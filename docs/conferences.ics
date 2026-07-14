@@ -1,0 +1,2594 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//leemgs//ai-conference-deadlines//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:AI 학회 논문 마감일
+X-WR-CALDESC:탑티어 AI 학회 논문 제출 마감일 (AoE 기준)
+BEGIN:VEVENT
+UID:socc-abstract-2026-02-06@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260206
+DTEND;VALUE=DATE:20260207
+SUMMARY:[SOCC 2026] 초록 마감 (확정)
+DESCRIPTION:ACM Symposium on Cloud Computing\n장소: Singapore\n마감 
+ 기준시: AoE\n공식 사이트: https://acmsocc.org/2026/
+URL:https://acmsocc.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:socc-paper-2026-02-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260213
+DTEND;VALUE=DATE:20260214
+SUMMARY:[SOCC 2026] 논문 마감 (First round) (확정)
+DESCRIPTION:ACM Symposium on Cloud Computing\n장소: Singapore\n마감 
+ 기준시: AoE\n공식 사이트: https://acmsocc.org/2026/
+URL:https://acmsocc.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:socc-abstract-2026-07-07@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260708
+SUMMARY:[SOCC 2026] 초록 마감 (확정)
+DESCRIPTION:ACM Symposium on Cloud Computing\n장소: Singapore\n마감 
+ 기준시: AoE\n공식 사이트: https://acmsocc.org/2026/
+URL:https://acmsocc.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:socc-paper-2026-07-14@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260714
+DTEND;VALUE=DATE:20260715
+SUMMARY:[SOCC 2026] 논문 마감 (Second round) (확정)
+DESCRIPTION:ACM Symposium on Cloud Computing\n장소: Singapore\n마감 
+ 기준시: AoE\n공식 사이트: https://acmsocc.org/2026/
+URL:https://acmsocc.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:ches-paper-2026-07-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
+SUMMARY:[CHES 2027] 논문 마감 (Schedule for TCHES Volume 2027/1) (확
+ 정)
+DESCRIPTION:Cryptographic Hardware and Embedded Systems\n장소: TBD\, Ame
+ ricas\n마감 기준시: AoE\n공식 사이트: https://ches.iacr.org/2027
+ /
+URL:https://ches.iacr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ches-paper-2026-10-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:[CHES 2027] 논문 마감 (Schedule for TCHES Volume 2027/2) (확
+ 정)
+DESCRIPTION:Cryptographic Hardware and Embedded Systems\n장소: TBD\, Ame
+ ricas\n마감 기준시: AoE\n공식 사이트: https://ches.iacr.org/2027
+ /
+URL:https://ches.iacr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ches-paper-2027-01-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[CHES 2027] 논문 마감 (Schedule for TCHES Volume 2027/3) (확
+ 정)
+DESCRIPTION:Cryptographic Hardware and Embedded Systems\n장소: TBD\, Ame
+ ricas\n마감 기준시: AoE\n공식 사이트: https://ches.iacr.org/2027
+ /
+URL:https://ches.iacr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ches-paper-2027-04-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270415
+DTEND;VALUE=DATE:20270416
+SUMMARY:[CHES 2027] 논문 마감 (Schedule for TCHES Volume 2027/4) (확
+ 정)
+DESCRIPTION:Cryptographic Hardware and Embedded Systems\n장소: TBD\, Ame
+ ricas\n마감 기준시: AoE\n공식 사이트: https://ches.iacr.org/2027
+ /
+URL:https://ches.iacr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-abstract-2026-01-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260110
+DTEND;VALUE=DATE:20260111
+SUMMARY:[SIGMOD 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-paper-2026-01-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260117
+DTEND;VALUE=DATE:20260118
+SUMMARY:[SIGMOD 2027] 논문 마감 (round 1) (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-abstract-2026-04-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260411
+SUMMARY:[SIGMOD 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-paper-2026-04-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260417
+DTEND;VALUE=DATE:20260418
+SUMMARY:[SIGMOD 2027] 논문 마감 (round 2) (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-abstract-2026-07-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:[SIGMOD 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-paper-2026-07-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:[SIGMOD 2027] 논문 마감 (round 3) (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-abstract-2026-10-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:[SIGMOD 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmod-paper-2026-10-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:[SIGMOD 2027] 논문 마감 (round 4) (확정)
+DESCRIPTION:International Conference on Management of Data\n장소: Huntin
+ gton Beach\, CA\, USA\n마감 기준시: AoE\n공식 사이트: https://20
+ 27.sigmod.org/
+URL:https://2027.sigmod.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigkdd-abstract-2026-07-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260719
+DTEND;VALUE=DATE:20260720
+SUMMARY:[SIGKDD 2027] 초록 마감 (확정)
+DESCRIPTION:ACM SIGKDD Conference on Knowledge Discovery and Data Mining\n
+ 장소: San Jose\, California\, USA\n마감 기준시: AoE\n공식 사이
+ 트: https://kdd2027.kdd.org/
+URL:https://kdd2027.kdd.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigkdd-paper-2026-07-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260726
+DTEND;VALUE=DATE:20260727
+SUMMARY:[SIGKDD 2027] 논문 마감 (1st round of 2 total rounds) (확정)
+DESCRIPTION:ACM SIGKDD Conference on Knowledge Discovery and Data Mining\n
+ 장소: San Jose\, California\, USA\n마감 기준시: AoE\n공식 사이
+ 트: https://kdd2027.kdd.org/
+URL:https://kdd2027.kdd.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-abstract-2026-07-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20260722
+SUMMARY:[AAAI 2027] 초록 마감 (확정)
+DESCRIPTION:National Conference on Artificial Intelligence\n장소: Montr
+ éal\, Québec\, Canada\n마감 기준시: UTC-12\n공식 사이트: https
+ ://aaai.org/conference/aaai/aaai-27/
+URL:https://aaai.org/conference/aaai/aaai-27/
+END:VEVENT
+BEGIN:VEVENT
+UID:aaai-paper-2026-07-28@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260728
+DTEND;VALUE=DATE:20260729
+SUMMARY:[AAAI 2027] 논문 마감 (확정)
+DESCRIPTION:National Conference on Artificial Intelligence\n장소: Montr
+ éal\, Québec\, Canada\n마감 기준시: UTC-12\n공식 사이트: https
+ ://aaai.org/conference/aaai/aaai-27/
+URL:https://aaai.org/conference/aaai/aaai-27/
+END:VEVENT
+BEGIN:VEVENT
+UID:hpca-abstract-2026-07-24@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:[HPCA 2027] 초록 마감 (확정)
+DESCRIPTION:International Symposium on High-Performance Computer Architect
+ ure\n장소: Salt Lake City\, Utah\n마감 기준시: AoE\n공식 사이
+ 트: https://conf.researchr.org/home/hpca-2027
+URL:https://conf.researchr.org/home/hpca-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:hpca-paper-2026-07-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:[HPCA 2027] 논문 마감 (확정)
+DESCRIPTION:International Symposium on High-Performance Computer Architect
+ ure\n장소: Salt Lake City\, Utah\n마감 기준시: AoE\n공식 사이
+ 트: https://conf.researchr.org/home/hpca-2027
+URL:https://conf.researchr.org/home/hpca-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:infocom-abstract-2026-07-24@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:[INFOCOM 2027] 초록 마감 (확정)
+DESCRIPTION:IEEE Conference on Computer Communications\n장소: Honolulu\,
+  HI\, USA\n마감 기준시: AoE\n공식 사이트: https://infocom2027.ie
+ ee-infocom.org/
+URL:https://infocom2027.ieee-infocom.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:infocom-paper-2026-07-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:[INFOCOM 2027] 논문 마감 (확정)
+DESCRIPTION:IEEE Conference on Computer Communications\n장소: Honolulu\,
+  HI\, USA\n마감 기준시: AoE\n공식 사이트: https://infocom2027.ie
+ ee-infocom.org/
+URL:https://infocom2027.ieee-infocom.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-03-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260325
+DTEND;VALUE=DATE:20260326
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-04-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260401
+DTEND;VALUE=DATE:20260402
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-04-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260426
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-05-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-05-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-06-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20260602
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-06-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260625
+DTEND;VALUE=DATE:20260626
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-07-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-07-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260725
+DTEND;VALUE=DATE:20260726
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-08-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-08-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-09-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260901
+DTEND;VALUE=DATE:20260902
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-09-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-10-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-10-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-11-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-11-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2026-12-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2026-12-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2027-01-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2027-01-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2027-02-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270201
+DTEND;VALUE=DATE:20270202
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-abstract-2027-02-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:[VLDB/PVLDB 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vldb-pvldb-paper-2027-03-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:[VLDB/PVLDB 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Very Large DataBases\n장소: Athe
+ ns\, Greece\n마감 기준시: PT\n공식 사이트: https://www.vldb.org/
+ 2027/
+URL:https://www.vldb.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ubicomp-paper-2026-02-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260201
+DTEND;VALUE=DATE:20260202
+SUMMARY:[UbiComp 2026] 논문 마감 (first round) (확정)
+DESCRIPTION:ACM International Conference on Ubiquitous Computing (※ UbiC
+ omp의 Accept 여부는 "Proceedings of the ACM on Interactive\, Mobile\, 
+ Wearable and Ubiquitous Technologies" 저널 탑재 기준으로 판단)\n
+ 장소: Shanghai\, China\n마감 기준시: AoE\n공식 사이트: https:/
+ /www.ubicomp.org/ubicomp-iswc-2026
+URL:https://www.ubicomp.org/ubicomp-iswc-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:ubicomp-paper-2026-05-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:[UbiComp 2026] 논문 마감 (second round) (확정)
+DESCRIPTION:ACM International Conference on Ubiquitous Computing (※ UbiC
+ omp의 Accept 여부는 "Proceedings of the ACM on Interactive\, Mobile\, 
+ Wearable and Ubiquitous Technologies" 저널 탑재 기준으로 판단)\n
+ 장소: Shanghai\, China\n마감 기준시: AoE\n공식 사이트: https:/
+ /www.ubicomp.org/ubicomp-iswc-2026
+URL:https://www.ubicomp.org/ubicomp-iswc-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:ubicomp-paper-2026-08-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260802
+SUMMARY:[UbiComp 2026] 논문 마감 (third round (only for resubmissions 
+ after major revisions)) (확정)
+DESCRIPTION:ACM International Conference on Ubiquitous Computing (※ UbiC
+ omp의 Accept 여부는 "Proceedings of the ACM on Interactive\, Mobile\, 
+ Wearable and Ubiquitous Technologies" 저널 탑재 기준으로 판단)\n
+ 장소: Shanghai\, China\n마감 기준시: AoE\n공식 사이트: https:/
+ /www.ubicomp.org/ubicomp-iswc-2026
+URL:https://www.ubicomp.org/ubicomp-iswc-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:ubicomp-paper-2026-11-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:[UbiComp 2026] 논문 마감 (fourth round) (확정)
+DESCRIPTION:ACM International Conference on Ubiquitous Computing (※ UbiC
+ omp의 Accept 여부는 "Proceedings of the ACM on Interactive\, Mobile\, 
+ Wearable and Ubiquitous Technologies" 저널 탑재 기준으로 판단)\n
+ 장소: Shanghai\, China\n마감 기준시: AoE\n공식 사이트: https:/
+ /www.ubicomp.org/ubicomp-iswc-2026
+URL:https://www.ubicomp.org/ubicomp-iswc-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:emnlp-paper-2026-05-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260525
+DTEND;VALUE=DATE:20260526
+SUMMARY:[EMNLP 2026] ARR 논문 마감 (확정)
+DESCRIPTION:Conference on Empirical Methods in Natural Language Processing
+ \n장소: 헝가리\n마감 기준시: AoE\n공식 사이트: https://2026
+ .emnlp.org
+URL:https://2026.emnlp.org
+END:VEVENT
+BEGIN:VEVENT
+UID:emnlp-etc-2026-08-02@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260802
+DTEND;VALUE=DATE:20260803
+SUMMARY:[EMNLP 2026] 커밋먼트 마감 (확정)
+DESCRIPTION:Conference on Empirical Methods in Natural Language Processing
+ \n장소: 헝가리\n마감 기준시: AoE\n공식 사이트: https://2026
+ .emnlp.org
+URL:https://2026.emnlp.org
+END:VEVENT
+BEGIN:VEVENT
+UID:ppopp-paper-2026-08-03@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:[PPoPP 2027] 논문 마감 (확정)
+DESCRIPTION:Principles and Practice of Parallel Programming\n장소: Salt 
+ Lake City\, Utah\, USA\n마감 기준시: AoE\n공식 사이트: https://p
+ popp27.sigplan.org/
+URL:https://ppopp27.sigplan.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:eacl-paper-2026-08-03@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:[EACL 2027] 논문 마감 (확정)
+DESCRIPTION:European Association for Computational Linguistics\n장소: At
+ hens\, Greece\n마감 기준시: AoE\n공식 사이트: https://2027.eacl.
+ org/
+URL:https://2027.eacl.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-abstract-2026-08-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:[IUI 2027] 초록 마감 (확정)
+DESCRIPTION:Intelligent User Interfaces\n장소: Helsinki\, Finland\n마
+ 감 기준시: AoE\n공식 사이트: https://iui.hosting.acm.org/2027/
+URL:https://iui.hosting.acm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:iui-paper-2026-08-20@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:[IUI 2027] 논문 마감 (확정)
+DESCRIPTION:Intelligent User Interfaces\n장소: Helsinki\, Finland\n마
+ 감 기준시: AoE\n공식 사이트: https://iui.hosting.acm.org/2027/
+URL:https://iui.hosting.acm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:wsdm-abstract-2026-08-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:[WSDM 2027] 초록 마감 (확정)
+DESCRIPTION:ACM International Conference on Web Search and Data Mining\n
+ 장소: Cordis\, Hong Kong SAR\, China\n마감 기준시: UTC-12\n공식 
+ 사이트: https://wsdm-conference.org/2027/
+URL:https://wsdm-conference.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:wsdm-paper-2026-08-24@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:[WSDM 2027] 논문 마감 (확정)
+DESCRIPTION:ACM International Conference on Web Search and Data Mining\n
+ 장소: Cordis\, Hong Kong SAR\, China\n마감 기준시: UTC-12\n공식 
+ 사이트: https://wsdm-conference.org/2027/
+URL:https://wsdm-conference.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:3dv-paper-2026-08-18@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:[3DV 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on 3D Vision\n장소: 미정\n마감 
+ 기준시: UTC-7\n공식 사이트: https://3dvconf.github.io/2026/
+URL:https://3dvconf.github.io/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-abstract-2026-08-18@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:[USENIX Security 2027] 초록 마감 (확정)
+DESCRIPTION:USENIX Security Symposium\n장소: Denver\, CO\, USA\n마감 
+ 기준시: UTC-12\n공식 사이트: https://www.usenix.org/conference/use
+ nixsecurity27
+URL:https://www.usenix.org/conference/usenixsecurity27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-paper-2026-08-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260825
+DTEND;VALUE=DATE:20260826
+SUMMARY:[USENIX Security 2027] 논문 마감 (Cycle 1 Deadline) (확정)
+DESCRIPTION:USENIX Security Symposium\n장소: Denver\, CO\, USA\n마감 
+ 기준시: UTC-12\n공식 사이트: https://www.usenix.org/conference/use
+ nixsecurity27
+URL:https://www.usenix.org/conference/usenixsecurity27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-abstract-2027-01-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:[USENIX Security 2027] 초록 마감 (확정)
+DESCRIPTION:USENIX Security Symposium\n장소: Denver\, CO\, USA\n마감 
+ 기준시: UTC-12\n공식 사이트: https://www.usenix.org/conference/use
+ nixsecurity27
+URL:https://www.usenix.org/conference/usenixsecurity27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-security-paper-2027-01-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:[USENIX Security 2027] 논문 마감 (Cycle 2 Deadline) (확정)
+DESCRIPTION:USENIX Security Symposium\n장소: Denver\, CO\, USA\n마감 
+ 기준시: UTC-12\n공식 사이트: https://www.usenix.org/conference/use
+ nixsecurity27
+URL:https://www.usenix.org/conference/usenixsecurity27
+END:VEVENT
+BEGIN:VEVENT
+UID:ndss-paper-2026-05-06@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260506
+DTEND;VALUE=DATE:20260507
+SUMMARY:[NDSS 2027] 논문 마감 (Summer) (확정)
+DESCRIPTION:Network and Distributed System Security Symposium\n장소: Seo
+ ul\, Republic of Korea\n마감 기준시: UTC-12\n공식 사이트: https:
+ //www.ndss-symposium.org/ndss2027/
+URL:https://www.ndss-symposium.org/ndss2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:ndss-paper-2026-08-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260819
+DTEND;VALUE=DATE:20260820
+SUMMARY:[NDSS 2027] 논문 마감 (Fall) (확정)
+DESCRIPTION:Network and Distributed System Security Symposium\n장소: Seo
+ ul\, Republic of Korea\n마감 기준시: UTC-12\n공식 사이트: https:
+ //www.ndss-symposium.org/ndss2027/
+URL:https://www.ndss-symposium.org/ndss2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:wacv-easy-abstract-2026-06-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY:[WACV (easy) 2027] 초록 마감 (확정)
+DESCRIPTION:IEEE Winter Conference on Applications of Computer Vision\n장
+ 소: Disney Springs\, Buena Vista\, FL\, USA\n마감 기준시: AoE\n공
+ 식 사이트: https://wacv.thecvf.com/
+URL:https://wacv.thecvf.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:wacv-easy-paper-2026-06-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:[WACV (easy) 2027] 논문 마감 (First round) (확정)
+DESCRIPTION:IEEE Winter Conference on Applications of Computer Vision\n장
+ 소: Disney Springs\, Buena Vista\, FL\, USA\n마감 기준시: AoE\n공
+ 식 사이트: https://wacv.thecvf.com/
+URL:https://wacv.thecvf.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:wacv-easy-abstract-2026-08-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:[WACV (easy) 2027] 초록 마감 (확정)
+DESCRIPTION:IEEE Winter Conference on Applications of Computer Vision\n장
+ 소: Disney Springs\, Buena Vista\, FL\, USA\n마감 기준시: AoE\n공
+ 식 사이트: https://wacv.thecvf.com/
+URL:https://wacv.thecvf.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:wacv-easy-paper-2026-08-28@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260829
+SUMMARY:[WACV (easy) 2027] 논문 마감 (Second round) (확정)
+DESCRIPTION:IEEE Winter Conference on Applications of Computer Vision\n장
+ 소: Disney Springs\, Buena Vista\, FL\, USA\n마감 기준시: AoE\n공
+ 식 사이트: https://wacv.thecvf.com/
+URL:https://wacv.thecvf.com/
+END:VEVENT
+BEGIN:VEVENT
+UID:bigdata-paper-2026-08-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:[BIGDATA 2026] 논문 마감 (확정)
+DESCRIPTION:IEEE International Conference on BigData\n장소: Phoenix\, Ar
+ izona\, United State\n마감 기준시: AoE\n공식 사이트: https://big
+ dataieee.org/BigData2026/
+URL:https://bigdataieee.org/BigData2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:asiaccs-paper-2026-08-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:[AsiaCCS 2027] 논문 마감 (1st round Deadline) (확정)
+DESCRIPTION:ACM ASIA Conference on Computer and Communications Security\n
+ 장소: Macau\, China\n마감 기준시: AoE\n공식 사이트: https://as
+ iaccs2027.cityu.edu.mo/index.html
+URL:https://asiaccs2027.cityu.edu.mo/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:asiaccs-paper-2026-12-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:[AsiaCCS 2027] 논문 마감 (2nd round Deadline) (확정)
+DESCRIPTION:ACM ASIA Conference on Computer and Communications Security\n
+ 장소: Macau\, China\n마감 기준시: AoE\n공식 사이트: https://as
+ iaccs2027.cityu.edu.mo/index.html
+URL:https://asiaccs2027.cityu.edu.mo/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:vr-abstract-2026-08-24@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:[VR 2027] 초록 마감 (확정)
+DESCRIPTION:IEEE Virtual Reality Conference\n장소: Melbourne\, Australia
+ \n마감 기준시: AoE\n공식 사이트: https://ieeevr.org/2027/
+URL:https://ieeevr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:vr-paper-2026-08-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:[VR 2027] 논문 마감 (확정)
+DESCRIPTION:IEEE Virtual Reality Conference\n장소: Melbourne\, Australia
+ \n마감 기준시: AoE\n공식 사이트: https://ieeevr.org/2027/
+URL:https://ieeevr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:pets-paper-2026-05-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260531
+DTEND;VALUE=DATE:20260601
+SUMMARY:[PETS 2027] 논문 마감 (Issue 1 Paper Submission Deadline) (확
+ 정)
+DESCRIPTION:Proceedings on Privacy Enhancing Technologies\n장소: Delft\,
+  The Netherlands\n마감 기준시: AoE\n공식 사이트: https://petsymp
+ osium.org/cfp27.php
+URL:https://petsymposium.org/cfp27.php
+END:VEVENT
+BEGIN:VEVENT
+UID:pets-paper-2026-08-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:[PETS 2027] 논문 마감 (Issue 2 Paper Submission Deadline) (확
+ 정)
+DESCRIPTION:Proceedings on Privacy Enhancing Technologies\n장소: Delft\,
+  The Netherlands\n마감 기준시: AoE\n공식 사이트: https://petsymp
+ osium.org/cfp27.php
+URL:https://petsymposium.org/cfp27.php
+END:VEVENT
+BEGIN:VEVENT
+UID:pets-paper-2026-11-30@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261130
+DTEND;VALUE=DATE:20261201
+SUMMARY:[PETS 2027] 논문 마감 (Issue 3 Paper Submission Deadline) (확
+ 정)
+DESCRIPTION:Proceedings on Privacy Enhancing Technologies\n장소: Delft\,
+  The Netherlands\n마감 기준시: AoE\n공식 사이트: https://petsymp
+ osium.org/cfp27.php
+URL:https://petsymposium.org/cfp27.php
+END:VEVENT
+BEGIN:VEVENT
+UID:pets-paper-2027-02-28@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+SUMMARY:[PETS 2027] 논문 마감 (Issue 4 Paper Submission Deadline) (확
+ 정)
+DESCRIPTION:Proceedings on Privacy Enhancing Technologies\n장소: Delft\,
+  The Netherlands\n마감 기준시: AoE\n공식 사이트: https://petsymp
+ osium.org/cfp27.php
+URL:https://petsymposium.org/cfp27.php
+END:VEVENT
+BEGIN:VEVENT
+UID:asplos-paper-2026-04-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260415
+DTEND;VALUE=DATE:20260416
+SUMMARY:[ASPLOS 2027] 논문 마감 (April Cycle Submission Deadline) (확
+ 정)
+DESCRIPTION:Architectural Support for Programming Languages and Operating 
+ Systems\n장소: Crete\, Greece\n마감 기준시: AoE\n공식 사이트: 
+ https://www.asplos-conference.org/asplos2027/cfp/
+URL:https://www.asplos-conference.org/asplos2027/cfp/
+END:VEVENT
+BEGIN:VEVENT
+UID:asplos-paper-2026-09-09@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:[ASPLOS 2027] 논문 마감 (September Cycle Submission Deadline) 
+ (확정)
+DESCRIPTION:Architectural Support for Programming Languages and Operating 
+ Systems\n장소: Crete\, Greece\n마감 기준시: AoE\n공식 사이트: 
+ https://www.asplos-conference.org/asplos2027/cfp/
+URL:https://www.asplos-conference.org/asplos2027/cfp/
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-nsdi-abstract-2026-04-16@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260416
+DTEND;VALUE=DATE:20260417
+SUMMARY:[USENIX NSDI 2027] 초록 마감 (확정)
+DESCRIPTION:Symposium on Networked Systems Design and Implementation\n장
+ 소: Providence\, RI\, USA\n마감 기준시: UTC-4\n공식 사이트: htt
+ ps://www.usenix.org/conference/nsdi27
+URL:https://www.usenix.org/conference/nsdi27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-nsdi-paper-2026-04-23@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260423
+DTEND;VALUE=DATE:20260424
+SUMMARY:[USENIX NSDI 2027] 논문 마감 (확정)
+DESCRIPTION:Symposium on Networked Systems Design and Implementation\n장
+ 소: Providence\, RI\, USA\n마감 기준시: UTC-4\n공식 사이트: htt
+ ps://www.usenix.org/conference/nsdi27
+URL:https://www.usenix.org/conference/nsdi27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-nsdi-abstract-2026-09-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[USENIX NSDI 2027] 초록 마감 (확정)
+DESCRIPTION:Symposium on Networked Systems Design and Implementation\n장
+ 소: Providence\, RI\, USA\n마감 기준시: UTC-4\n공식 사이트: htt
+ ps://www.usenix.org/conference/nsdi27
+URL:https://www.usenix.org/conference/nsdi27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-nsdi-paper-2026-09-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:[USENIX NSDI 2027] 논문 마감 (확정)
+DESCRIPTION:Symposium on Networked Systems Design and Implementation\n장
+ 소: Providence\, RI\, USA\n마감 기준시: UTC-4\n공식 사이트: htt
+ ps://www.usenix.org/conference/nsdi27
+URL:https://www.usenix.org/conference/nsdi27
+END:VEVENT
+BEGIN:VEVENT
+UID:cgo-paper-2026-06-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260612
+SUMMARY:[CGO 2027] 논문 마감 (First Submission) (확정)
+DESCRIPTION:International Symposium on Code Generation and Optimization\n
+ 장소: Salt Lake City\, Utah\, USA\n마감 기준시: AoE\n공식 사이
+ 트: https://conf.researchr.org/home/cgo-2027
+URL:https://conf.researchr.org/home/cgo-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:cgo-paper-2026-09-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[CGO 2027] 논문 마감 (Second Submission) (확정)
+DESCRIPTION:International Symposium on Code Generation and Optimization\n
+ 장소: Salt Lake City\, Utah\, USA\n마감 기준시: AoE\n공식 사이
+ 트: https://conf.researchr.org/home/cgo-2027
+URL:https://conf.researchr.org/home/cgo-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:chi-paper-2026-09-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[CHI 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Human Factors in Computing Systems
+ \n장소: David L. Lawrence Convention Center\, Pittsburgh\, USA\n마감 
+ 기준시: AoE\n공식 사이트: https://chi2027.acm.org/
+URL:https://chi2027.acm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:mmsys-abstract-2026-09-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[Mmsys 2027] 초록 마감 (확정)
+DESCRIPTION:ACM Multimedia Systems Conference\n장소: Ghent\, Belgium\n
+ 마감 기준시: AoE\n공식 사이트: https://2027.acmmmsys.org
+URL:https://2027.acmmmsys.org
+END:VEVENT
+BEGIN:VEVENT
+UID:mmsys-paper-2026-09-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:[Mmsys 2027] 논문 마감 (확정)
+DESCRIPTION:ACM Multimedia Systems Conference\n장소: Ghent\, Belgium\n
+ 마감 기준시: AoE\n공식 사이트: https://2027.acmmmsys.org
+URL:https://2027.acmmmsys.org
+END:VEVENT
+BEGIN:VEVENT
+UID:date-abstract-2026-09-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260913
+DTEND;VALUE=DATE:20260914
+SUMMARY:[DATE 2027] 초록 마감 (확정)
+DESCRIPTION:Design Automation and Test in Europe Conference\n장소: Dresd
+ en\, Germany\n마감 기준시: AoE\n공식 사이트: https://www.date-co
+ nference.com/date-2027-call-papers
+URL:https://www.date-conference.com/date-2027-call-papers
+END:VEVENT
+BEGIN:VEVENT
+UID:date-paper-2026-09-20@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260920
+DTEND;VALUE=DATE:20260921
+SUMMARY:[DATE 2027] 논문 마감 (확정)
+DESCRIPTION:Design Automation and Test in Europe Conference\n장소: Dresd
+ en\, Germany\n마감 기준시: AoE\n공식 사이트: https://www.date-co
+ nference.com/date-2027-call-papers
+URL:https://www.date-conference.com/date-2027-call-papers
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-fast-paper-2026-03-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260317
+DTEND;VALUE=DATE:20260318
+SUMMARY:[USENIX FAST 2027] 논문 마감 (Spring deadline) (확정)
+DESCRIPTION:USENIX Conference on File and Storage Technologies\n장소: Re
+ nton\, WA\, USA\n마감 기준시: AoE\n공식 사이트: https://www.usen
+ ix.org/conference/fast27
+URL:https://www.usenix.org/conference/fast27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-fast-paper-2026-09-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:[USENIX FAST 2027] 논문 마감 (Fall deadline) (확정)
+DESCRIPTION:USENIX Conference on File and Storage Technologies\n장소: Re
+ nton\, WA\, USA\n마감 기준시: AoE\n공식 사이트: https://www.usen
+ ix.org/conference/fast27
+URL:https://www.usenix.org/conference/fast27
+END:VEVENT
+BEGIN:VEVENT
+UID:wcnc-paper-2026-09-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:[WCNC 2027] 논문 마감 (확정)
+DESCRIPTION:IEEE Wireless Communications and Networking Conference\n장소
+ : Panama City\, Panama\n마감 기준시: AoE\n공식 사이트: https://w
+ cnc2027.ieee-wcnc.org/
+URL:https://wcnc2027.ieee-wcnc.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:icra-paper-2026-09-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:[ICRA 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Robotics and Automation\n장
+ 소: 미정\n마감 기준시: UTC-8\n공식 사이트: https://2026.ieee-
+ icra.org/
+URL:https://2026.ieee-icra.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:icassp-paper-2026-09-16@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260916
+DTEND;VALUE=DATE:20260917
+SUMMARY:[ICASSP 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Acoustics\, Speech\, and Signal Pr
+ ocessing\n장소: Toronto\, Canada\n마감 기준시: UTC-12\n공식 사
+ 이트: https://2027.ieeeicassp.org/
+URL:https://2027.ieeeicassp.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurosys-abstract-2026-05-07@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260507
+DTEND;VALUE=DATE:20260508
+SUMMARY:[EUROSYS 2027] 초록 마감 (확정)
+DESCRIPTION:European Conference on Computer Systems\n장소: Rabat\, Moroc
+ co\n마감 기준시: AoE\n공식 사이트: https://2027.eurosys.org/
+URL:https://2027.eurosys.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurosys-paper-2026-05-14@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260514
+DTEND;VALUE=DATE:20260515
+SUMMARY:[EUROSYS 2027] 논문 마감 (Spring Submission Deadline) (확정)
+DESCRIPTION:European Conference on Computer Systems\n장소: Rabat\, Moroc
+ co\n마감 기준시: AoE\n공식 사이트: https://2027.eurosys.org/
+URL:https://2027.eurosys.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurosys-abstract-2026-09-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:[EUROSYS 2027] 초록 마감 (확정)
+DESCRIPTION:European Conference on Computer Systems\n장소: Rabat\, Moroc
+ co\n마감 기준시: AoE\n공식 사이트: https://2027.eurosys.org/
+URL:https://2027.eurosys.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurosys-paper-2026-09-24@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:[EUROSYS 2027] 논문 마감 (Fall Submission Deadline) (확정)
+DESCRIPTION:European Conference on Computer Systems\n장소: Rabat\, Moroc
+ co\n마감 기준시: AoE\n공식 사이트: https://2027.eurosys.org/
+URL:https://2027.eurosys.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:fc-paper-2026-09-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:[FC 2027] 논문 마감 (Submission deadline) (확정)
+DESCRIPTION:Financial Cryptography and Data Security\n장소: Barbados (te
+ ntative)\n마감 기준시: UTC-12\n공식 사이트: https://fc27.ifca.ai
+ /
+URL:https://fc27.ifca.ai/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurocrypt-paper-2026-09-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:[EUROCRYPT 2027] 논문 마감 (확정)
+DESCRIPTION:Theory and Application of Cryptographic Techniques\n장소: Ei
+ ndhoven\, Netherlands\n마감 기준시: AoE\n공식 사이트: https://eu
+ rocrypt.iacr.org/2027/
+URL:https://eurocrypt.iacr.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-abstract-2026-09-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:[ICLR 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Learning Representation\n장소: 
+ 브라질\n마감 기준시: AoE\n공식 사이트: https://iclr.cc
+URL:https://iclr.cc
+END:VEVENT
+BEGIN:VEVENT
+UID:iclr-paper-2026-09-24@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:[ICLR 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Learning Representation\n장소: 
+ 브라질\n마감 기준시: AoE\n공식 사이트: https://iclr.cc
+URL:https://iclr.cc
+END:VEVENT
+BEGIN:VEVENT
+UID:saner-abstract-2026-09-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:[SANER 2027] 초록 마감 (확정)
+DESCRIPTION:IEEE International Conference on Software Analysis\, Evolution
+  and Reengineering\n장소: Richmond\, Virginia\, United States\n마감 
+ 기준시: AoE\n공식 사이트: https://conf.researchr.org/home/saner-20
+ 27
+URL:https://conf.researchr.org/home/saner-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:saner-paper-2026-09-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:[SANER 2027] 논문 마감 (Research Track Paper submission deadli
+ ne) (확정)
+DESCRIPTION:IEEE International Conference on Software Analysis\, Evolution
+  and Reengineering\n장소: Richmond\, Virginia\, United States\n마감 
+ 기준시: AoE\n공식 사이트: https://conf.researchr.org/home/saner-20
+ 27
+URL:https://conf.researchr.org/home/saner-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:fpga-paper-2026-10-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:[FPGA 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Symposium on Field Programmable Gate Arrays\n장
+ 소: 미정\n마감 기준시: UTC-12\n공식 사이트: https://www.isfpg
+ a.org/
+URL:https://www.isfpga.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-abstract-2026-07-03@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:[SIGMETRICS 2027] 초록 마감 (확정)
+DESCRIPTION:ACM SIGMETRICS Measurement and Modeling of Computer Systems\n
+ 장소: Atlanta\, Georgia\, USA\n마감 기준시: AoE\n공식 사이트: 
+ https://www.sigmetrics.org/sigmetrics2027/
+URL:https://www.sigmetrics.org/sigmetrics2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-paper-2026-07-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:[SIGMETRICS 2027] 논문 마감 (summer round) (확정)
+DESCRIPTION:ACM SIGMETRICS Measurement and Modeling of Computer Systems\n
+ 장소: Atlanta\, Georgia\, USA\n마감 기준시: AoE\n공식 사이트: 
+ https://www.sigmetrics.org/sigmetrics2027/
+URL:https://www.sigmetrics.org/sigmetrics2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-abstract-2026-10-02@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:[SIGMETRICS 2027] 초록 마감 (확정)
+DESCRIPTION:ACM SIGMETRICS Measurement and Modeling of Computer Systems\n
+ 장소: Atlanta\, Georgia\, USA\n마감 기준시: AoE\n공식 사이트: 
+ https://www.sigmetrics.org/sigmetrics2027/
+URL:https://www.sigmetrics.org/sigmetrics2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-paper-2026-10-09@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:[SIGMETRICS 2027] 논문 마감 (fall round) (확정)
+DESCRIPTION:ACM SIGMETRICS Measurement and Modeling of Computer Systems\n
+ 장소: Atlanta\, Georgia\, USA\n마감 기준시: AoE\n공식 사이트: 
+ https://www.sigmetrics.org/sigmetrics2027/
+URL:https://www.sigmetrics.org/sigmetrics2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-abstract-2027-01-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:[SIGMETRICS 2027] 초록 마감 (확정)
+DESCRIPTION:ACM SIGMETRICS Measurement and Modeling of Computer Systems\n
+ 장소: Atlanta\, Georgia\, USA\n마감 기준시: AoE\n공식 사이트: 
+ https://www.sigmetrics.org/sigmetrics2027/
+URL:https://www.sigmetrics.org/sigmetrics2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigmetrics-paper-2027-01-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+SUMMARY:[SIGMETRICS 2027] 논문 마감 (winter round) (확정)
+DESCRIPTION:ACM SIGMETRICS Measurement and Modeling of Computer Systems\n
+ 장소: Atlanta\, Georgia\, USA\n마감 기준시: AoE\n공식 사이트: 
+ https://www.sigmetrics.org/sigmetrics2027/
+URL:https://www.sigmetrics.org/sigmetrics2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:aistats-paper-2026-10-02@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:[AISTATS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Artificial Intelligence and Statis
+ tics\n장소: 미정\n마감 기준시: UTC-12\n공식 사이트: https://
+ virtual.aistats.org/Conferences/2026
+URL:https://virtual.aistats.org/Conferences/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:aamas-abstract-2026-10-02@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:[AAMAS 2027] 초록 마감 (확정)
+DESCRIPTION:International Conference on Autonomous Agents and Multiagent S
+ ystems\n장소: Hanoi\, Vietnam\n마감 기준시: UTC+0\n공식 사이트
+ : https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+URL:https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:aamas-paper-2026-10-09@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:[AAMAS 2027] 논문 마감 (확정)
+DESCRIPTION:International Conference on Autonomous Agents and Multiagent S
+ ystems\n장소: Hanoi\, Vietnam\n마감 기준시: UTC+0\n공식 사이트
+ : https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+URL:https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference
+END:VEVENT
+BEGIN:VEVENT
+UID:fse-paper-2026-10-02@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:[FSE 2027] 논문 마감 (확정)
+DESCRIPTION:ACM SIGSOFT International Symposium on the Foundations of Soft
+ ware Engineering\n장소: Shenzhen\, China\n마감 기준시: AoE\n공식 
+ 사이트: https://conf.researchr.org/home/fse-2027
+URL:https://conf.researchr.org/home/fse-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:ipdps-paper-2026-10-09@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:[IPDPS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Parallel and Distributed Processing Symposi
+ um\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://www.i
+ pdps.org/
+URL:https://www.ipdps.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:www-abstract-2026-10-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:[WWW 2027] 초록 마감 (확정)
+DESCRIPTION:World Wide Web Conference Series\n장소: Dublin\, Ireland\n
+ 마감 기준시: AoE\n공식 사이트: https://acmweb2027.org/
+URL:https://acmweb2027.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:www-paper-2026-10-18@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:[WWW 2027] 논문 마감 (확정)
+DESCRIPTION:World Wide Web Conference Series\n장소: Dublin\, Ireland\n
+ 마감 기준시: AoE\n공식 사이트: https://acmweb2027.org/
+URL:https://acmweb2027.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:noms-paper-2026-10-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:[NOMS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE/IFIP Network Operations and Management Symposium\n장소:
+  미정\n마감 기준시: UTC+10\n공식 사이트: https://noms2026.ieee
+ -noms.org/
+URL:https://noms2026.ieee-noms.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:iscas-paper-2026-10-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:[ISCAS 2027] 논문 마감 (확정)
+DESCRIPTION:IEEE International Symposium on Circuits and Systems\n장소: 
+ Bordeaux\, France\n마감 기준시: AoE\n공식 사이트: https://2027.i
+ eee-iscas.org/
+URL:https://2027.ieee-iscas.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:tacas-paper-2026-10-16@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:[TACAS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Tools and Algorithms for Construct
+ ion and Analysis of Systems\n장소: 미정\n마감 기준시: AoE\n공식
+  사이트: https://etaps.org/2026
+URL:https://etaps.org/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:msr-paper-2026-10-23@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:[MSR 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Conference on Mining Software Repository\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://2026.msrconf.org/
+URL:https://2026.msrconf.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:pkc-paper-2026-10-24@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:[PKC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Public Key Cryptography\n장소: 미정\n마감 기준시: UTC
+ -12\n공식 사이트: https://pkc.iacr.org/2026/
+URL:https://pkc.iacr.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:mlsys-paper-2026-10-30@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:[MLSys 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Conference on Machine Learning and Systems\n장소: 미정\n
+ 마감 기준시: AoE\n공식 사이트: https://mlsys.org/
+URL:https://mlsys.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:icc-paper-2026-10-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:[ICC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Communications\n장소: 미
+ 정\n마감 기준시: UTC-4\n공식 사이트: https://icc2026.ieee-icc.o
+ rg
+URL:https://icc2026.ieee-icc.org
+END:VEVENT
+BEGIN:VEVENT
+UID:stoc-paper-2026-11-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:[STOC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Symposium on Theory of Computing\n장소: 미정\n마감 
+ 기준시: UTC-5\n공식 사이트: https://acm-stoc.org/stoc2026/
+URL:https://acm-stoc.org/stoc2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:pacificvis-paper-2026-11-08@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:[PacificVis 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Pacific Visualization Symposium\n장소: 미정\n마감 
+ 기준시: AoE\n공식 사이트: https://pacificvis2026.github.io/
+URL:https://pacificvis2026.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:sp-abstract-2026-06-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260604
+DTEND;VALUE=DATE:20260605
+SUMMARY:[SP 2027] 초록 마감 (확정)
+DESCRIPTION:IEEE Symposium on Security and Privacy\n장소: MONTREAL\, CAN
+ ADA\n마감 기준시: UTC-12\n공식 사이트: https://sp2027.ieee-secur
+ ity.org/index.html
+URL:https://sp2027.ieee-security.org/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:sp-paper-2026-06-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260612
+SUMMARY:[SP 2027] 논문 마감 (First Paper submission deadline) (확정)
+DESCRIPTION:IEEE Symposium on Security and Privacy\n장소: MONTREAL\, CAN
+ ADA\n마감 기준시: UTC-12\n공식 사이트: https://sp2027.ieee-secur
+ ity.org/index.html
+URL:https://sp2027.ieee-security.org/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:sp-abstract-2026-11-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:[SP 2027] 초록 마감 (확정)
+DESCRIPTION:IEEE Symposium on Security and Privacy\n장소: MONTREAL\, CAN
+ ADA\n마감 기준시: UTC-12\n공식 사이트: https://sp2027.ieee-secur
+ ity.org/index.html
+URL:https://sp2027.ieee-security.org/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:sp-paper-2026-11-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[SP 2027] 논문 마감 (Second Paper submission deadline) (확정)
+DESCRIPTION:IEEE Symposium on Security and Privacy\n장소: MONTREAL\, CAN
+ ADA\n마감 기준시: UTC-12\n공식 사이트: https://sp2027.ieee-secur
+ ity.org/index.html
+URL:https://sp2027.ieee-security.org/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:icde-paper-2026-06-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260612
+SUMMARY:[ICDE 2027] 논문 마감 (first round) (확정)
+DESCRIPTION:International Conference on Data Engineering\n장소: Copenhag
+ en\, Denmark\n마감 기준시: UTC-7\n공식 사이트: https://icde2027.
+ github.io/
+URL:https://icde2027.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:icde-paper-2026-11-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:[ICDE 2027] 논문 마감 (second round) (확정)
+DESCRIPTION:International Conference on Data Engineering\n장소: Copenhag
+ en\, Denmark\n마감 기준시: UTC-7\n공식 사이트: https://icde2027.
+ github.io/
+URL:https://icde2027.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:pldi-paper-2026-11-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:[PLDI 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:SIGPLAN Conference on Programming Language Design and Implemen
+ tation\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://p
+ ldi26.sigplan.org/
+URL:https://pldi26.sigplan.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:cvpr-abstract-2026-11-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:[CVPR 2027] 논문 등록(초록) 마감 (확정)
+DESCRIPTION:Computer Vision and Pattern Recognition\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://cvpr.thecvf.com
+URL:https://cvpr.thecvf.com
+END:VEVENT
+BEGIN:VEVENT
+UID:cvpr-paper-2026-11-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:[CVPR 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Computer Vision and Pattern Recognition\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://cvpr.thecvf.com
+URL:https://cvpr.thecvf.com
+END:VEVENT
+BEGIN:VEVENT
+UID:isca-paper-2026-11-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261117
+DTEND;VALUE=DATE:20261118
+SUMMARY:[ISCA 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Symposium on Computer Architecture\n장소: 미
+ 정\n마감 기준시: AoE\n공식 사이트: https://iscaconf.org/isca202
+ 6/
+URL:https://iscaconf.org/isca2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:dac-paper-2026-11-18@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:[DAC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Design Automation Conference\n장소: 미정\n마감 기준시
+ : UTC-8\n공식 사이트: https://dac.com/2026/call-for-contributions
+URL:https://dac.com/2026/call-for-contributions
+END:VEVENT
+BEGIN:VEVENT
+UID:euros-p-paper-2026-11-20@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:[EuroS&P 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE European Symposium on Security and Privacy\n장소: 미
+ 정\n마감 기준시: UTC-12\n공식 사이트: https://eurosp2026.ieee-s
+ ecurity.org/
+URL:https://eurosp2026.ieee-security.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:eurovis-paper-2026-11-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:[EuroVis 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Eurographics Conference on Visualization\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://www.eurovis.org.uk/
+URL:https://www.eurovis.org.uk/
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-osdi-abstract-2026-12-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:[USENIX OSDI 2027] 초록 마감 (확정)
+DESCRIPTION:USENIX Symposium on Operating Systems Design and Implementatio
+ n\n장소: Baltimore\, MD\, USA\n마감 기준시: UTC\n공식 사이트: 
+ https://www.usenix.org/conference/osdi27
+URL:https://www.usenix.org/conference/osdi27
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-osdi-paper-2026-12-08@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:[USENIX OSDI 2027] 논문 마감 (확정)
+DESCRIPTION:USENIX Symposium on Operating Systems Design and Implementatio
+ n\n장소: Baltimore\, MD\, USA\n마감 기준시: UTC\n공식 사이트: 
+ https://www.usenix.org/conference/osdi27
+URL:https://www.usenix.org/conference/osdi27
+END:VEVENT
+BEGIN:VEVENT
+UID:socg-paper-2026-12-02@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:[SOCG 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Annual Symposium on Computational Geometry\n장소: 미정\n
+ 마감 기준시: AoE\n공식 사이트: https://cgweek26.computational-ge
+ ometry.org/contribute/
+URL:https://cgweek26.computational-geometry.org/contribute/
+END:VEVENT
+BEGIN:VEVENT
+UID:mobisys-paper-2026-12-05@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:[MobiSys 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Mobile Systems\, Applications\, an
+ d Services\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https
+ ://www.sigmobile.org/mobisys/2026/
+URL:https://www.sigmobile.org/mobisys/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:icst-paper-2026-12-22@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:[ICST 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Software Testing\, Verificati
+ on and Validation\n장소: 미정\n마감 기준시: AoE\n공식 사이트
+ : https://conf.researchr.org/home/icst-2026
+URL:https://conf.researchr.org/home/icst-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:codaspy-paper-2026-12-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261226
+DTEND;VALUE=DATE:20261227
+SUMMARY:[CODASPY 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Data and Application Security and Privacy\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://www.codaspy.org/2026/
+URL:https://www.codaspy.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:icme-paper-2026-12-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:[ICME 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Multimedia and Expo\n장소: 
+ 미정\n마감 기준시: UTC-12\n공식 사이트: https://2026.ieeeicme.
+ org/
+URL:https://2026.ieeeicme.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:acl-paper-2027-01-05@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+SUMMARY:[ACL 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Association for Computational Linguistics\n장소: 미정\n마
+ 감 기준시: UTC-12\n공식 사이트: https://2026.aclweb.org/
+URL:https://2026.aclweb.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:fg-paper-2027-01-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[FG 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Automatic Face & Gesture Reco
+ gnition\n장소: 미정\n마감 기준시: UTC-8\n공식 사이트: https:
+ //fg2026.ieee-biometrics.org/
+URL:https://fg2026.ieee-biometrics.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:icwsm-paper-2027-01-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+SUMMARY:[ICWSM 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International AAAI Conference on Web and Social Media\n장소:
+  미정\n마감 기준시: AoE\n공식 사이트: https://www.icwsm.org/20
+ 26/index.html
+URL:https://www.icwsm.org/2026/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:isit-paper-2027-01-16@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270116
+DTEND;VALUE=DATE:20270117
+SUMMARY:[ISIT 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Symposium on Information Theory\n장소: 
+ 미정\n마감 기준시: AoE\n공식 사이트: https://2026.ieee-isit.or
+ g/
+URL:https://2026.ieee-isit.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcai-paper-2027-01-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:[IJCAI 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Joint Conference on Artificial Intelligence\n장
+ 소: 미정\n마감 기준시: UTC-12\n공식 사이트: https://2026.ijca
+ i.org/
+URL:https://2026.ijcai.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:dis-paper-2027-01-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270119
+DTEND;VALUE=DATE:20270120
+SUMMARY:[DIS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Designing Interactive Systems\n장소: 미정\n마감 기준
+ 시: AoE\n공식 사이트: https://dis.acm.org/2026/
+URL:https://dis.acm.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:icdcs-paper-2027-01-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+SUMMARY:[ICDCS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Distributed Computing Systems\n장
+ 소: 미정\n마감 기준시: AoE\n공식 사이트: http://icdcs2026.icd
+ cs.org/
+URL:http://icdcs2026.icdcs.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigir-paper-2027-01-22@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:[SIGIR 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Research and Development in Information Retrieval\n장소: 미
+ 정\n마감 기준시: AoE\n공식 사이트: https://sigir2026.org/en-AU
+URL:https://sigir2026.org/en-AU
+END:VEVENT
+BEGIN:VEVENT
+UID:siggraph-paper-2027-01-22@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:[SIGGRAPH 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM SIGGRAPH Conference\n장소: 미정\n마감 기준시: UTC
+ +0\n공식 사이트: https://s2026.siggraph.org/
+URL:https://s2026.siggraph.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:lics-paper-2027-01-22@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270122
+DTEND;VALUE=DATE:20270123
+SUMMARY:[LICS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Logic in Computer Science\n장소: 미정\n마감 기준시: A
+ oE\n공식 사이트: https://lics.siglog.org/lics26/
+URL:https://lics.siglog.org/lics26/
+END:VEVENT
+BEGIN:VEVENT
+UID:cav-paper-2027-01-28@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270128
+DTEND;VALUE=DATE:20270129
+SUMMARY:[CAV 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Computer-Aided Verification\n장
+ 소: 미정\n마감 기준시: AoE\n공식 사이트: https://conferences.
+ i-cav.org/2026/
+URL:https://conferences.i-cav.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:icml-paper-2027-01-29@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:[ICML 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Machine Learning\n장소: 미정\n
+ 마감 기준시: UTC+0\n공식 사이트: https://icml.cc/Conferences/202
+ 6
+URL:https://icml.cc/Conferences/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:issta-paper-2027-01-29@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270129
+DTEND;VALUE=DATE:20270130
+SUMMARY:[ISSTA 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM International Symposium on Software Testing and Analysis\n
+ 장소: 미정\n마감 기준시: AoE\n공식 사이트: https://conf.rese
+ archr.org/home/issta-2026
+URL:https://conf.researchr.org/home/issta-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:rss-paper-2027-01-30@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270130
+DTEND;VALUE=DATE:20270131
+SUMMARY:[RSS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Robotics: Science and Systems Conference\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://roboticsconference.org
+URL:https://roboticsconference.org
+END:VEVENT
+BEGIN:VEVENT
+UID:cec-paper-2027-01-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+SUMMARY:[CEC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Congress on Evolutionary Computation\n장소: 미정\n마
+ 감 기준시: UTC-12\n공식 사이트: https://attend.ieee.org/wcci-2026
+ /ieee-cec-2025/
+URL:https://attend.ieee.org/wcci-2026/ieee-cec-2025/
+END:VEVENT
+BEGIN:VEVENT
+UID:icip-easy-paper-2027-02-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:[ICIP (easy) 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Image Processing\n장소: 미
+ 정\n마감 기준시: UTC+0\n공식 사이트: https://2026.ieeeicip.org/
+URL:https://2026.ieeeicip.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:colt-paper-2027-02-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270204
+DTEND;VALUE=DATE:20270205
+SUMMARY:[COLT 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Annual Conference on Computational Learning Theory\n장소: 
+ 미정\n마감 기준시: AoE\n공식 사이트: https://learningtheory.or
+ g/colt2026/
+URL:https://learningtheory.org/colt2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:hpdc-paper-2027-02-05@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270205
+DTEND;VALUE=DATE:20270206
+SUMMARY:[HPDC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Symposium on High Performance Distributed C
+ omputing\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https:/
+ /hpdc.sci.utah.edu/2026/
+URL:https://hpdc.sci.utah.edu/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:sigcomm-paper-2027-02-06@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:[SIGCOMM 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Conference on Applications\, Technologies\, Architectures\
+ , and Protocols for Computer Communication\n장소: 미정\n마감 기준
+ 시: AoE\n공식 사이트: https://conferences.sigcomm.org/sigcomm/2026/
+URL:https://conferences.sigcomm.org/sigcomm/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:icalp-paper-2027-02-06@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+SUMMARY:[ICALP 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Colloquium on Automata\, Languages and Programmi
+ ng\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://icalp
+ podcspaa2026.cs.rhul.ac.uk/
+URL:https://icalppodcspaa2026.cs.rhul.ac.uk/
+END:VEVENT
+BEGIN:VEVENT
+UID:ics-paper-2027-02-09@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270209
+DTEND;VALUE=DATE:20270210
+SUMMARY:[ICS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM International Conference on Supercomputing\n장소: 미정
+ \n마감 기준시: AoE\n공식 사이트: https://dipsa-qub.github.io/ICS
+ 2026-webpage/
+URL:https://dipsa-qub.github.io/ICS2026-webpage/
+END:VEVENT
+BEGIN:VEVENT
+UID:crypto-paper-2027-02-12@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:[CRYPTO 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Cryptology Conference\n장소: 미정\n마감 
+ 기준시: UTC-12\n공식 사이트: https://crypto.iacr.org/2026/
+URL:https://crypto.iacr.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:icmr-paper-2027-02-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:[ICMR 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM International Conference on Multimedia Retrieval\n장소: 
+ 미정\n마감 기준시: UTC-12\n공식 사이트: https://icmr2026.org/c
+ alls.html
+URL:https://icmr2026.org/calls.html
+END:VEVENT
+BEGIN:VEVENT
+UID:conll-paper-2027-02-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:[CoNLL 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Conference on Natural Language Learning\n장소: 미정\n마
+ 감 기준시: UTC-12\n공식 사이트: https://www.conll.org/
+URL:https://www.conll.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:soups-paper-2027-02-19@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+SUMMARY:[SOUPS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Symposium On Usable Privacy and Security\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://soups.page/
+URL:https://soups.page/
+END:VEVENT
+BEGIN:VEVENT
+UID:interspeech-paper-2027-02-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270225
+DTEND;VALUE=DATE:20270226
+SUMMARY:[INTERSPEECH 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Annual Conference of the International Speech Communication As
+ sociation\n장소: 미정\n마감 기준시: UTC+0\n공식 사이트: http
+ s://interspeech2026.org/
+URL:https://interspeech2026.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:miccai-paper-2027-02-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+SUMMARY:[MICCAI 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Medical Image Computing and Computer Assisted Intervention Soc
+ iety\n장소: 미정\n마감 기준시: UTC-8\n공식 사이트: https://c
+ onferences.miccai.org/2026/en/IMPORTANT-DATES.html
+URL:https://conferences.miccai.org/2026/en/IMPORTANT-DATES.html
+END:VEVENT
+BEGIN:VEVENT
+UID:icdar-paper-2027-02-27@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270227
+DTEND;VALUE=DATE:20270228
+SUMMARY:[ICDAR 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Document Analysis and Recognition\
+ n장소: 미정\n마감 기준시: UTC+0\n공식 사이트: https://icdar2
+ 026.org/
+URL:https://icdar2026.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:iros-paper-2027-03-02@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270302
+DTEND;VALUE=DATE:20270303
+SUMMARY:[IROS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE/RSJ International Conference on Intelligent Robots and Sy
+ stems\n장소: 미정\n마감 기준시: UTC-8\n공식 사이트: https://
+ 2026.ieee-iros.org/
+URL:https://2026.ieee-iros.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:icsme-paper-2027-03-06@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+SUMMARY:[ICSME 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Software Maintenance and Evol
+ ution\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://co
+ nf.researchr.org/home/icsme-2026
+URL:https://conf.researchr.org/home/icsme-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:iccv-paper-2027-03-08@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:[ICCV 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Computer Vision\n장소: 미정\n
+ 마감 기준시: UTC+0\n공식 사이트: https://iccv.thecvf.com/Confere
+ nces/2025
+URL:https://iccv.thecvf.com/Conferences/2025
+END:VEVENT
+BEGIN:VEVENT
+UID:ecml-pkdd-paper-2027-03-12@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:[ECML PKDD 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:European Conference on Machine learning and knowledge discover
+ y in databases\n장소: 미정\n마감 기준시: AoE\n공식 사이트: h
+ ttps://ecmlpkdd.org/2026/
+URL:https://ecmlpkdd.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:mobicom-paper-2027-03-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270313
+DTEND;VALUE=DATE:20270314
+SUMMARY:[MOBICOM 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM International Conference on Mobile Computing and Networkin
+ g\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://sigmob
+ ile.org/mobicom/2026/
+URL:https://sigmobile.org/mobicom/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:oopsla-paper-2027-03-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270317
+DTEND;VALUE=DATE:20270318
+SUMMARY:[OOPSLA 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Conference on Object-Oriented Programming Systems\, Languages\
+ , and Applications\n장소: 미정\n마감 기준시: UTC-12\n공식 사
+ 이트: https://conf.researchr.org/track/splash-2026/oopsla-2026
+URL:https://conf.researchr.org/track/splash-2026/oopsla-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:ase-paper-2027-03-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:[ASE 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE/ACM International Conference on Automated Software Engine
+ ering\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://co
+ nf.researchr.org/home/ase-2026
+URL:https://conf.researchr.org/home/ase-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:uist-paper-2027-03-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:[UIST 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:User Interface Software and Technology\n장소: 미정\n마감
+  기준시: AoE\n공식 사이트: https://uist.acm.org/2026/
+URL:https://uist.acm.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:vast-paper-2027-03-31@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:[VAST 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Symposium on Visual Analytics Science and Technology\n장
+ 소: 미정\n마감 기준시: AoE\n공식 사이트: https://ieeevis.org/
+ year/2026/welcome
+URL:https://ieeevis.org/year/2026/welcome
+END:VEVENT
+BEGIN:VEVENT
+UID:sosp-paper-2027-04-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[SOSP 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Symposium on Operating Systems Principles\n장소: 미정\
+ n마감 기준시: AoE\n공식 사이트: https://sigops.org/s/conferences
+ /sosp/2026/index.html
+URL:https://sigops.org/s/conferences/sosp/2026/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:acm-mm-paper-2027-04-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[ACM MM 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Multimedia Conference\n장소: 미정\n마감 기준시: A
+ oE\n공식 사이트: https://2026.acmmm.org/
+URL:https://2026.acmmm.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:focs-paper-2027-04-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+SUMMARY:[FOCS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Symposium on Foundations of Computer Science\n장소: 미
+ 정\n마감 기준시: UTC\n공식 사이트: https://sanjeevkhanna.org/FO
+ CS2026_CFP.html
+URL:https://sanjeevkhanna.org/FOCS2026_CFP.html
+END:VEVENT
+BEGIN:VEVENT
+UID:micro-paper-2027-04-07@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270407
+DTEND;VALUE=DATE:20270408
+SUMMARY:[MICRO 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Symposium on Microarchitecture\n장소: 미정\n
+ 마감 기준시: UTC-4\n공식 사이트: https://microarch.org/micro59/
+URL:https://microarch.org/micro59/
+END:VEVENT
+BEGIN:VEVENT
+UID:sc-paper-2027-04-08@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:[SC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM/IEEE International Conference for High Performance Computi
+ ng\, Networking\, Storage and Analysis\n장소: 미정\n마감 기준시: 
+ AoE\n공식 사이트: https://sc26.supercomputing.org/
+URL:https://sc26.supercomputing.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:issre-paper-2027-04-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270411
+SUMMARY:[ISSRE 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Symposium on Software Reliability Engineeri
+ ng\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://cypru
+ sconferences.org/issre2026/
+URL:https://cyprusconferences.org/issre2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:iccad-paper-2027-04-14@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270414
+DTEND;VALUE=DATE:20270415
+SUMMARY:[ICCAD 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE/ACM International Conference on Computer-Aided Design\n
+ 장소: 미정\n마감 기준시: UTC-12\n공식 사이트: https://iccad.
+ com/2026
+URL:https://iccad.com/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:raid-paper-2027-04-16@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270416
+DTEND;VALUE=DATE:20270417
+SUMMARY:[RAID 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Symposium on Recent Advances in Intrusion Detect
+ ion\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://raid
+ 2026.org
+URL:https://raid2026.org
+END:VEVENT
+BEGIN:VEVENT
+UID:icmi-paper-2027-04-20@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:[ICMI 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Multimodal Interfaces\n장소: 미
+ 정\n마감 기준시: UTC+7\n공식 사이트: https://icmi.acm.org/2026/
+URL:https://icmi.acm.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:mobihoc-paper-2027-04-20@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+SUMMARY:[MobiHoc 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Symposium of Mobile and Ad Hoc Computing\n장소: 미정\n
+ 마감 기준시: AoE\n공식 사이트: https://www.sigmobile.org/mobihoc
+ /2026/
+URL:https://www.sigmobile.org/mobihoc/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:recsys-paper-2027-04-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:[RecSys 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Conference on Recommender Systems\n장소: 미정\n마감 
+ 기준시: AoE\n공식 사이트: https://recsys.acm.org/recsys26
+URL:https://recsys.acm.org/recsys26
+END:VEVENT
+BEGIN:VEVENT
+UID:esorics-paper-2027-04-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+SUMMARY:[ESORICS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:European Symposium on Research in Computer Security\n장소: 
+ 미정\n마감 기준시: AoE\n공식 사이트: https://sites.google.com/
+ di.uniroma1.it/esorics2026/home
+URL:https://sites.google.com/di.uniroma1.it/esorics2026/home
+END:VEVENT
+BEGIN:VEVENT
+UID:imc-paper-2027-04-29@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:[IMC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Internet Measurement Conference\n장소: 미정\n마감 
+ 기준시: AoE\n공식 사이트: https://conferences.sigcomm.org/imc/2026
+ /
+URL:https://conferences.sigcomm.org/imc/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:ccs-paper-2027-04-29@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:[CCS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Symposium on Computer and Communications Security\n장소:
+  미정\n마감 기준시: UTC-12\n공식 사이트: https://www.sigsac.or
+ g/ccs/CCS2026/
+URL:https://www.sigsac.org/ccs/CCS2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:sec-paper-2027-05-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:[SEC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM/IEEE Symposium on Edge Computing\n장소: 미정\n마감 
+ 기준시: AoE\n공식 사이트: https://acm-ieee-sec.org/2026/
+URL:https://acm-ieee-sec.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:globecom-paper-2027-05-03@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:[GLOBECOM 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Global Communications Conference\n장소: 미정\n마감 
+ 기준시: UTC-4\n공식 사이트: https://globecom2026.ieee-globecom.org
+ /
+URL:https://globecom2026.ieee-globecom.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:smc-paper-2027-05-03@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270503
+DTEND;VALUE=DATE:20270504
+SUMMARY:[SMC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Systems\, Man\, and Cyberneti
+ cs\n장소: 미정\n마감 기준시: UTC-7\n공식 사이트: https://www
+ .ieeesmc2026.org/
+URL:https://www.ieeesmc2026.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:neurips-paper-2027-05-07@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:[NeurIPS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Neural Information Processing Systems\n장소: 미정\n마감 
+ 기준시: UTC+0\n공식 사이트: https://neurips.cc/Conferences/2026
+URL:https://neurips.cc/Conferences/2026
+END:VEVENT
+BEGIN:VEVENT
+UID:iswc-paper-2027-05-07@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+SUMMARY:[ISWC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Semantic Web Conference\n장소: 미정\n마감 
+ 기준시: AoE\n공식 사이트: https://iswc2026.semanticweb.org/
+URL:https://iswc2026.semanticweb.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:siggraph-asia-paper-2027-05-12@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+SUMMARY:[SIGGRAPH-ASIA 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM SIGGRAPH Conference in Asia\n장소: 미정\n마감 기준
+ 시: UTC-12\n공식 사이트: https://asia.siggraph.org/2026/
+URL:https://asia.siggraph.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtss-paper-2027-05-21@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:[RTSS 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Real-Time Systems Symposium\n장소: 미정\n마감 기
+ 준시: AoE\n공식 사이트: http://2026.rtss.org/
+URL:http://2026.rtss.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:icnp-paper-2027-05-22@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+SUMMARY:[ICNP 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Network Protocols\n장소: 
+ 미정\n마감 기준시: AoE\n공식 사이트: https://icnp26.cs.ucr.edu
+ /
+URL:https://icnp26.cs.ucr.edu/
+END:VEVENT
+BEGIN:VEVENT
+UID:asiacrypt-paper-2027-05-22@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270522
+DTEND;VALUE=DATE:20270523
+SUMMARY:[ASIACRYPT 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on the Theory and Application of Cryp
+ tology and Information Security\n장소: 미정\n마감 기준시: UTC\n
+ 공식 사이트: https://asiacrypt.iacr.org/2026/
+URL:https://asiacrypt.iacr.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:cikm-paper-2027-05-23@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+SUMMARY:[CIKM 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Information and Knowledge Manageme
+ nt\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://cikm2
+ 026.diag.uniroma1.it/
+URL:https://cikm2026.diag.uniroma1.it/
+END:VEVENT
+BEGIN:VEVENT
+UID:ijcnlp-paper-2027-05-25@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270525
+DTEND;VALUE=DATE:20270526
+SUMMARY:[IJCNLP 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:International Joint Conference on Natural Language Processing\
+ n장소: 미정\n마감 기준시: UTC-12\n공식 사이트: https://2026.
+ aaclnet.org/
+URL:https://2026.aaclnet.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:acsac-paper-2027-05-26@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:[ACSAC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Annual Computer Security Applications Conference\n장소: 미
+ 정\n마감 기준시: UTC-12\n공식 사이트: https://www.acsac.org/
+URL:https://www.acsac.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:corl-paper-2027-05-28@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270528
+DTEND;VALUE=DATE:20270529
+SUMMARY:[CoRL 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Conference on Robot Learning\n장소: 미정\n마감 기준시
+ : AoE\n공식 사이트: https://www.corl.org/
+URL:https://www.corl.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:bmvc-easy-paper-2027-05-29@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:[BMVC (easy) 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:British Machine Vision Conference\n장소: 미정\n마감 기
+ 준시: UTC+0\n공식 사이트: https://bmvc2026.bmva.org/
+URL:https://bmvc2026.bmva.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:sca-paper-2027-06-01@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270602
+SUMMARY:[SCA 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Symposium on Computer Animation\n장소: 미정\n마감 기준
+ 시: AoE\n공식 사이트: https://computeranimation.org/
+URL:https://computeranimation.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:conext-paper-2027-06-05@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:[CoNEXT 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:Conference on Emerging Network Experiment and Technology\n장
+ 소: 미정\n마감 기준시: AoE\n공식 사이트: https://conferences.
+ sigcomm.org/co-next/2026/#!/home
+URL:https://conferences.sigcomm.org/co-next/2026/#!/home
+END:VEVENT
+BEGIN:VEVENT
+UID:sensys-paper-2027-06-05@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+SUMMARY:[SenSys 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM Conference On Embedded Networked Sensor Systems\n장소: 
+ 미정\n마감 기준시: AoE\n공식 사이트: https://sensys.acm.org/20
+ 27/
+URL:https://sensys.acm.org/2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:icdm-paper-2027-06-06@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+SUMMARY:[ICDM 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE International Conference on Data Mining\n장소: 미정\n
+ 마감 기준시: AoE\n공식 사이트: http://icdm2026.neu.edu.cn/
+URL:http://icdm2026.neu.edu.cn/
+END:VEVENT
+BEGIN:VEVENT
+UID:usenix-atc-paper-2027-06-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270611
+DTEND;VALUE=DATE:20270612
+SUMMARY:[USENIX ATC 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:USENIX Annual Technical Conference\n장소: 미정\n마감 기
+ 준시: UTC+0\n공식 사이트: https://sigops.org/s/conferences/atc/2026
+ /index.html
+URL:https://sigops.org/s/conferences/atc/2026/index.html
+END:VEVENT
+BEGIN:VEVENT
+UID:slt-paper-2027-06-17@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+SUMMARY:[SLT 2027] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Spoken Language Technology Workshop\n장소: 미정\n마
+ 감 기준시: AoE\n공식 사이트: https://attend.ieee.org/slt-2026/
+URL:https://attend.ieee.org/slt-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:icse-paper-2027-06-30@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270630
+DTEND;VALUE=DATE:20270701
+SUMMARY:[ICSE 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:International Conference on Software Engineering\n장소: 미
+ 정\n마감 기준시: AoE\n공식 사이트: https://conf.researchr.org/h
+ ome/icse-2027
+URL:https://conf.researchr.org/home/icse-2027
+END:VEVENT
+BEGIN:VEVENT
+UID:popl-paper-2027-07-09@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:[POPL 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM SIGPLAN-SIGACT Symposium on Principles of Programming Lang
+ uages\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://po
+ pl27.sigplan.org/
+URL:https://popl27.sigplan.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:soda-paper-2027-07-09@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:[SODA 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:ACM-SIAM Symposium on Discrete Algorithms\n장소: 미정\n마
+ 감 기준시: UTC-12\n공식 사이트: https://www.siam.org/conferences-
+ events/siam-conferences/soda27/
+URL:https://www.siam.org/conferences-events/siam-conferences/soda27/
+END:VEVENT
+BEGIN:VEVENT
+UID:asp-dac-paper-2027-07-10@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+SUMMARY:[ASP-DAC 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:Asia and South Pacific Design Automation Conference\n장소: 
+ 미정\n마감 기준시: AoE\n공식 사이트: https://www.aspdac.com/as
+ pdac2027/
+URL:https://www.aspdac.com/aspdac2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:rtas-paper-2027-11-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20271113
+DTEND;VALUE=DATE:20271114
+SUMMARY:[RTAS 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:IEEE Real-Time and Embedded Technology and Applications Sympos
+ ium\n장소: 미정\n마감 기준시: AoE\n공식 사이트: https://2026
+ .rtas.org/
+URL:https://2026.rtas.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:eccv-paper-2028-03-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20280304
+DTEND;VALUE=DATE:20280305
+SUMMARY:[ECCV 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:European Conference on Computer Vision\n장소: 미정\n마감
+  기준시: UTC-8\n공식 사이트: https://eccv.ecva.net/
+URL:https://eccv.ecva.net/
+END:VEVENT
+BEGIN:VEVENT
+UID:accv-paper-2028-07-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20280704
+DTEND;VALUE=DATE:20280705
+SUMMARY:[ACCV 2028] 논문 마감 (예상) (예상)
+DESCRIPTION:Asian Conference on Computer Vision\n장소: 미정\n마감 
+ 기준시: UTC-12\n공식 사이트: https://accv2026.org/
+URL:https://accv2026.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:coling-easy-paper-2024-09-16@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20240916
+DTEND;VALUE=DATE:20240917
+SUMMARY:[COLING (easy) 2025] 논문 마감 (First Call for Main Conference
+  Papers) (확정)
+DESCRIPTION:International Conference on Computational Linguistics\n장소:
+  Abu Dhabi\, UAE\n마감 기준시: UTC-12\n공식 사이트: https://coli
+ ng2025.org/
+URL:https://coling2025.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:cscw-paper-2025-05-13@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20250513
+DTEND;VALUE=DATE:20250514
+SUMMARY:[CSCW 2026] 논문 마감 (MAY 2025 SUBMISSION CYCLE) (확정)
+DESCRIPTION:Conference on Computer Supported Cooperative Work (※ CSCW의
+  Accept 여부는 "Proceedings of the ACM on Human-Computer Interaction" 
+ 저널 탑재 기준으로 판단)\n장소: Salt Lake City\, Utah\, USA\n
+ 마감 기준시: AoE\n공식 사이트: https://cscw.acm.org/2026/
+URL:https://cscw.acm.org/2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:middleware-paper-2021-11-20@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20211120
+DTEND;VALUE=DATE:20211121
+SUMMARY:[MIDDLEWARE 2022] 논문 마감 (Submission R1) (확정)
+DESCRIPTION:ACM/IFIP/USENIX International Middleware Conference\n장소: F
+ airmont Le Château Frontenac\, Québec City\, Québec\, Canada\n마감 
+ 기준시: AoE\n공식 사이트: https://middleware-conf.github.io/2022/
+URL:https://middleware-conf.github.io/2022/
+END:VEVENT
+BEGIN:VEVENT
+UID:middleware-paper-2022-03-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20220315
+DTEND;VALUE=DATE:20220316
+SUMMARY:[MIDDLEWARE 2022] 논문 마감 (Submission R2) (확정)
+DESCRIPTION:ACM/IFIP/USENIX International Middleware Conference\n장소: F
+ airmont Le Château Frontenac\, Québec City\, Québec\, Canada\n마감 
+ 기준시: AoE\n공식 사이트: https://middleware-conf.github.io/2022/
+URL:https://middleware-conf.github.io/2022/
+END:VEVENT
+BEGIN:VEVENT
+UID:naacl-hlt-paper-2024-10-15@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20241015
+DTEND;VALUE=DATE:20241016
+SUMMARY:[NAACL/HLT 2025] 논문 마감 (확정)
+DESCRIPTION:Conference of the North American Chapter of the Association fo
+ r Computational Linguistics: Human Language Technologies\n장소: Albuquer
+ que\, New Mexico\, USA\n마감 기준시: UTC-12\n공식 사이트: https:
+ //2025.naacl.org/
+URL:https://2025.naacl.org/
+END:VEVENT
+BEGIN:VEVENT
+UID:pact-abstract-2025-04-11@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20250411
+DTEND;VALUE=DATE:20250412
+SUMMARY:[PACT 2025] Abstract submission deadline (확정)
+DESCRIPTION:Parallel Architectures and Compilation Techniques\n장소: Irv
+ ine\, California\, USA\n마감 기준시: AoE\n공식 사이트: https://p
+ act2025.github.io/
+URL:https://pact2025.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:pact-paper-2025-04-18@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20250418
+DTEND;VALUE=DATE:20250419
+SUMMARY:[PACT 2025] 논문 마감 (Paper submission deadline) (확정)
+DESCRIPTION:Parallel Architectures and Compilation Techniques\n장소: Irv
+ ine\, California\, USA\n마감 기준시: AoE\n공식 사이트: https://p
+ act2025.github.io/
+URL:https://pact2025.github.io/
+END:VEVENT
+BEGIN:VEVENT
+UID:sdm-abstract-2024-09-27@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20240927
+DTEND;VALUE=DATE:20240928
+SUMMARY:[SDM 2025] 초록 마감 (확정)
+DESCRIPTION:SIAM International Conference on Data Mining\n장소: Alexandr
+ ia\, Virginia\, USA\n마감 기준시: UTC-8\n공식 사이트: https://ww
+ w.siam.org/conferences-events/siam-conferences/sdm25
+URL:https://www.siam.org/conferences-events/siam-conferences/sdm25
+END:VEVENT
+BEGIN:VEVENT
+UID:sdm-paper-2024-10-04@leemgs.github.io
+DTSTAMP:20260714T113729Z
+DTSTART;VALUE=DATE:20241004
+DTEND;VALUE=DATE:20241005
+SUMMARY:[SDM 2025] 논문 마감 (확정)
+DESCRIPTION:SIAM International Conference on Data Mining\n장소: Alexandr
+ ia\, Virginia\, USA\n마감 기준시: UTC-8\n공식 사이트: https://ww
+ w.siam.org/conferences-events/siam-conferences/sdm25
+URL:https://www.siam.org/conferences-events/siam-conferences/sdm25
+END:VEVENT
+END:VCALENDAR

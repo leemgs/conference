@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>탑티어 학회 마감일 캘린더</title>
+  <meta name="description" content="ICML, AAAI, CVPR 등 AI 학회를 비롯한 전 분야 탑티어 학회의 논문 제출 마감일을 한눈에 보는 캘린더" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <h1>🎓 탑티어 학회 마감일 캘린더</h1>
+        <p class="tagline">ICML · AAAI · CVPR 등 12개 분야 탑티어 학회 논문 제출 일정 모음</p>
+      </div>
+      <div class="header-actions">
+        <a class="ics-link" href="conferences.ics" title="구글 캘린더 등에서 URL로 구독할 수 있습니다">📅 캘린더 구독 (ICS)</a>
+        <span class="updated" id="updated-at"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="control-row">
+        <div class="view-toggle" role="tablist" aria-label="보기 전환">
+          <button type="button" class="view-btn active" data-view="calendar" role="tab" aria-selected="true">🗓️ 달력</button>
+          <button type="button" class="view-btn" data-view="list" role="tab" aria-selected="false">📋 목록</button>
+        </div>
+      </div>
+      <div class="control-row">
+        <span class="control-label">분야</span>
+        <div class="chip-group" id="field-filter"></div>
+      </div>
+      <div class="control-row">
+        <span class="control-label">상태</span>
+        <div class="chip-group" id="status-filter">
+          <button type="button" class="chip active" data-status="all">전체</button>
+          <button type="button" class="chip" data-status="confirmed">✅ 확정</button>
+          <button type="button" class="chip" data-status="estimated">🔮 예상</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="calendar-view">
+      <div class="cal-nav">
+        <button type="button" id="prev-month" aria-label="이전 달">‹</button>
+        <h2 id="cal-title"></h2>
+        <button type="button" id="next-month" aria-label="다음 달">›</button>
+        <button type="button" id="today-btn">오늘</button>
+      </div>
+      <div class="cal-weekdays" id="cal-weekdays"></div>
+      <div class="cal-grid" id="cal-grid"></div>
+    </section>
+
+    <section id="list-view" hidden>
+      <h2 class="list-heading">다가오는 마감</h2>
+      <div id="upcoming-list" class="deadline-list"></div>
+      <details class="past-details">
+        <summary>지난 마감 보기</summary>
+        <div id="past-list" class="deadline-list"></div>
+      </details>
+      <details class="past-details" id="unknown-details">
+        <summary>마감일 미확인 학회 보기</summary>
+        <div id="unknown-list" class="deadline-list"></div>
+      </details>
+    </section>
+
+    <p id="empty-msg" class="empty" hidden>표시할 학회 일정이 없습니다.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>마감일은 각 학회 공지 기준(대부분 <strong>AoE, UTC-12</strong>)입니다.
+      <span class="badge badge-estimated">🔮 예상</span> 표시 일정은 직전 개최 패턴 기반 추정치이므로 반드시 공식 사이트에서 확인하세요.</p>
+    <p>학회 목록·등급: <a href="https://github.com/leemgs/conference/blob/main/data/list_conf.csv">list_conf.csv</a> ·
+      마감일 데이터: <a href="https://github.com/ccfddl/ccf-deadlines">ccfddl</a> 기반 ·
+      소스: <a href="https://github.com/leemgs/conference">github.com/leemgs/conference</a></p>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button type="button" class="modal-close" data-close aria-label="닫기">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

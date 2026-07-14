@@ -1,0 +1,3781 @@
+{
+  "updated": "2026-07-14",
+  "note": "마감일은 각 학회 공지 기준(대부분 AoE/UTC-12)입니다. 'estimated' 항목은 직전 개최 패턴 기반 예상 일정이며, 등급(rating)은 data/list_conf.csv 기준입니다.",
+  "conferences": [
+    {
+      "id": "socc",
+      "name": "SOCC 2026",
+      "fullName": "ACM Symposium on Cloud Computing",
+      "field": "sys",
+      "rating": "우수",
+      "location": "Singapore",
+      "confText": "November 18-20, 2026",
+      "url": "https://acmsocc.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-02-06",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (First round)",
+          "date": "2026-02-13",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-07",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Second round)",
+          "date": "2026-07-14",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "ches",
+      "name": "CHES 2027",
+      "fullName": "Cryptographic Hardware and Embedded Systems",
+      "field": "sec",
+      "rating": "우수",
+      "location": "TBD, Americas",
+      "confText": "TBD, 2027",
+      "url": "https://ches.iacr.org/2027/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (Schedule for TCHES Volume 2027/1)",
+          "date": "2026-07-15",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Schedule for TCHES Volume 2027/2)",
+          "date": "2026-10-15",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Schedule for TCHES Volume 2027/3)",
+          "date": "2027-01-15",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Schedule for TCHES Volume 2027/4)",
+          "date": "2027-04-15",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "sigmod",
+      "name": "SIGMOD 2027",
+      "fullName": "International Conference on Management of Data",
+      "field": "data",
+      "rating": "최우수",
+      "location": "Huntington Beach, CA, USA",
+      "confText": "June 13-19, 2027",
+      "url": "https://2027.sigmod.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-01-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (round 1)",
+          "date": "2026-01-17",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-04-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (round 2)",
+          "date": "2026-04-17",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (round 3)",
+          "date": "2026-07-17",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-10-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (round 4)",
+          "date": "2026-10-17",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "sigkdd",
+      "name": "SIGKDD 2027",
+      "fullName": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "field": "data",
+      "rating": "최우수",
+      "location": "San Jose, California, USA",
+      "confText": "August 2027 (exact dates TBD)",
+      "url": "https://kdd2027.kdd.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-19",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (1st round of 2 total rounds)",
+          "date": "2026-07-26",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "aaai",
+      "name": "AAAI 2027",
+      "fullName": "National Conference on Artificial Intelligence",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "Montréal, Québec, Canada",
+      "confText": "February 16-23, 2027",
+      "url": "https://aaai.org/conference/aaai/aaai-27/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-21",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-07-28",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "hpca",
+      "name": "HPCA 2027",
+      "fullName": "International Symposium on High-Performance Computer Architecture",
+      "field": "sys",
+      "rating": "최우수",
+      "location": "Salt Lake City, Utah",
+      "confText": "Jan 30-Feb 3, 2027",
+      "url": "https://conf.researchr.org/home/hpca-2027",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-24",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-07-31",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "infocom",
+      "name": "INFOCOM 2027",
+      "fullName": "IEEE Conference on Computer Communications",
+      "field": "net",
+      "rating": "최우수",
+      "location": "Honolulu, HI, USA",
+      "confText": "May 24 - 27, 2027",
+      "url": "https://infocom2027.ieee-infocom.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-24",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-07-31",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "vldb-pvldb",
+      "name": "VLDB/PVLDB 2027",
+      "fullName": "International Conference on Very Large DataBases",
+      "field": "data",
+      "rating": "최우수",
+      "location": "Athens, Greece",
+      "confText": "August 23 - August 27, 2027",
+      "url": "https://www.vldb.org/2027/",
+      "tz": "PT",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-03-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-04-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-04-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-05-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-05-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-06-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-06-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-07-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-08-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-08-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-09-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-10-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-10-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-11-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-11-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-12-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-12-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2027-01-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2027-01-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2027-02-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2027-02-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2027-03-01",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "ubicomp",
+      "name": "UbiComp 2026",
+      "fullName": "ACM International Conference on Ubiquitous Computing (※ UbiComp의 Accept 여부는 \"Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies\" 저널 탑재 기준으로 판단)",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "Shanghai, China",
+      "confText": "October 11-15, 2026",
+      "url": "https://www.ubicomp.org/ubicomp-iswc-2026",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (first round)",
+          "date": "2026-02-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (second round)",
+          "date": "2026-05-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (third round (only for resubmissions after major revisions))",
+          "date": "2026-08-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (fourth round)",
+          "date": "2026-11-01",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "emnlp",
+      "name": "EMNLP 2026",
+      "fullName": "Conference on Empirical Methods in Natural Language Processing",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "헝가리",
+      "confText": "November 2026",
+      "url": "https://2026.emnlp.org",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "ARR 논문 마감",
+          "date": "2026-05-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "etc",
+          "label": "커밋먼트 마감",
+          "date": "2026-08-02",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "ppopp",
+      "name": "PPoPP 2027",
+      "fullName": "Principles and Practice of Parallel Programming",
+      "field": "sys",
+      "rating": "우수",
+      "location": "Salt Lake City, Utah, USA",
+      "confText": "Mar 20-24, 2027",
+      "url": "https://ppopp27.sigplan.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-08-03",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "eacl",
+      "name": "EACL 2027",
+      "fullName": "European Association for Computational Linguistics",
+      "field": "ai",
+      "rating": "우수",
+      "location": "Athens, Greece",
+      "confText": "March 9-14, 2027",
+      "url": "https://2027.eacl.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-08-03",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "iui",
+      "name": "IUI 2027",
+      "fullName": "Intelligent User Interfaces",
+      "field": "hci",
+      "rating": "우수",
+      "location": "Helsinki, Finland",
+      "confText": "February 8-11, 2027",
+      "url": "https://iui.hosting.acm.org/2027/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-08-13",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-08-20",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "wsdm",
+      "name": "WSDM 2027",
+      "fullName": "ACM International Conference on Web Search and Data Mining",
+      "field": "data",
+      "rating": "최우수",
+      "location": "Cordis, Hong Kong SAR, China",
+      "confText": "February 15 - 19, 2027",
+      "url": "https://wsdm-conference.org/2027/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-08-17",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-08-24",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "3dv",
+      "name": "3DV 2027",
+      "fullName": "International Conference on 3D Vision",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://3dvconf.github.io/2026/",
+      "tz": "UTC-7",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-08-18",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "usenix-security",
+      "name": "USENIX Security 2027",
+      "fullName": "USENIX Security Symposium",
+      "field": "sec",
+      "rating": "최우수",
+      "location": "Denver, CO, USA",
+      "confText": "August 11-13, 2027",
+      "url": "https://www.usenix.org/conference/usenixsecurity27",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-08-18",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Cycle 1 Deadline)",
+          "date": "2026-08-25",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2027-01-19",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Cycle 2 Deadline)",
+          "date": "2027-01-26",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "ndss",
+      "name": "NDSS 2027",
+      "fullName": "Network and Distributed System Security Symposium",
+      "field": "sec",
+      "rating": "최우수",
+      "location": "Seoul, Republic of Korea",
+      "confText": "March 22 - March 26, 2027",
+      "url": "https://www.ndss-symposium.org/ndss2027/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (Summer)",
+          "date": "2026-05-06",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Fall)",
+          "date": "2026-08-19",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "wacv-easy",
+      "name": "WACV (easy) 2027",
+      "fullName": "IEEE Winter Conference on Applications of Computer Vision",
+      "field": "ai",
+      "rating": "우수",
+      "location": "Disney Springs, Buena Vista, FL, USA",
+      "confText": "Jan 5 - 9, 2027",
+      "url": "https://wacv.thecvf.com/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-06-19",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (First round)",
+          "date": "2026-06-26",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-08-21",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Second round)",
+          "date": "2026-08-28",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "bigdata",
+      "name": "BIGDATA 2026",
+      "fullName": "IEEE International Conference on BigData",
+      "field": "data",
+      "rating": "최우수",
+      "location": "Phoenix, Arizona, United State",
+      "confText": "December 14-17, 2026",
+      "url": "https://bigdataieee.org/BigData2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-08-21",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "asiaccs",
+      "name": "AsiaCCS 2027",
+      "fullName": "ACM ASIA Conference on Computer and Communications Security",
+      "field": "sec",
+      "rating": "우수",
+      "location": "Macau, China",
+      "confText": "July 12-16, 2027",
+      "url": "https://asiaccs2027.cityu.edu.mo/index.html",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (1st round Deadline)",
+          "date": "2026-08-21",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (2nd round Deadline)",
+          "date": "2026-12-11",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "vr",
+      "name": "VR 2027",
+      "fullName": "IEEE Virtual Reality Conference",
+      "field": "arvr",
+      "rating": "우수",
+      "location": "Melbourne, Australia",
+      "confText": "February 27 - March 3, 2027",
+      "url": "https://ieeevr.org/2027/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-08-24",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-08-31",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "pets",
+      "name": "PETS 2027",
+      "fullName": "Proceedings on Privacy Enhancing Technologies",
+      "field": "sec",
+      "rating": "우수",
+      "location": "Delft, The Netherlands",
+      "confText": "July 19-24, 2027",
+      "url": "https://petsymposium.org/cfp27.php",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (Issue 1 Paper Submission Deadline)",
+          "date": "2026-05-31",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Issue 2 Paper Submission Deadline)",
+          "date": "2026-08-31",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Issue 3 Paper Submission Deadline)",
+          "date": "2026-11-30",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Issue 4 Paper Submission Deadline)",
+          "date": "2027-02-28",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "asplos",
+      "name": "ASPLOS 2027",
+      "fullName": "Architectural Support for Programming Languages and Operating Systems",
+      "field": "sys",
+      "rating": "최우수",
+      "location": "Crete, Greece",
+      "confText": "April 11-15, 2027",
+      "url": "https://www.asplos-conference.org/asplos2027/cfp/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (April Cycle Submission Deadline)",
+          "date": "2026-04-15",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (September Cycle Submission Deadline)",
+          "date": "2026-09-09",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "usenix-nsdi",
+      "name": "USENIX NSDI 2027",
+      "fullName": "Symposium on Networked Systems Design and Implementation",
+      "field": "net",
+      "rating": "최우수",
+      "location": "Providence, RI, USA",
+      "confText": "May 11-13, 2027",
+      "url": "https://www.usenix.org/conference/nsdi27",
+      "tz": "UTC-4",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-04-16",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-04-23",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-09-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-17",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "cgo",
+      "name": "CGO 2027",
+      "fullName": "International Symposium on Code Generation and Optimization",
+      "field": "plse",
+      "rating": "우수",
+      "location": "Salt Lake City, Utah, USA",
+      "confText": "TBD",
+      "url": "https://conf.researchr.org/home/cgo-2027",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (First Submission)",
+          "date": "2026-06-11",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Second Submission)",
+          "date": "2026-09-10",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "chi",
+      "name": "CHI 2027",
+      "fullName": "International Conference on Human Factors in Computing Systems",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "David L. Lawrence Convention Center, Pittsburgh, USA",
+      "confText": "May 10 - 14, 2027",
+      "url": "https://chi2027.acm.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-10",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "mmsys",
+      "name": "Mmsys 2027",
+      "fullName": "ACM Multimedia Systems Conference",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "Ghent, Belgium",
+      "confText": "March 30 - April 2, 2027",
+      "url": "https://2027.acmmmsys.org",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-09-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-17",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "name": "DATE 2027",
+      "fullName": "Design Automation and Test in Europe Conference",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "Dresden, Germany",
+      "confText": "March 22-24, 2027",
+      "url": "https://www.date-conference.com/date-2027-call-papers",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-09-13",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-20",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "usenix-fast",
+      "name": "USENIX FAST 2027",
+      "fullName": "USENIX Conference on File and Storage Technologies",
+      "field": "sys",
+      "rating": "우수",
+      "location": "Renton, WA, USA",
+      "confText": "FEBRUARY 23-25, 2027",
+      "url": "https://www.usenix.org/conference/fast27",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (Spring deadline)",
+          "date": "2026-03-17",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Fall deadline)",
+          "date": "2026-09-15",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "wcnc",
+      "name": "WCNC 2027",
+      "fullName": "IEEE Wireless Communications and Networking Conference",
+      "field": "net",
+      "rating": "우수",
+      "location": "Panama City, Panama",
+      "confText": "April 5-8, 2027",
+      "url": "https://wcnc2027.ieee-wcnc.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-15",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "icra",
+      "name": "ICRA 2027",
+      "fullName": "IEEE International Conference on Robotics and Automation",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.ieee-icra.org/",
+      "tz": "UTC-8",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-09-15",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icassp",
+      "name": "ICASSP 2027",
+      "fullName": "International Conference on Acoustics, Speech, and Signal Processing",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "Toronto, Canada",
+      "confText": "May 16-21, 2027",
+      "url": "https://2027.ieeeicassp.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-16",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "eurosys",
+      "name": "EUROSYS 2027",
+      "fullName": "European Conference on Computer Systems",
+      "field": "sys",
+      "rating": "최우수",
+      "location": "Rabat, Morocco",
+      "confText": "April 19-24, 2027",
+      "url": "https://2027.eurosys.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-05-07",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Spring Submission Deadline)",
+          "date": "2026-05-14",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-09-17",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Fall Submission Deadline)",
+          "date": "2026-09-24",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "fc",
+      "name": "FC 2027",
+      "fullName": "Financial Cryptography and Data Security",
+      "field": "sec",
+      "rating": "최우수",
+      "location": "Barbados (tentative)",
+      "confText": "February 8-12, 2027",
+      "url": "https://fc27.ifca.ai/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (Submission deadline)",
+          "date": "2026-09-17",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "eurocrypt",
+      "name": "EUROCRYPT 2027",
+      "fullName": "Theory and Application of Cryptographic Techniques",
+      "field": "sec",
+      "rating": "최우수",
+      "location": "Eindhoven, Netherlands",
+      "confText": "April 11-15, 2027",
+      "url": "https://eurocrypt.iacr.org/2027/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-17",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "iclr",
+      "name": "ICLR 2027",
+      "fullName": "International Conference on Learning Representation",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "브라질",
+      "confText": "April 24-28, 2027",
+      "url": "https://iclr.cc",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-09-19",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-09-24",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "saner",
+      "name": "SANER 2027",
+      "fullName": "IEEE International Conference on Software Analysis, Evolution and Reengineering",
+      "field": "plse",
+      "rating": "우수",
+      "location": "Richmond, Virginia, United States",
+      "confText": "March 9-12, 2027",
+      "url": "https://conf.researchr.org/home/saner-2027",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-09-21",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Research Track Paper submission deadline)",
+          "date": "2026-09-25",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "fpga",
+      "name": "FPGA 2027",
+      "fullName": "International Symposium on Field Programmable Gate Arrays",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.isfpga.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-01",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sigmetrics",
+      "name": "SIGMETRICS 2027",
+      "fullName": "ACM SIGMETRICS Measurement and Modeling of Computer Systems",
+      "field": "sys",
+      "rating": "우수",
+      "location": "Atlanta, Georgia, USA",
+      "confText": "June 7-11, 2027",
+      "url": "https://www.sigmetrics.org/sigmetrics2027/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-03",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (summer round)",
+          "date": "2026-07-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-10-02",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (fall round)",
+          "date": "2026-10-09",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2027-01-04",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (winter round)",
+          "date": "2027-01-11",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "aistats",
+      "name": "AISTATS 2027",
+      "fullName": "International Conference on Artificial Intelligence and Statistics",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://virtual.aistats.org/Conferences/2026",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-02",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "aamas",
+      "name": "AAMAS 2027",
+      "fullName": "International Conference on Autonomous Agents and Multiagent Systems",
+      "field": "data",
+      "rating": "우수",
+      "location": "Hanoi, Vietnam",
+      "confText": "May 03, 2027",
+      "url": "https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-10-02",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-10-09",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "fse",
+      "name": "FSE 2027",
+      "fullName": "ACM SIGSOFT International Symposium on the Foundations of Software Engineering",
+      "field": "plse",
+      "rating": "최우수",
+      "location": "Shenzhen, China",
+      "confText": "July 12-16, 2027",
+      "url": "https://conf.researchr.org/home/fse-2027",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-10-02",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "ipdps",
+      "name": "IPDPS 2027",
+      "fullName": "IEEE International Parallel and Distributed Processing Symposium",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.ipdps.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-09",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "www",
+      "name": "WWW 2027",
+      "fullName": "World Wide Web Conference Series",
+      "field": "data",
+      "rating": "최우수",
+      "location": "Dublin, Ireland",
+      "confText": "May 10 - 14, 2027",
+      "url": "https://acmweb2027.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-10-11",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-10-18",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "noms",
+      "name": "NOMS 2027",
+      "fullName": "IEEE/IFIP Network Operations and Management Symposium",
+      "field": "net",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://noms2026.ieee-noms.org/",
+      "tz": "UTC+10",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-13",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "iscas",
+      "name": "ISCAS 2027",
+      "fullName": "IEEE International Symposium on Circuits and Systems",
+      "field": "hw",
+      "rating": "우수",
+      "location": "Bordeaux, France",
+      "confText": "June 6-9, 2027",
+      "url": "https://2027.ieee-iscas.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-10-13",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "tacas",
+      "name": "TACAS 2027",
+      "fullName": "International Conference on Tools and Algorithms for Construction and Analysis of Systems",
+      "field": "theory",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://etaps.org/2026",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-16",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "msr",
+      "name": "MSR 2027",
+      "fullName": "Conference on Mining Software Repository",
+      "field": "plse",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.msrconf.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-23",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "pkc",
+      "name": "PKC 2027",
+      "fullName": "Public Key Cryptography",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://pkc.iacr.org/2026/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-24",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "mlsys",
+      "name": "MLSys 2027",
+      "fullName": "Conference on Machine Learning and Systems",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://mlsys.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-30",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icc",
+      "name": "ICC 2027",
+      "fullName": "IEEE International Conference on Communications",
+      "field": "net",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://icc2026.ieee-icc.org",
+      "tz": "UTC-4",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-10-31",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "stoc",
+      "name": "STOC 2027",
+      "fullName": "ACM Symposium on Theory of Computing",
+      "field": "theory",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://acm-stoc.org/stoc2026/",
+      "tz": "UTC-5",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-04",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "pacificvis",
+      "name": "PacificVis 2027",
+      "fullName": "IEEE Pacific Visualization Symposium",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://pacificvis2026.github.io/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-08",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sp",
+      "name": "SP 2027",
+      "fullName": "IEEE Symposium on Security and Privacy",
+      "field": "sec",
+      "rating": "최우수",
+      "location": "MONTREAL, CANADA",
+      "confText": "TBD",
+      "url": "https://sp2027.ieee-security.org/index.html",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-06-04",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (First Paper submission deadline)",
+          "date": "2026-06-11",
+          "status": "confirmed"
+        },
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-11-10",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Second Paper submission deadline)",
+          "date": "2026-11-17",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "icde",
+      "name": "ICDE 2027",
+      "fullName": "International Conference on Data Engineering",
+      "field": "data",
+      "rating": "최우수",
+      "location": "Copenhagen, Denmark",
+      "confText": "May 17-21, 2027",
+      "url": "https://icde2027.github.io/",
+      "tz": "UTC-7",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (first round)",
+          "date": "2026-06-11",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (second round)",
+          "date": "2026-11-11",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "pldi",
+      "name": "PLDI 2027",
+      "fullName": "SIGPLAN Conference on Programming Language Design and Implementation",
+      "field": "plse",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://pldi26.sigplan.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-13",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "cvpr",
+      "name": "CVPR 2027",
+      "fullName": "Computer Vision and Pattern Recognition",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "June 20-25, 2027",
+      "url": "https://cvpr.thecvf.com",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "논문 등록(초록) 마감",
+          "date": "2026-11-15",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-19",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "isca",
+      "name": "ISCA 2027",
+      "fullName": "International Symposium on Computer Architecture",
+      "field": "sys",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://iscaconf.org/isca2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-17",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "dac",
+      "name": "DAC 2027",
+      "fullName": "Design Automation Conference",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://dac.com/2026/call-for-contributions",
+      "tz": "UTC-8",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-18",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "euros-p",
+      "name": "EuroS&P 2027",
+      "fullName": "IEEE European Symposium on Security and Privacy",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://eurosp2026.ieee-security.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-20",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "eurovis",
+      "name": "EuroVis 2027",
+      "fullName": "Eurographics Conference on Visualization",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.eurovis.org.uk/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-11-26",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "usenix-osdi",
+      "name": "USENIX OSDI 2027",
+      "fullName": "USENIX Symposium on Operating Systems Design and Implementation",
+      "field": "sys",
+      "rating": "최우수",
+      "location": "Baltimore, MD, USA",
+      "confText": "July 7-9, 2027",
+      "url": "https://www.usenix.org/conference/osdi27",
+      "tz": "UTC",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-12-01",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-12-08",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "socg",
+      "name": "SOCG 2027",
+      "fullName": "Annual Symposium on Computational Geometry",
+      "field": "theory",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://cgweek26.computational-geometry.org/contribute/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-12-02",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "mobisys",
+      "name": "MobiSys 2027",
+      "fullName": "International Conference on Mobile Systems, Applications, and Services",
+      "field": "net",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.sigmobile.org/mobisys/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-12-05",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icst",
+      "name": "ICST 2027",
+      "fullName": "IEEE International Conference on Software Testing, Verification and Validation",
+      "field": "plse",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conf.researchr.org/home/icst-2026",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-12-22",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "codaspy",
+      "name": "CODASPY 2027",
+      "fullName": "Data and Application Security and Privacy",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.codaspy.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-12-26",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icme",
+      "name": "ICME 2027",
+      "fullName": "IEEE International Conference on Multimedia and Expo",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.ieeeicme.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2026-12-31",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "acl",
+      "name": "ACL 2027",
+      "fullName": "Association for Computational Linguistics",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.aclweb.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-05",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "fg",
+      "name": "FG 2027",
+      "fullName": "IEEE International Conference on Automatic Face & Gesture Recognition",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://fg2026.ieee-biometrics.org/",
+      "tz": "UTC-8",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-15",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icwsm",
+      "name": "ICWSM 2027",
+      "fullName": "International AAAI Conference on Web and Social Media",
+      "field": "data",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.icwsm.org/2026/index.html",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-15",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "isit",
+      "name": "ISIT 2027",
+      "fullName": "IEEE International Symposium on Information Theory",
+      "field": "net",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.ieee-isit.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-16",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "ijcai",
+      "name": "IJCAI 2027",
+      "fullName": "International Joint Conference on Artificial Intelligence",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.ijcai.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-19",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "dis",
+      "name": "DIS 2027",
+      "fullName": "Designing Interactive Systems",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://dis.acm.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-19",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icdcs",
+      "name": "ICDCS 2027",
+      "fullName": "International Conference on Distributed Computing Systems",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "http://icdcs2026.icdcs.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-21",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sigir",
+      "name": "SIGIR 2027",
+      "fullName": "Research and Development in Information Retrieval",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://sigir2026.org/en-AU",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-22",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "siggraph",
+      "name": "SIGGRAPH 2027",
+      "fullName": "ACM SIGGRAPH Conference",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://s2026.siggraph.org/",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-22",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "lics",
+      "name": "LICS 2027",
+      "fullName": "Logic in Computer Science",
+      "field": "theory",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://lics.siglog.org/lics26/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-22",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "cav",
+      "name": "CAV 2027",
+      "fullName": "International Conference on Computer-Aided Verification",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conferences.i-cav.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-28",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icml",
+      "name": "ICML 2027",
+      "fullName": "International Conference on Machine Learning",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://icml.cc/Conferences/2026",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-29",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "issta",
+      "name": "ISSTA 2027",
+      "fullName": "ACM International Symposium on Software Testing and Analysis",
+      "field": "plse",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conf.researchr.org/home/issta-2026",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-29",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "rss",
+      "name": "RSS 2027",
+      "fullName": "Robotics: Science and Systems Conference",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://roboticsconference.org",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-30",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "cec",
+      "name": "CEC 2027",
+      "fullName": "IEEE Congress on Evolutionary Computation",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://attend.ieee.org/wcci-2026/ieee-cec-2025/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-01-31",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icip-easy",
+      "name": "ICIP (easy) 2027",
+      "fullName": "IEEE International Conference on Image Processing",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.ieeeicip.org/",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-04",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "colt",
+      "name": "COLT 2027",
+      "fullName": "Annual Conference on Computational Learning Theory",
+      "field": "theory",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://learningtheory.org/colt2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-04",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "hpdc",
+      "name": "HPDC 2027",
+      "fullName": "IEEE International Symposium on High Performance Distributed Computing",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://hpdc.sci.utah.edu/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-05",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sigcomm",
+      "name": "SIGCOMM 2027",
+      "fullName": "ACM Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+      "field": "net",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conferences.sigcomm.org/sigcomm/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-06",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icalp",
+      "name": "ICALP 2027",
+      "fullName": "International Colloquium on Automata, Languages and Programming",
+      "field": "theory",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://icalppodcspaa2026.cs.rhul.ac.uk/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-06",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "ics",
+      "name": "ICS 2027",
+      "fullName": "ACM International Conference on Supercomputing",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://dipsa-qub.github.io/ICS2026-webpage/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-09",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "crypto",
+      "name": "CRYPTO 2027",
+      "fullName": "International Cryptology Conference",
+      "field": "sec",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://crypto.iacr.org/2026/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-12",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icmr",
+      "name": "ICMR 2027",
+      "fullName": "ACM International Conference on Multimedia Retrieval",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://icmr2026.org/calls.html",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-13",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "conll",
+      "name": "CoNLL 2027",
+      "fullName": "Conference on Natural Language Learning",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.conll.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-19",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "soups",
+      "name": "SOUPS 2027",
+      "fullName": "Symposium On Usable Privacy and Security",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://soups.page/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-19",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "interspeech",
+      "name": "INTERSPEECH 2027",
+      "fullName": "Annual Conference of the International Speech Communication Association",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://interspeech2026.org/",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-25",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "miccai",
+      "name": "MICCAI 2027",
+      "fullName": "Medical Image Computing and Computer Assisted Intervention Society",
+      "field": "health",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conferences.miccai.org/2026/en/IMPORTANT-DATES.html",
+      "tz": "UTC-8",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-26",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icdar",
+      "name": "ICDAR 2027",
+      "fullName": "International Conference on Document Analysis and Recognition",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://icdar2026.org/",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-02-27",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "iros",
+      "name": "IROS 2027",
+      "fullName": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.ieee-iros.org/",
+      "tz": "UTC-8",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-02",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icsme",
+      "name": "ICSME 2027",
+      "fullName": "IEEE International Conference on Software Maintenance and Evolution",
+      "field": "plse",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conf.researchr.org/home/icsme-2026",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-06",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "iccv",
+      "name": "ICCV 2027",
+      "fullName": "International Conference on Computer Vision",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://iccv.thecvf.com/Conferences/2025",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-08",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "ecml-pkdd",
+      "name": "ECML PKDD 2027",
+      "fullName": "European Conference on Machine learning and knowledge discovery in databases",
+      "field": "data",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://ecmlpkdd.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-12",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "mobicom",
+      "name": "MOBICOM 2027",
+      "fullName": "ACM International Conference on Mobile Computing and Networking",
+      "field": "net",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://sigmobile.org/mobicom/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-13",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "oopsla",
+      "name": "OOPSLA 2027",
+      "fullName": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
+      "field": "plse",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conf.researchr.org/track/splash-2026/oopsla-2026",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-17",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "ase",
+      "name": "ASE 2027",
+      "fullName": "IEEE/ACM International Conference on Automated Software Engineering",
+      "field": "plse",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conf.researchr.org/home/ase-2026",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-26",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "uist",
+      "name": "UIST 2027",
+      "fullName": "User Interface Software and Technology",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://uist.acm.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-31",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "vast",
+      "name": "VAST 2027",
+      "fullName": "IEEE Symposium on Visual Analytics Science and Technology",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://ieeevis.org/year/2026/welcome",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-03-31",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sosp",
+      "name": "SOSP 2027",
+      "fullName": "ACM Symposium on Operating Systems Principles",
+      "field": "sys",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://sigops.org/s/conferences/sosp/2026/index.html",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-01",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "acm-mm",
+      "name": "ACM MM 2027",
+      "fullName": "ACM Multimedia Conference",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.acmmm.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-01",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "focs",
+      "name": "FOCS 2027",
+      "fullName": "IEEE Symposium on Foundations of Computer Science",
+      "field": "theory",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://sanjeevkhanna.org/FOCS2026_CFP.html",
+      "tz": "UTC",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-01",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "micro",
+      "name": "MICRO 2027",
+      "fullName": "International Symposium on Microarchitecture",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://microarch.org/micro59/",
+      "tz": "UTC-4",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-07",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sc",
+      "name": "SC 2027",
+      "fullName": "ACM/IEEE International Conference for High Performance Computing, Networking, Storage and Analysis",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://sc26.supercomputing.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-08",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "issre",
+      "name": "ISSRE 2027",
+      "fullName": "IEEE International Symposium on Software Reliability Engineering",
+      "field": "plse",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://cyprusconferences.org/issre2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-10",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "iccad",
+      "name": "ICCAD 2027",
+      "fullName": "IEEE/ACM International Conference on Computer-Aided Design",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://iccad.com/2026",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-14",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "raid",
+      "name": "RAID 2027",
+      "fullName": "International Symposium on Recent Advances in Intrusion Detection",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://raid2026.org",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-16",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icmi",
+      "name": "ICMI 2027",
+      "fullName": "International Conference on Multimodal Interfaces",
+      "field": "health",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://icmi.acm.org/2026/",
+      "tz": "UTC+7",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-20",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "mobihoc",
+      "name": "MobiHoc 2027",
+      "fullName": "ACM Symposium of Mobile and Ad Hoc Computing",
+      "field": "net",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.sigmobile.org/mobihoc/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-20",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "recsys",
+      "name": "RecSys 2027",
+      "fullName": "ACM Conference on Recommender Systems",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://recsys.acm.org/recsys26",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-21",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "esorics",
+      "name": "ESORICS 2027",
+      "fullName": "European Symposium on Research in Computer Security",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://sites.google.com/di.uniroma1.it/esorics2026/home",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-21",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "imc",
+      "name": "IMC 2027",
+      "fullName": "ACM Internet Measurement Conference",
+      "field": "net",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conferences.sigcomm.org/imc/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-29",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "ccs",
+      "name": "CCS 2027",
+      "fullName": "ACM Symposium on Computer and Communications Security",
+      "field": "sec",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.sigsac.org/ccs/CCS2026/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-29",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sec",
+      "name": "SEC 2027",
+      "fullName": "ACM/IEEE Symposium on Edge Computing",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://acm-ieee-sec.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-01",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "globecom",
+      "name": "GLOBECOM 2027",
+      "fullName": "IEEE Global Communications Conference",
+      "field": "net",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://globecom2026.ieee-globecom.org/",
+      "tz": "UTC-4",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-03",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "smc",
+      "name": "SMC 2027",
+      "fullName": "IEEE International Conference on Systems, Man, and Cybernetics",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.ieeesmc2026.org/",
+      "tz": "UTC-7",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-03",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "neurips",
+      "name": "NeurIPS 2027",
+      "fullName": "Neural Information Processing Systems",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://neurips.cc/Conferences/2026",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-07",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "iswc",
+      "name": "ISWC 2027",
+      "fullName": "International Semantic Web Conference",
+      "field": "data",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://iswc2026.semanticweb.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-07",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "siggraph-asia",
+      "name": "SIGGRAPH-ASIA 2027",
+      "fullName": "ACM SIGGRAPH Conference in Asia",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://asia.siggraph.org/2026/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-12",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "rtss",
+      "name": "RTSS 2027",
+      "fullName": "IEEE Real-Time Systems Symposium",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "http://2026.rtss.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-21",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icnp",
+      "name": "ICNP 2027",
+      "fullName": "IEEE International Conference on Network Protocols",
+      "field": "net",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://icnp26.cs.ucr.edu/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-22",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "asiacrypt",
+      "name": "ASIACRYPT 2027",
+      "fullName": "International Conference on the Theory and Application of Cryptology and Information Security",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://asiacrypt.iacr.org/2026/",
+      "tz": "UTC",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-22",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "cikm",
+      "name": "CIKM 2027",
+      "fullName": "International Conference on Information and Knowledge Management",
+      "field": "data",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://cikm2026.diag.uniroma1.it/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-23",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "ijcnlp",
+      "name": "IJCNLP 2027",
+      "fullName": "International Joint Conference on Natural Language Processing",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://2026.aaclnet.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-25",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "acsac",
+      "name": "ACSAC 2027",
+      "fullName": "Annual Computer Security Applications Conference",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.acsac.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-26",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "corl",
+      "name": "CoRL 2027",
+      "fullName": "Conference on Robot Learning",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.corl.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-28",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "bmvc-easy",
+      "name": "BMVC (easy) 2027",
+      "fullName": "British Machine Vision Conference",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://bmvc2026.bmva.org/",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-05-29",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sca",
+      "name": "SCA 2027",
+      "fullName": "Symposium on Computer Animation",
+      "field": "hci",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://computeranimation.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-06-01",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "conext",
+      "name": "CoNEXT 2027",
+      "fullName": "Conference on Emerging Network Experiment and Technology",
+      "field": "net",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://conferences.sigcomm.org/co-next/2026/#!/home",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-06-05",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sensys",
+      "name": "SenSys 2028",
+      "fullName": "ACM Conference On Embedded Networked Sensor Systems",
+      "field": "net",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://sensys.acm.org/2027/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-06-05",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icdm",
+      "name": "ICDM 2027",
+      "fullName": "IEEE International Conference on Data Mining",
+      "field": "data",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "http://icdm2026.neu.edu.cn/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-06-06",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "usenix-atc",
+      "name": "USENIX ATC 2027",
+      "fullName": "USENIX Annual Technical Conference",
+      "field": "sys",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://sigops.org/s/conferences/atc/2026/index.html",
+      "tz": "UTC+0",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-06-11",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "slt",
+      "name": "SLT 2027",
+      "fullName": "IEEE Spoken Language Technology Workshop",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://attend.ieee.org/slt-2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-06-17",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "icse",
+      "name": "ICSE 2028",
+      "fullName": "International Conference on Software Engineering",
+      "field": "plse",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://conf.researchr.org/home/icse-2027",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-06-30",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "popl",
+      "name": "POPL 2028",
+      "fullName": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "field": "plse",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://popl27.sigplan.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-07-09",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "soda",
+      "name": "SODA 2028",
+      "fullName": "ACM-SIAM Symposium on Discrete Algorithms",
+      "field": "theory",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://www.siam.org/conferences-events/siam-conferences/soda27/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-07-09",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "asp-dac",
+      "name": "ASP-DAC 2028",
+      "fullName": "Asia and South Pacific Design Automation Conference",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://www.aspdac.com/aspdac2027/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-07-10",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "rtas",
+      "name": "RTAS 2028",
+      "fullName": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://2026.rtas.org/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-11-13",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "eccv",
+      "name": "ECCV 2028",
+      "fullName": "European Conference on Computer Vision",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://eccv.ecva.net/",
+      "tz": "UTC-8",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2028-03-04",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "accv",
+      "name": "ACCV 2028",
+      "fullName": "Asian Conference on Computer Vision",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2028년 (예정)",
+      "url": "https://accv2026.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2028-07-04",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "aes",
+      "name": "AES",
+      "fullName": "Audio engineering society convention",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "apec",
+      "name": "APEC",
+      "fullName": "IEEE Applied Power Electronics Conference and Exposition",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "asru",
+      "name": "ASRU",
+      "fullName": "IEEE Workshop on Automatic Speech Recognition & Understanding",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "avss",
+      "name": "AVSS",
+      "fullName": "IEEE International Conference on Advanced Video and Signal-Based Surveillance",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "ccnc",
+      "name": "CCNC",
+      "fullName": "IEEE Consumer Communications and Networking Conference",
+      "field": "net",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "coling-easy",
+      "name": "COLING (easy) 2025",
+      "fullName": "International Conference on Computational Linguistics",
+      "field": "ai",
+      "rating": "우수",
+      "location": "Abu Dhabi, UAE",
+      "confText": "Jan 19 - Jan 24, 2025",
+      "url": "https://coling2025.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (First Call for Main Conference Papers)",
+          "date": "2024-09-16",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "cscw",
+      "name": "CSCW 2026",
+      "fullName": "Conference on Computer Supported Cooperative Work (※ CSCW의 Accept 여부는 \"Proceedings of the ACM on Human-Computer Interaction\" 저널 탑재 기준으로 판단)",
+      "field": "hci",
+      "rating": "최우수",
+      "location": "Salt Lake City, Utah, USA",
+      "confText": "October 10-14, 2026",
+      "url": "https://cscw.acm.org/2026/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (MAY 2025 SUBMISSION CYCLE)",
+          "date": "2025-05-13",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "cvpr-w",
+      "name": "CVPR-W",
+      "fullName": "CVPR Workshops (※ Peer Review를 받고 발표된 논문에 대해서만 실적 인정)",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "ec",
+      "name": "EC",
+      "fullName": "ACM Conference on Electronic Commerce",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "embc",
+      "name": "EMBC",
+      "fullName": "Engineering in Medicine and Biology Conference",
+      "field": "health",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "esa",
+      "name": "ESA",
+      "fullName": "European Symposium on Algorithms",
+      "field": "theory",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "eucap",
+      "name": "EuCAP",
+      "fullName": "European Conference on Antennas and Propagation",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "hri",
+      "name": "HRI",
+      "fullName": "ACM/IEEE International Conference on Human Robot Interaction",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "iccp",
+      "name": "ICCP",
+      "fullName": "IEEE International Conference on Computational Photography",
+      "field": "theory",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "iccps",
+      "name": "ICCPS",
+      "fullName": "ACM/IEEE International Conference on Cyber-Physical Systems",
+      "field": "sec",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "ieee-bhi-bsn",
+      "name": "IEEE BHI&BSN",
+      "fullName": "IEEE-EMBS International Conference on Biomedical and Health Informatics(BHI) and the Body Sensor Networks(BSN) Conferences",
+      "field": "health",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "im",
+      "name": "IM",
+      "fullName": "IFIP/IEEE International Symposium on Integrated Network Management",
+      "field": "net",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "ims",
+      "name": "IMS",
+      "fullName": "IEEE/MTT-S International Microwave Symposium",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "isc",
+      "name": "ISC",
+      "fullName": "International Supercomputing Conference(ISC High Performance)",
+      "field": "sys",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "ismir",
+      "name": "ISMIR",
+      "fullName": "International Society for Music Information Retrieval Conference",
+      "field": "data",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "isscc",
+      "name": "ISSCC",
+      "fullName": "IEEE International Solid-State Circuits Conference",
+      "field": "hw",
+      "rating": "최우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "itcs",
+      "name": "ITCS",
+      "fullName": "Innovations in Theoretical Computer Science",
+      "field": "theory",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "lrec",
+      "name": "LREC",
+      "fullName": "International Conference on Language Resources and Evaluation",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "middleware",
+      "name": "MIDDLEWARE 2022",
+      "fullName": "ACM/IFIP/USENIX International Middleware Conference",
+      "field": "sys",
+      "rating": "우수",
+      "location": "Fairmont Le Château Frontenac, Québec City, Québec, Canada",
+      "confText": "November 7-11, 2022",
+      "url": "https://middleware-conf.github.io/2022/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (Submission R1)",
+          "date": "2021-11-20",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Submission R2)",
+          "date": "2022-03-15",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "naacl-hlt",
+      "name": "NAACL/HLT 2025",
+      "fullName": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "field": "ai",
+      "rating": "우수",
+      "location": "Albuquerque, New Mexico, USA",
+      "confText": "April 29-May 4, 2025",
+      "url": "https://2025.naacl.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2024-10-15",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "pact",
+      "name": "PACT 2025",
+      "fullName": "Parallel Architectures and Compilation Techniques",
+      "field": "hw",
+      "rating": "우수",
+      "location": "Irvine, California, USA",
+      "confText": "November 3-6, 2025",
+      "url": "https://pact2025.github.io/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "Abstract submission deadline",
+          "date": "2025-04-11",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감 (Paper submission deadline)",
+          "date": "2025-04-18",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "pods",
+      "name": "PODS",
+      "fullName": "Symposium on Principles of Database",
+      "field": "data",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "photonics-west",
+      "name": "Photonics West",
+      "fullName": "Photonics West",
+      "field": "arvr",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "rfic",
+      "name": "RFIC",
+      "fullName": "IEEE Radio Frequency Integrated Circuits Symposium",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "sdm",
+      "name": "SDM 2025",
+      "fullName": "SIAM International Conference on Data Mining",
+      "field": "data",
+      "rating": "우수",
+      "location": "Alexandria, Virginia, USA",
+      "confText": "May 1-3, 2025",
+      "url": "https://www.siam.org/conferences-events/siam-conferences/sdm25",
+      "tz": "UTC-8",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2024-09-27",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2024-10-04",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "sid",
+      "name": "SID",
+      "fullName": "Display Week",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "sigdial",
+      "name": "SIGDIAL",
+      "fullName": "Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "semeval",
+      "name": "SemEval",
+      "fullName": "International Workshop on Semantic Evaluation",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "tmrc",
+      "name": "TMRC",
+      "fullName": "The Magnetic Recording Conference",
+      "field": "etc",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "vlsi",
+      "name": "VLSI",
+      "fullName": "IEEE Symposium on VLSI Circuits and Technology",
+      "field": "hw",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "vrst",
+      "name": "VRST",
+      "fullName": "ACM Symposium on Virtual Reality Software and Technology",
+      "field": "arvr",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "vtc",
+      "name": "VTC",
+      "fullName": "IEEE Vehicular Technology Conference, VTC",
+      "field": "net",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    },
+    {
+      "id": "wmt",
+      "name": "WMT",
+      "fullName": "Conference On Machine Translation (WMT: Workshop on Machine Translation)",
+      "field": "ai",
+      "rating": "우수",
+      "location": "미확인",
+      "confText": "일정 미확인",
+      "url": "",
+      "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
+      "deadlines": []
+    }
+  ]
+}
