@@ -197,12 +197,55 @@
 
   // ── 렌더링 ───────────────────────────────
   function render() {
+    const isSearch = state.query.length > 0;
     const isCal = state.view === "calendar";
-    $("#calendar-view").hidden = !isCal;
-    $("#list-view").hidden = isCal;
+    $("#search-view").hidden = !isSearch;
+    $("#calendar-view").hidden = isSearch || !isCal;
+    $("#list-view").hidden = isSearch || isCal;
     $("#empty-msg").hidden = true;
+    if (isSearch) {
+      renderSearchResults();
+      return;
+    }
     if (isCal) renderCalendar();
     else renderList();
+  }
+
+  function renderSearchResults() {
+    const results = (state.data.conferences || []).filter((conf) => {
+      if (state.field !== "all" && conf.field !== state.field) return false;
+      return matchesSearch(conf);
+    });
+    const wrap = $("#search-results");
+    wrap.innerHTML = "";
+    $("#search-heading").textContent = `학회 검색 결과 (${results.length}개)`;
+
+    if (results.length === 0) {
+      wrap.innerHTML = '<p class="empty">일치하는 학회 정보가 없습니다.</p>';
+      return;
+    }
+    results.forEach((conf) => wrap.appendChild(conferenceInfoCard(conf)));
+  }
+
+  function conferenceInfoCard(conf) {
+    const meta = FIELD_META[conf.field];
+    const el = document.createElement("article");
+    el.className = "conference-info-card";
+    el.style.borderTopColor = meta.hex;
+    el.innerHTML = `
+      <div class="conference-info-title">
+        <h3>${conf.name}</h3>
+        <span class="badge badge-field" style="background:${meta.hex}">${meta.label}</span>
+        ${ratingBadge(conf)}
+      </div>
+      <dl>
+        <div><dt>학회명</dt><dd>${conf.fullName}</dd></div>
+        <div><dt>분야</dt><dd>${meta.label}</dd></div>
+        <div><dt>등급</dt><dd>${conf.rating || "미지정"}</dd></div>
+      </dl>
+      <button type="button" class="details-btn">마감일 및 개최 정보 보기</button>`;
+    el.querySelector(".details-btn").addEventListener("click", () => openModal(conf));
+    return el;
   }
 
   function renderCalendar() {

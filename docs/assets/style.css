@@ -278,6 +278,46 @@ a { color: var(--accent); }
 /* ── List view ──────────────────────────── */
 .list-heading { font-size: 1.15rem; margin: 4px 0 12px; }
 
+.conference-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 12px;
+}
+
+.conference-info-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.conference-info-title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.conference-info-title h3 { margin: 0 4px 0 0; font-size: 1.15rem; }
+.conference-info-card dl { margin: 12px 0; }
+.conference-info-card dl div { display: grid; grid-template-columns: 58px 1fr; gap: 8px; margin: 5px 0; }
+.conference-info-card dt { color: var(--text-muted); font-size: 0.82rem; font-weight: 700; }
+.conference-info-card dd { margin: 0; font-size: 0.88rem; }
+
+.details-btn {
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 6px 13px;
+  background: transparent;
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.details-btn:hover { background: var(--accent); color: #fff; }
+
 .deadline-list { display: flex; flex-direction: column; gap: 10px; }
 
 .deadline-card {
