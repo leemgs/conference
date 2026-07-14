@@ -306,7 +306,9 @@ a { color: var(--accent); }
 .conference-info-card dt { color: var(--text-muted); font-size: 0.82rem; font-weight: 700; }
 .conference-info-card dd { margin: 0; font-size: 0.88rem; }
 
-.details-btn {
+.conference-info-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.details-btn, .web-search-btn {
   border: 1px solid var(--accent);
   border-radius: 999px;
   padding: 6px 13px;
@@ -316,7 +318,8 @@ a { color: var(--accent); }
   cursor: pointer;
 }
 
-.details-btn:hover { background: var(--accent); color: #fff; }
+.web-search-btn { border-color: var(--border); color: var(--text); }
+.details-btn:hover, .web-search-btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 .deadline-list { display: flex; flex-direction: column; gap: 10px; }
 

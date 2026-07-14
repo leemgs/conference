@@ -243,9 +243,26 @@
         <div><dt>분야</dt><dd>${meta.label}</dd></div>
         <div><dt>등급</dt><dd>${conf.rating || "미지정"}</dd></div>
       </dl>
-      <button type="button" class="details-btn">마감일 및 개최 정보 보기</button>`;
+      <div class="conference-info-actions">
+        <button type="button" class="details-btn">마감일 및 개최 정보 보기</button>
+        <button type="button" class="web-search-btn">🌐 인터넷에서 검색</button>
+      </div>`;
     el.querySelector(".details-btn").addEventListener("click", () => openModal(conf));
+    el.querySelector(".web-search-btn").addEventListener("click", () => openWebSearch(conf));
     return el;
+  }
+
+  function openWebSearch(conf) {
+    const query = encodeURIComponent(`${conf.name} ${conf.fullName} conference deadline`);
+    const popup = window.open(
+      `https://www.google.com/search?q=${query}`,
+      `conference-search-${conf.id}`,
+      "popup=yes,width=960,height=760,scrollbars=yes,resizable=yes"
+    );
+    if (popup) {
+      popup.opener = null;
+      popup.focus();
+    }
   }
 
   function renderCalendar() {
