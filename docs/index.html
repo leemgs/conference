@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>탑티어 학회 마감일 캘린더</title>
-  <meta name="description" content="ICML, AAAI, CVPR 등 AI 학회를 비롯한 전 분야 탑티어 학회의 논문 제출 마감일을 한눈에 보는 캘린더" />
+  <meta name="description" content="ICML, AAAI, CVPR 등 12개 분야 185개 탑티어 학회의 논문 제출 마감일을 한눈에 보는 캘린더" />
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
 </head>
@@ -13,7 +13,7 @@
     <div class="header-inner">
       <div class="brand">
         <h1>🎓 탑티어 학회 마감일 캘린더</h1>
-        <p class="tagline">ICML · AAAI · CVPR 등 12개 분야 탑티어 학회 논문 제출 일정 모음</p>
+        <p class="tagline">ICML · AAAI · CVPR 등 12개 분야, 185개 탑티어 학회 논문 제출 일정 모음</p>
       </div>
       <div class="header-actions">
         <a class="ics-link" href="conferences.ics" title="구글 캘린더 등에서 URL로 구독할 수 있습니다">📅 캘린더 구독 (ICS)</a>
@@ -28,6 +28,14 @@
         <div class="view-toggle" role="tablist" aria-label="보기 전환">
           <button type="button" class="view-btn active" data-view="calendar" role="tab" aria-selected="true">🗓️ 달력</button>
           <button type="button" class="view-btn" data-view="list" role="tab" aria-selected="false">📋 목록</button>
+        </div>
+      </div>
+      <div class="control-row search-row">
+        <label class="control-label" for="conference-search">검색</label>
+        <div class="search-box">
+          <span aria-hidden="true">🔍</span>
+          <input type="search" id="conference-search" placeholder="학회명 검색 (예: CVPR, Machine Learning)" autocomplete="off" />
+          <button type="button" id="clear-search" aria-label="검색어 지우기" hidden>✕</button>
         </div>
       </div>
       <div class="control-row">

@@ -23,6 +23,7 @@
     view: "calendar",
     field: "all",
     status: "all",
+    query: "",
     year: new Date().getFullYear(),
     month: new Date().getMonth(), // 0-based
     data: null,
@@ -103,12 +104,33 @@
     return state.events.filter((ev) => {
       if (state.field !== "all" && ev.conf.field !== state.field) return false;
       if (state.status !== "all" && ev.dl.status !== state.status) return false;
+      if (!matchesSearch(ev.conf)) return false;
       return true;
     });
   }
 
+  function matchesSearch(conf) {
+    if (!state.query) return true;
+    return `${conf.name} ${conf.fullName}`.toLocaleLowerCase().includes(state.query);
+  }
+
   // ── 컨트롤 바인딩 ─────────────────────────
   function bindControls() {
+    const search = $("#conference-search");
+    const clearSearch = $("#clear-search");
+    search.addEventListener("input", () => {
+      state.query = search.value.trim().toLocaleLowerCase();
+      clearSearch.hidden = search.value.length === 0;
+      render();
+    });
+    clearSearch.addEventListener("click", () => {
+      search.value = "";
+      state.query = "";
+      clearSearch.hidden = true;
+      search.focus();
+      render();
+    });
+
     $("#field-filter").addEventListener("click", (e) => {
       const btn = e.target.closest(".chip");
       if (!btn) return;
@@ -264,6 +286,7 @@
     const unknown = (state.data.conferences || []).filter((conf) => {
       if (conf.deadlines.length > 0) return false;
       if (state.field !== "all" && conf.field !== state.field) return false;
+      if (!matchesSearch(conf)) return false;
       return state.status === "all";
     });
     unknown.forEach((conf) => unknownWrap.appendChild(unknownCard(conf)));

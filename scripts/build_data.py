@@ -22,20 +22,20 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "data" / "list_conf.csv"
 OUT_PATH = ROOT / "docs" / "data" / "conferences.json"
 
-# CSV 도메인 접두 번호 → (슬러그, 한국어 라벨)
+# CSV 도메인 이름 → (슬러그, 한국어 라벨)
 DOMAINS = {
-    "1": ("sys", "시스템/아키텍처"),
-    "2": ("ai", "인공지능"),
-    "3": ("data", "데이터/웹"),
-    "4": ("net", "네트워크/통신"),
-    "5": ("sec", "보안"),
-    "6": ("plse", "PL/SE"),
-    "7": ("hci", "HCI/그래픽스"),
-    "8": ("theory", "알고리즘/이론"),
-    "9": ("hw", "HW/로보틱스"),
-    "10": ("arvr", "AR/VR"),
-    "11": ("health", "헬스/바이오"),
-    "12": ("etc", "기타"),
+    "System/OS/Architecture/Distributed & Parallel Computing": ("sys", "시스템/아키텍처"),
+    "Intelligence": ("ai", "인공지능"),
+    "Data, Service (Database, Data Mining, Information Retrieval, WWW)": ("data", "데이터/웹"),
+    "Network & Communications": ("net", "네트워크/통신"),
+    "Security": ("sec", "보안"),
+    "Programming Languages/Software Engineering": ("plse", "PL/SE"),
+    "Human-Computer Interaction & Graphics": ("hci", "HCI/그래픽스"),
+    "Algorithms & Theory": ("theory", "알고리즘/이론"),
+    "Hardware, Robotics & Electronics": ("hw", "HW/로보틱스"),
+    "AR/MR/VR": ("arvr", "AR/VR"),
+    "Health, Digital Health & Biometrics": ("health", "헬스/바이오"),
+    "Etc._Magnetic recording devices": ("etc", "기타"),
 }
 
 # CSV 약어 → ccfddl (title, sub 카테고리 제한 | None)
@@ -131,14 +131,16 @@ def load_csv():
         for r in reader:
             if not r or not r[0].strip():
                 continue
-            domain_raw = r[0].strip()
+            domain = clean_text(r[0])
             name = clean_text(r[1]) if len(r) > 1 else ""
             full = clean_text(r[2]) if len(r) > 2 else ""
             rating = (r[3].strip() if len(r) > 3 else "") or "우수"
-            m = re.match(r"(\d+)\.", domain_raw)
-            if not m or not name:
+            if not domain or not name:
                 continue
-            slug, label = DOMAINS[m.group(1)]
+            try:
+                slug, label = DOMAINS[domain]
+            except KeyError as exc:
+                raise ValueError(f"알 수 없는 domain: {domain!r}") from exc
             rows.append({
                 "abbr": name, "fullName": full, "rating": rating,
                 "domain": slug, "domainLabel": label,
