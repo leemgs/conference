@@ -35,8 +35,8 @@
     --accent: #5b8bff;
     --accent-2: #8b74ff;
     --shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
-    --tier-top: #86b6ef;
-    --tier-good: #2a78d6;
+    --tier-top: #9ec5f4;
+    --tier-good: #256abf;
     --tier-top-ink: #0f1420;
     --tier-good-ink: #ffffff;
     --grid-line: #232c40;
@@ -505,8 +505,11 @@ a { color: var(--accent); }
 .dash-legend { display: flex; gap: 16px; margin-bottom: 10px; font-size: 0.78rem; color: var(--text-muted); }
 .legend-item { display: inline-flex; align-items: center; gap: 6px; }
 .legend-swatch { width: 12px; height: 12px; border-radius: 3px; }
-.swatch-top { background: var(--tier-top); }
-.swatch-good { background: var(--tier-good); }
+/* 차트 마크는 단색 gradient로 칠한다: 일부 모바일 브라우저(삼성 인터넷 등)의
+   "웹사이트 강제 다크 모드"가 color-scheme 선언을 무시하고 background-color를
+   재변환하는데, background-image(gradient)는 건드리지 않아 색이 그대로 유지된다 */
+.swatch-top { background-image: linear-gradient(var(--tier-top), var(--tier-top)); }
+.swatch-good { background-image: linear-gradient(var(--tier-good), var(--tier-good)); }
 
 /* 카테고리별 등급: 가로 누적 막대 */
 .domain-chart { display: flex; flex-direction: column; gap: 6px; }
@@ -539,8 +542,8 @@ a { color: var(--accent); }
 .seg { display: flex; align-items: center; justify-content: center; min-width: 0; }
 .seg + .seg { margin-left: 2px; }
 .seg:last-child { border-radius: 0 4px 4px 0; }
-.seg-top { background: var(--tier-top); }
-.seg-good { background: var(--tier-good); }
+.seg-top { background-color: var(--tier-top); background-image: linear-gradient(var(--tier-top), var(--tier-top)); }
+.seg-good { background-color: var(--tier-good); background-image: linear-gradient(var(--tier-good), var(--tier-good)); }
 .seg-label { font-size: 0.68rem; font-weight: 700; }
 .seg-top .seg-label { color: var(--tier-top-ink); }
 .seg-good .seg-label { color: var(--tier-good-ink); }
@@ -591,7 +594,8 @@ a { color: var(--accent); }
   max-width: 64%;
   border: none;
   padding: 0;
-  background: var(--accent);
+  background-color: var(--accent);
+  background-image: linear-gradient(var(--accent), var(--accent));
   border-radius: 4px 4px 0 0;
   cursor: pointer;
   position: relative;

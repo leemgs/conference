@@ -484,6 +484,12 @@
     return { max: Math.ceil(max / step) * step, step };
   }
 
+  // 강제 다크 브라우저가 background-color를 재변환하지 못하도록 gradient로 칠한다
+  function paintFixed(node, color) {
+    node.style.backgroundColor = color;
+    node.style.backgroundImage = `linear-gradient(${color}, ${color})`;
+  }
+
   // ── 대시보드: 툴팁 ──
   let tipEl = null;
   function tipNode() {
@@ -502,7 +508,7 @@
       const row = el("div", "tip-row");
       if (line.swatch) {
         const sw = el("span", "tip-swatch");
-        sw.style.background = line.swatch;
+        paintFixed(sw, line.swatch);
         row.appendChild(sw);
       }
       if (line.value !== undefined) row.appendChild(el("strong", "tip-value", line.value));
@@ -622,7 +628,7 @@
 
       const label = el("span", "domain-label");
       const dot = el("span", "dot");
-      dot.style.background = meta.hex;
+      paintFixed(dot, meta.hex);
       label.appendChild(dot);
       label.appendChild(document.createTextNode(meta.label));
       row.appendChild(label);
@@ -784,7 +790,7 @@
         const date = el("span", "mi-date", `${String(ev.date.getMonth() + 1).padStart(2, "0")}.${String(ev.date.getDate()).padStart(2, "0")}`);
         const name = el("span", "mi-name");
         const dot = el("span", "dot");
-        dot.style.background = meta.hex;
+        paintFixed(dot, meta.hex);
         name.appendChild(dot);
         name.appendChild(document.createTextNode(ev.conf.name));
         const label = el("span", "mi-label", ev.dl.label);
