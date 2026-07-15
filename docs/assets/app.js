@@ -35,6 +35,28 @@
 
   const $ = (sel) => document.querySelector(sel);
 
+  // 뷰별 직접 접속 주소: #calendar, #list, #dashboard
+  const VIEW_HASHES = { calendar: "#calendar", list: "#list", dashboard: "#dashboard" };
+
+  function viewFromHash() {
+    const h = location.hash;
+    return Object.keys(VIEW_HASHES).find((v) => VIEW_HASHES[v] === h) || null;
+  }
+
+  function setView(view, updateHash) {
+    if (!VIEW_HASHES[view]) return;
+    state.view = view;
+    document.querySelectorAll(".view-btn").forEach((b) => {
+      const on = b.dataset.view === view;
+      b.classList.toggle("active", on);
+      b.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    if (updateHash !== false && location.hash !== VIEW_HASHES[view]) {
+      history.replaceState(null, "", VIEW_HASHES[view]);
+    }
+    render();
+  }
+
   // ── 데이터 로딩 ───────────────────────────
   Promise.all([
     fetch("data/conferences.json").then((r) => r.json()),
@@ -47,12 +69,9 @@
       $("#updated-at").textContent = "업데이트: " + data.updated;
       buildFieldChips();
       bindControls();
-      const hashView = { "#list": "list", "#dashboard": "dashboard" }[location.hash];
-      if (hashView) {
-        const btn = document.querySelector(`.view-btn[data-view="${hashView}"]`);
-        if (btn) btn.click();
-      }
-      render();
+      const hashView = viewFromHash();
+      if (hashView) setView(hashView, false);
+      else render();
     })
     .catch((err) => {
       $("#empty-msg").hidden = false;
@@ -155,14 +174,13 @@
     });
 
     document.querySelectorAll(".view-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        state.view = btn.dataset.view;
-        document.querySelectorAll(".view-btn").forEach((b) => {
-          b.classList.toggle("active", b === btn);
-          b.setAttribute("aria-selected", b === btn ? "true" : "false");
-        });
-        render();
-      });
+      btn.addEventListener("click", () => setView(btn.dataset.view));
+    });
+
+    // 주소창에서 해시를 바꾸거나 뒤로/앞으로 이동해도 뷰가 따라간다
+    window.addEventListener("hashchange", () => {
+      const v = viewFromHash();
+      if (v && v !== state.view) setView(v, false);
     });
 
     $("#prev-month").addEventListener("click", () => shiftMonth(-1));

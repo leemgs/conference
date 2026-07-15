@@ -2,6 +2,12 @@
 
 **https://leemgs.github.io/conference/**
 
+각 뷰로 바로 접속할 수 있는 주소:
+
+- 🗓️ 달력: **https://leemgs.github.io/conference/#calendar**
+- 📋 목록: **https://leemgs.github.io/conference/#list**
+- 📊 대시보드: **https://leemgs.github.io/conference/#dashboard**
+
 [`data/list_conf.csv`](data/list_conf.csv)에 정리된 **12개 분야, 185개 탑티어 학회**(ICML,
 AAAI, CVPR, SOSP, SIGCOMM, CHI, PLDI 등)의 논문 제출 마감일을 한눈에 볼 수 있는 캘린더
 웹사이트입니다. [leemgs/webinar](https://github.com/leemgs/webinar)의
