@@ -28,6 +28,7 @@
         <div class="view-toggle" role="tablist" aria-label="보기 전환">
           <button type="button" class="view-btn active" data-view="calendar" role="tab" aria-selected="true">🗓️ 달력</button>
           <button type="button" class="view-btn" data-view="list" role="tab" aria-selected="false">📋 목록</button>
+          <button type="button" class="view-btn" data-view="dashboard" role="tab" aria-selected="false">📊 대시보드</button>
         </div>
       </div>
       <div class="control-row search-row">
@@ -66,6 +67,52 @@
       </div>
       <div class="cal-weekdays" id="cal-weekdays"></div>
       <div class="cal-grid" id="cal-grid"></div>
+    </section>
+
+    <section id="dashboard-view" hidden>
+      <div class="dash-tiles" id="dash-tiles"></div>
+
+      <div class="dash-grid">
+        <article class="dash-card" id="domain-card">
+          <h3 class="dash-title">카테고리별 학회 등급 현황</h3>
+          <p class="dash-sub">도메인별 최우수·우수 학회 수 (전체 기간 기준)</p>
+          <div class="dash-legend" aria-hidden="true">
+            <span class="legend-item"><span class="legend-swatch swatch-top"></span>최우수</span>
+            <span class="legend-item"><span class="legend-swatch swatch-good"></span>우수</span>
+          </div>
+          <div id="domain-chart" class="domain-chart"></div>
+          <details class="dash-table-details">
+            <summary>표로 보기</summary>
+            <div class="dash-table-wrap"><table class="dash-table" id="domain-table"></table></div>
+          </details>
+        </article>
+
+        <article class="dash-card" id="month-card">
+          <h3 class="dash-title">월별 학회 현황</h3>
+          <p class="dash-sub">향후 12개월 논문·초록 마감 건수 — 월을 누르면 해당 월 목록이 표시됩니다</p>
+          <div id="month-chart" class="column-chart"></div>
+          <h4 class="dash-detail-heading" id="month-detail-heading"></h4>
+          <div id="month-detail" class="month-detail"></div>
+          <details class="dash-table-details">
+            <summary>표로 보기</summary>
+            <div class="dash-table-wrap"><table class="dash-table" id="month-table"></table></div>
+          </details>
+        </article>
+
+        <article class="dash-card" id="papers-card">
+          <h3 class="dash-title">매년 학회별 등재 논문 수</h3>
+          <p class="dash-sub">
+            <label for="paper-conf-select">학회 선택</label>
+            <select id="paper-conf-select"></select>
+          </p>
+          <div id="paper-chart" class="column-chart"></div>
+          <details class="dash-table-details">
+            <summary>표로 보기</summary>
+            <div class="dash-table-wrap"><table class="dash-table" id="paper-table"></table></div>
+          </details>
+          <p class="dash-note" id="paper-note"></p>
+        </article>
+      </div>
     </section>
 
     <section id="list-view" hidden>
