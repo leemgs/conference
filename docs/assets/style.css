@@ -16,11 +16,11 @@
   --field-dm: #0ca678;
   --field-speech: #e64980;
   --shadow: 0 4px 18px rgba(20, 30, 60, 0.08);
-  /* 대시보드 차트: 등급 서수 램프(파랑 2단계, validator 검증) + 격자선 */
-  --tier-top: #256abf;
-  --tier-good: #86b6ef;
+  /* 대시보드 차트: 등급 색 (최우수=녹색, 우수=파랑 — CVD validator 검증) + 격자선 */
+  --tier-top: #008300;
+  --tier-good: #256abf;
   --tier-top-ink: #ffffff;
-  --tier-good-ink: #13203a;
+  --tier-good-ink: #ffffff;
   --grid-line: #e9edf5;
 }
 
@@ -35,10 +35,10 @@
     --accent: #5b8bff;
     --accent-2: #8b74ff;
     --shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
-    --tier-top: #9ec5f4;
-    --tier-good: #256abf;
+    --tier-top: #2f9e44;
+    --tier-good: #3987e5;
     --tier-top-ink: #0f1420;
-    --tier-good-ink: #ffffff;
+    --tier-good-ink: #0f1420;
     --grid-line: #232c40;
   }
 }
