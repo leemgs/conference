@@ -88,3 +88,7 @@ python3 -m http.server 8000 --directory docs
 
 저장소 **Settings → Pages → Source**에서 `main` 브랜치의 `/docs` 폴더를 지정하면
 https://leemgs.github.io/conference/ 로 서비스됩니다.
+
+> 💡 `docs/assets/`의 CSS·JS를 수정해 배포할 때는 `docs/index.html`의
+> `?v=YYYYMMDD` 버전 쿼리를 함께 올려 주세요. 브라우저가 이전 버전을 캐시하고
+> 있어도 새 파일을 강제로 다시 받게 됩니다.
