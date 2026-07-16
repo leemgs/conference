@@ -74,6 +74,27 @@
       "years": { "2020": 754, "2021": 850, "2022": 829, "2023": 1047 }
     },
     {
+      "id": "naacl",
+      "label": "NAACL",
+      "dblp": "conf/naacl",
+      "approx": true,
+      "years": { "2021": 556, "2022": 735 }
+    },
+    {
+      "id": "icassp",
+      "label": "ICASSP",
+      "dblp": "conf/icassp",
+      "approx": true,
+      "years": { "2020": 1873, "2021": 1731, "2022": 1975, "2023": 2064, "2024": 2713 }
+    },
+    {
+      "id": "interspeech",
+      "label": "INTERSPEECH",
+      "dblp": "conf/interspeech",
+      "approx": true,
+      "years": { "2020": 1004, "2021": 1607, "2022": 1100, "2023": 1128, "2024": 1300 }
+    },
+    {
       "id": "sigkdd",
       "label": "SIGKDD (Research)",
       "dblp": "conf/kdd",
