@@ -3,21 +3,27 @@
   "use strict";
 
   const FIELD_META = {
-    sys: { label: "시스템/아키텍처", hex: "#1971c2" },
-    ai: { label: "인공지능", hex: "#9c36b5" },
-    data: { label: "데이터/웹", hex: "#0ca678" },
-    net: { label: "네트워크/통신", hex: "#2f9e44" },
-    sec: { label: "보안", hex: "#e03131" },
-    plse: { label: "PL/SE", hex: "#e8590c" },
-    hci: { label: "HCI/그래픽스", hex: "#e64980" },
-    theory: { label: "알고리즘/이론", hex: "#5f3dc4" },
-    hw: { label: "HW/로보틱스", hex: "#f08c00" },
-    arvr: { label: "AR/VR", hex: "#0b7285" },
-    health: { label: "헬스/바이오", hex: "#74b816" },
-    etc: { label: "기타", hex: "#868e96" },
+    sys: { hex: "#1971c2" },
+    ai: { hex: "#9c36b5" },
+    data: { hex: "#0ca678" },
+    net: { hex: "#2f9e44" },
+    sec: { hex: "#e03131" },
+    plse: { hex: "#e8590c" },
+    hci: { hex: "#e64980" },
+    theory: { hex: "#5f3dc4" },
+    hw: { hex: "#f08c00" },
+    arvr: { hex: "#0b7285" },
+    health: { hex: "#74b816" },
+    etc: { hex: "#868e96" },
   };
 
-  const WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"];
+  function fieldLabel(key) {
+    return t("field." + key);
+  }
+
+  function weekdayLabel(i) {
+    return t("weekday." + ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][i]);
+  }
 
   const state = {
     view: "calendar",
@@ -66,7 +72,7 @@
       state.data = data;
       state.paperStats = paperStats;
       state.events = flatten(data.conferences);
-      $("#updated-at").textContent = "업데이트: " + data.updated;
+      renderUpdatedAt();
       buildFieldChips();
       bindControls();
       const hashView = viewFromHash();
@@ -75,8 +81,12 @@
     })
     .catch((err) => {
       $("#empty-msg").hidden = false;
-      $("#empty-msg").textContent = "데이터를 불러오지 못했습니다: " + err.message;
+      $("#empty-msg").textContent = t("empty.fetchError", { msg: err.message });
     });
+
+  function renderUpdatedAt() {
+    if (state.data) $("#updated-at").textContent = t("header.updated", { date: state.data.updated });
+  }
 
   function flatten(confs) {
     const out = [];
@@ -104,7 +114,7 @@
   }
 
   function fmtDate(date) {
-    return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")} (${WEEKDAYS[date.getDay()]})`;
+    return `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, "0")}.${String(date.getDate()).padStart(2, "0")} (${weekdayLabel(date.getDay())})`;
   }
 
   // ── 필터 ─────────────────────────────────
@@ -114,15 +124,35 @@
     all.type = "button";
     all.className = "chip active";
     all.dataset.field = "all";
-    all.textContent = "전체";
+    all.textContent = t("common.all");
     wrap.appendChild(all);
-    Object.entries(FIELD_META).forEach(([key, meta]) => {
+    Object.keys(FIELD_META).forEach((key) => {
+      const meta = FIELD_META[key];
       const b = document.createElement("button");
       b.type = "button";
       b.className = "chip";
       b.dataset.field = key;
-      b.innerHTML = `<span class="dot" style="background:${meta.hex}"></span>${meta.label}`;
+      b.innerHTML = `<span class="dot" style="background:${meta.hex}"></span>${fieldLabel(key)}`;
       wrap.appendChild(b);
+    });
+  }
+
+  function updateFieldChipLabels() {
+    $("#field-filter").querySelectorAll(".chip").forEach((b) => {
+      if (b.dataset.field === "all") { b.textContent = t("common.all"); return; }
+      const meta = FIELD_META[b.dataset.field];
+      b.innerHTML = `<span class="dot" style="background:${meta.hex}"></span>${fieldLabel(b.dataset.field)}`;
+    });
+  }
+
+  function renderWeekdayHeader() {
+    const wd = $("#cal-weekdays");
+    wd.innerHTML = "";
+    [0, 1, 2, 3, 4, 5, 6].forEach((i) => {
+      const s = document.createElement("span");
+      s.textContent = weekdayLabel(i);
+      if (i === 0) s.className = "sun";
+      wd.appendChild(s);
     });
   }
 
@@ -199,13 +229,16 @@
       if (e.key === "Escape") closeModal();
     });
 
-    // 요일 헤더
-    const wd = $("#cal-weekdays");
-    WEEKDAYS.forEach((d, i) => {
-      const s = document.createElement("span");
-      s.textContent = d;
-      if (i === 0) s.className = "sun";
-      wd.appendChild(s);
+    renderWeekdayHeader();
+
+    $("#lang-toggle").addEventListener("click", () => {
+      const next = window.I18N_LANG === "ko" ? "en" : "ko";
+      setLang(next);
+      applyTranslations(next);
+      updateFieldChipLabels();
+      renderWeekdayHeader();
+      renderUpdatedAt();
+      render();
     });
   }
 
@@ -250,10 +283,10 @@
     });
     const wrap = $("#search-results");
     wrap.innerHTML = "";
-    $("#search-heading").textContent = `학회 검색 결과 (${results.length}개)`;
+    $("#search-heading").textContent = t("search.heading.count", { n: results.length });
 
     if (results.length === 0) {
-      wrap.innerHTML = '<p class="empty">일치하는 학회 정보가 없습니다.</p>';
+      wrap.innerHTML = `<p class="empty">${t("search.empty")}</p>`;
       return;
     }
     results.forEach((conf) => wrap.appendChild(conferenceInfoCard(conf)));
@@ -261,23 +294,24 @@
 
   function conferenceInfoCard(conf) {
     const meta = FIELD_META[conf.field];
+    const label = fieldLabel(conf.field);
     const el = document.createElement("article");
     el.className = "conference-info-card";
     el.style.borderTopColor = meta.hex;
     el.innerHTML = `
       <div class="conference-info-title">
         <h3>${conf.name}</h3>
-        <span class="badge badge-field" style="background:${meta.hex}">${meta.label}</span>
+        <span class="badge badge-field" style="background:${meta.hex}">${label}</span>
         ${ratingBadge(conf)}
       </div>
       <dl>
-        <div><dt>학회명</dt><dd>${conf.fullName}</dd></div>
-        <div><dt>분야</dt><dd>${meta.label}</dd></div>
-        <div><dt>등급</dt><dd>${conf.rating || "미지정"}</dd></div>
+        <div><dt>${t("card.fullNameLabel")}</dt><dd>${conf.fullName}</dd></div>
+        <div><dt>${t("field.label")}</dt><dd>${label}</dd></div>
+        <div><dt>${t("card.ratingLabel")}</dt><dd>${conf.rating ? t(conf.rating === "최우수" ? "rating.top" : "rating.good") : t("rating.none")}</dd></div>
       </dl>
       <div class="conference-info-actions">
-        <button type="button" class="details-btn">마감일 및 개최 정보 보기</button>
-        <button type="button" class="web-search-btn">🌐 인터넷에서 검색</button>
+        <button type="button" class="details-btn">${t("card.detailsBtn")}</button>
+        <button type="button" class="web-search-btn">${t("card.webSearchBtn")}</button>
       </div>`;
     el.querySelector(".details-btn").addEventListener("click", () => openModal(conf));
     el.querySelector(".web-search-btn").addEventListener("click", () => openWebSearch(conf));
@@ -298,7 +332,8 @@
   }
 
   function renderCalendar() {
-    $("#cal-title").textContent = `${state.year}년 ${state.month + 1}월`;
+    const monthLabel = t("month." + (state.month + 1));
+    $("#cal-title").textContent = t("cal.title", { year: state.year, monthLabel });
     const grid = $("#cal-grid");
     grid.innerHTML = "";
 
@@ -334,7 +369,7 @@
         const more = document.createElement("button");
         more.type = "button";
         more.className = "more-count";
-        more.textContent = `+${dayEvents.length - MAX}개 더보기`;
+        more.textContent = t("cal.moreCount", { n: dayEvents.length - MAX });
         more.addEventListener("click", () => openModal(dayEvents[MAX].conf));
         cell.appendChild(more);
       }
@@ -357,9 +392,9 @@
   }
 
   function shortLabel(dl) {
-    if (dl.type === "abstract") return "초록";
-    if (dl.type === "paper") return "논문";
-    return "기타";
+    if (dl.type === "abstract") return t("type.abstract");
+    if (dl.type === "paper") return t("type.paper");
+    return t("type.other");
   }
 
   function renderList() {
@@ -389,7 +424,7 @@
       return;
     }
     if (upcoming.length === 0) {
-      upWrap.innerHTML = '<p class="empty">다가오는 마감이 없습니다.</p>';
+      upWrap.innerHTML = `<p class="empty">${t("list.upcomingEmpty")}</p>`;
     }
 
     upcoming.forEach((ev) => upWrap.appendChild(card(ev, false)));
@@ -398,14 +433,15 @@
 
   function unknownCard(conf) {
     const meta = FIELD_META[conf.field];
+    const label = fieldLabel(conf.field);
     const el = document.createElement("div");
     el.className = "deadline-card";
     el.style.borderLeftColor = meta.hex;
     el.innerHTML = `
-      <div class="dday"><span class="date-sub">미확인</span></div>
+      <div class="dday"><span class="date-sub">${t("list.unknown")}</span></div>
       <div class="deadline-info">
         <div class="conf-name">${conf.name}
-          <span class="badge badge-field" style="background:${meta.hex}">${meta.label}</span>
+          <span class="badge badge-field" style="background:${meta.hex}">${label}</span>
           ${ratingBadge(conf)}
         </div>
         <div class="deadline-label">${conf.fullName}</div>
@@ -416,6 +452,7 @@
 
   function card(ev, isPast) {
     const meta = FIELD_META[ev.conf.field];
+    const label = fieldLabel(ev.conf.field);
     const dday = ddayOf(ev.date);
     const el = document.createElement("div");
     el.className = "deadline-card" + (isPast ? " past" : "");
@@ -430,7 +467,7 @@
       </div>
       <div class="deadline-info">
         <div class="conf-name">${ev.conf.name}
-          <span class="badge badge-field" style="background:${meta.hex}">${meta.label}</span>
+          <span class="badge badge-field" style="background:${meta.hex}">${label}</span>
           ${ratingBadge(ev.conf)}
           ${statusBadge(ev.dl.status)}
         </div>
@@ -443,21 +480,22 @@
 
   function statusBadge(status) {
     return status === "estimated"
-      ? '<span class="badge badge-estimated">🔮 예상</span>'
-      : '<span class="badge badge-confirmed">✅ 확정</span>';
+      ? `<span class="badge badge-estimated">${t("status.estimated")}</span>`
+      : `<span class="badge badge-confirmed">${t("status.confirmed")}</span>`;
   }
 
   function ratingBadge(conf) {
     if (!conf.rating) return "";
-    const cls = conf.rating === "최우수" ? "badge-rating-top" : "badge-rating-good";
-    return `<span class="badge ${cls}">🏆 ${conf.rating}</span>`;
+    const isTop = conf.rating === "최우수";
+    const cls = isTop ? "badge-rating-top" : "badge-rating-good";
+    return `<span class="badge ${cls}">🏆 ${t(isTop ? "rating.top" : "rating.good")}</span>`;
   }
 
   function confPeriod(conf) {
     if (conf.confStart && conf.confEnd) {
       return `${fmtDate(parseDate(conf.confStart))} ~ ${fmtDate(parseDate(conf.confEnd))}`;
     }
-    return conf.confText || "일정 미정";
+    return conf.confText || t("confPeriod.tbd");
   }
 
   // ── 대시보드 ─────────────────────────────
@@ -471,7 +509,7 @@
   }
 
   function fmtNum(n) {
-    return Number(n).toLocaleString("ko-KR");
+    return Number(n).toLocaleString(window.I18N_LANG === "en" ? "en-US" : "ko-KR");
   }
 
   // 눈금 계산: max 값을 4개 내외의 깔끔한 눈금으로
@@ -596,12 +634,13 @@
     const fields = new Set(confs.map((c) => c.field)).size;
     const nowKey = monthKeys12()[0];
     const thisMonth = monthStats()[0];
+    const nowMonthLabel = t("month." + nowKey.month);
 
     const tiles = [
-      { label: "전체 학회", value: fmtNum(confs.length), sub: `${fields}개 분야` },
-      { label: "최우수 학회", value: fmtNum(top), sub: `전체의 ${Math.round((top / confs.length) * 100)}%` },
-      { label: "우수 학회", value: fmtNum(confs.length - top), sub: `전체의 ${Math.round(((confs.length - top) / confs.length) * 100)}%` },
-      { label: `이번 달 마감 (${nowKey.month}월)`, value: `${fmtNum(thisMonth.count)}건`, sub: `확정 ${thisMonth.confirmed} · 예상 ${thisMonth.estimated}` },
+      { label: t("dash.tile.total"), value: fmtNum(confs.length), sub: t("dash.tile.fieldsCount", { n: fields }) },
+      { label: t("dash.tile.top"), value: fmtNum(top), sub: t("dash.tile.pctOfTotal", { pct: Math.round((top / confs.length) * 100) }) },
+      { label: t("dash.tile.good"), value: fmtNum(confs.length - top), sub: t("dash.tile.pctOfTotal", { pct: Math.round(((confs.length - top) / confs.length) * 100) }) },
+      { label: t("dash.tile.thisMonth", { monthLabel: nowMonthLabel }), value: t("unit.cases", { n: fmtNum(thisMonth.count) }), sub: t("dash.tile.confirmedEstimated", { c: thisMonth.confirmed, e: thisMonth.estimated }) },
     ];
 
     const wrap = $("#dash-tiles");
@@ -624,21 +663,22 @@
 
     rows.forEach((r) => {
       const meta = FIELD_META[r.field] || FIELD_META.etc;
+      const label = fieldLabel(r.field);
       const row = el("div", "domain-row");
 
-      const label = el("span", "domain-label");
+      const labelEl = el("span", "domain-label");
       const dot = el("span", "dot");
       paintFixed(dot, meta.hex);
-      label.appendChild(dot);
-      label.appendChild(document.createTextNode(meta.label));
-      row.appendChild(label);
+      labelEl.appendChild(dot);
+      labelEl.appendChild(document.createTextNode(label));
+      row.appendChild(labelEl);
 
       const track = el("div", "domain-track");
       const bar = el("div", "domain-bar");
       bar.style.width = (r.total / max) * 100 + "%";
       bar.tabIndex = 0;
       bar.setAttribute("role", "img");
-      bar.setAttribute("aria-label", `${meta.label}: 최우수 ${r.top}개, 우수 ${r.good}개, 합계 ${r.total}개`);
+      bar.setAttribute("aria-label", t("dash.domain.ariaBar", { field: label, top: r.top, good: r.good, total: r.total }));
       if (r.top > 0) {
         const seg = el("div", "seg seg-top");
         seg.style.flexGrow = r.top;
@@ -652,10 +692,10 @@
         bar.appendChild(seg);
       }
       attachTip(bar, () => [
-        { label: meta.label },
-        { value: `${r.top}개`, label: "최우수", swatch: cssVar("--tier-top") },
-        { value: `${r.good}개`, label: "우수", swatch: cssVar("--tier-good") },
-        { value: `${r.total}개`, label: "합계" },
+        { label },
+        { value: t("unit.count", { n: r.top }), label: t("rating.top"), swatch: cssVar("--tier-top") },
+        { value: t("unit.count", { n: r.good }), label: t("rating.good"), swatch: cssVar("--tier-good") },
+        { value: t("unit.count", { n: r.total }), label: t("dash.total") },
       ]);
       track.appendChild(bar);
       row.appendChild(track);
@@ -674,14 +714,14 @@
     // 표 뷰
     const table = $("#domain-table");
     table.innerHTML = "";
-    table.appendChild(tableRow(["분야", "최우수", "우수", "합계"], "th"));
+    table.appendChild(tableRow([t("field.label"), t("rating.top"), t("rating.good"), t("dash.total")], "th"));
     rows.forEach((r) => {
-      const meta = FIELD_META[r.field] || FIELD_META.etc;
-      table.appendChild(tableRow([meta.label, r.top, r.good, r.total]));
+      const label = fieldLabel(r.field);
+      table.appendChild(tableRow([label, r.top, r.good, r.total]));
     });
     const sum = rows.reduce((a, r) => ({ top: a.top + r.top, good: a.good + r.good, total: a.total + r.total }),
                             { top: 0, good: 0, total: 0 });
-    table.appendChild(tableRow(["전체", sum.top, sum.good, sum.total], "th"));
+    table.appendChild(tableRow([t("common.all"), sum.top, sum.good, sum.total], "th"));
   }
 
   function cssVar(name) {
@@ -754,31 +794,35 @@
       state.dashMonth = stats[0].key;
     }
 
-    columnChart($("#month-chart"), stats.map((s, i) => ({
-      label: `${s.month}월`,
-      sub: i === 0 || s.month === 1 ? String(s.year) : undefined,
-      value: s.count,
-      selected: s.key === state.dashMonth,
-      aria: `${s.year}년 ${s.month}월: 마감 ${s.count}건 (학회 ${s.confCount}곳)`,
-      onClick: () => {
-        state.dashMonth = s.key;
-        renderMonthChart();
-      },
-      tipLines: () => [
-        { label: `${s.year}년 ${s.month}월` },
-        { value: `${s.count}건`, label: "논문·초록 마감" },
-        { value: `${s.confCount}곳`, label: "학회 수" },
-        { value: `${s.confirmed} · ${s.estimated}`, label: "확정 · 예상" },
-      ],
-    })), { labelMax: true });
+    columnChart($("#month-chart"), stats.map((s, i) => {
+      const monthLabel = t("month." + s.month);
+      return {
+        label: monthLabel,
+        sub: i === 0 || s.month === 1 ? String(s.year) : undefined,
+        value: s.count,
+        selected: s.key === state.dashMonth,
+        aria: t("dash.month.aria", { year: s.year, monthLabel, count: s.count, confCount: s.confCount }),
+        onClick: () => {
+          state.dashMonth = s.key;
+          renderMonthChart();
+        },
+        tipLines: () => [
+          { label: t("cal.title", { year: s.year, monthLabel }) },
+          { value: t("unit.cases", { n: s.count }), label: t("dash.month.tip.deadlines") },
+          { value: t("unit.venues", { n: s.confCount }), label: t("dash.confCount") },
+          { value: `${s.confirmed} · ${s.estimated}`, label: t("dash.month.tip.confirmedEstimated") },
+        ],
+      };
+    }), { labelMax: true });
 
     // 선택한 월의 상세 목록
     const sel = stats.find((s) => s.key === state.dashMonth);
-    $("#month-detail-heading").textContent = `${sel.year}년 ${sel.month}월 마감 목록 (${sel.count}건)`;
+    const selMonthLabel = t("month." + sel.month);
+    $("#month-detail-heading").textContent = t("dash.month.detailHeading", { year: sel.year, monthLabel: selMonthLabel, count: sel.count });
     const detail = $("#month-detail");
     detail.innerHTML = "";
     if (sel.count === 0) {
-      detail.appendChild(el("p", "empty", "이 달에는 등록된 마감이 없습니다."));
+      detail.appendChild(el("p", "empty", t("dash.month.detailEmpty")));
     }
     sel.events
       .slice()
@@ -795,7 +839,7 @@
         name.appendChild(document.createTextNode(ev.conf.name));
         const label = el("span", "mi-label", ev.dl.label);
         const badge = el("span", "badge " + (ev.dl.status === "estimated" ? "badge-estimated" : "badge-confirmed"),
-                         ev.dl.status === "estimated" ? "🔮 예상" : "✅ 확정");
+                         t(ev.dl.status === "estimated" ? "status.estimated" : "status.confirmed"));
         item.append(date, name, label, badge);
         item.addEventListener("click", () => openModal(ev.conf));
         detail.appendChild(item);
@@ -804,7 +848,7 @@
     // 표 뷰
     const table = $("#month-table");
     table.innerHTML = "";
-    table.appendChild(tableRow(["월", "마감 건수", "확정", "예상", "학회 수"], "th"));
+    table.appendChild(tableRow([t("dash.month.table.month"), t("dash.month.table.count"), t("table.confirmed"), t("table.estimated"), t("dash.confCount")], "th"));
     stats.forEach((s) => table.appendChild(tableRow([`${s.year}.${String(s.month).padStart(2, "0")}`, s.count, s.confirmed, s.estimated, s.confCount])));
   }
 
@@ -819,8 +863,7 @@
     if (venues.length === 0) {
       select.hidden = true;
       chart.innerHTML = "";
-      chart.appendChild(el("p", "empty",
-        "논문 수 데이터가 아직 없습니다. scripts/build_paper_stats.py 를 실행해 docs/data/paper_stats.json 을 생성하세요."));
+      chart.appendChild(el("p", "empty", t("dash.papers.empty")));
       note.textContent = "";
       card.querySelector(".dash-table-details").hidden = true;
       return;
@@ -849,23 +892,26 @@
 
     const venue = venues.find((v) => v.id === state.paperConf);
     const years = Object.keys(venue.years).sort();
-    const approxMark = venue.approx ? "약 " : "";
+    const approxMark = venue.approx ? t("dash.papers.approx") : "";
 
-    columnChart(chart, years.map((y, i) => ({
-      label: y,
-      value: venue.years[y],
-      capLabel: i === years.length - 1, // 최신 연도만 직접 라벨
-      aria: `${venue.label} ${y}년: ${approxMark}${fmtNum(venue.years[y])}편`,
-      tipLines: () => [
-        { label: `${venue.label} ${y}년` },
-        { value: `${approxMark}${fmtNum(venue.years[y])}편`, label: "등재 논문" },
-      ],
-    })), { labelMax: false });
+    columnChart(chart, years.map((y, i) => {
+      const valueText = t("papers.valueWithUnit", { approx: approxMark, n: fmtNum(venue.years[y]) });
+      return {
+        label: y,
+        value: venue.years[y],
+        capLabel: i === years.length - 1, // 최신 연도만 직접 라벨
+        aria: t("dash.papers.aria", { label: venue.label, year: y, valueText }),
+        tipLines: () => [
+          { label: t("dash.papers.tip.title", { label: venue.label, year: y }) },
+          { value: valueText, label: t("dash.papers.tip.accepted") },
+        ],
+      };
+    }), { labelMax: false });
 
     // 표 뷰
     const table = $("#paper-table");
     table.innerHTML = "";
-    table.appendChild(tableRow(["연도", "논문 수"], "th"));
+    table.appendChild(tableRow([t("dash.papers.table.year"), t("dash.papers.table.count")], "th"));
     years.forEach((y) => table.appendChild(tableRow([y, venue.years[y]])));
 
     note.textContent = state.paperStats.note || "";
@@ -874,6 +920,7 @@
   // ── 모달 ─────────────────────────────────
   function openModal(conf) {
     const meta = FIELD_META[conf.field];
+    const label = fieldLabel(conf.field);
     const body = $("#modal-body");
 
     const rows = conf.deadlines
@@ -900,24 +947,24 @@
       const e = new Date(y, m, day + 1);
       const eStr = `${e.getFullYear()}${String(e.getMonth() + 1).padStart(2, "0")}${String(e.getDate()).padStart(2, "0")}`;
       const text = encodeURIComponent(`[${conf.name}] ${next.dl.label}`);
-      const details = encodeURIComponent(`${conf.fullName}\nAoE(UTC-12) 기준 마감\n${conf.url}`);
-      gcalLink = `<a class="primary" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${s}/${eStr}&details=${details}">＋ 구글 캘린더에 추가</a>`;
+      const details = encodeURIComponent(`${conf.fullName}\n${t("modal.gcalDetails")}\n${conf.url}`);
+      gcalLink = `<a class="primary" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=${text}&dates=${s}/${eStr}&details=${details}">${t("modal.addToGCal")}</a>`;
     }
 
     body.innerHTML = `
       <h3 id="modal-title">${conf.name}
-        <span class="badge badge-field" style="background:${meta.hex}">${meta.label}</span>
+        <span class="badge badge-field" style="background:${meta.hex}">${label}</span>
         ${ratingBadge(conf)}
       </h3>
       <p class="full-name">${conf.fullName}</p>
-      <div class="meta-row">📍 <strong>장소</strong> · ${conf.location}</div>
-      <div class="meta-row">🗓️ <strong>개최</strong> · ${confPeriod(conf)}</div>
-      <div class="meta-row">⏰ <strong>기준시</strong> · ${conf.tz || "학회 공지 참조"}</div>
+      <div class="meta-row">📍 <strong>${t("modal.location")}</strong> · ${conf.location}</div>
+      <div class="meta-row">🗓️ <strong>${t("modal.dates")}</strong> · ${confPeriod(conf)}</div>
+      <div class="meta-row">⏰ <strong>${t("modal.tz")}</strong> · ${conf.tz || t("modal.tzDefault")}</div>
       ${conf.note ? `<div class="meta-row">ℹ️ ${conf.note}</div>` : ""}
-      <ul class="modal-deadlines">${rows || '<li><span>등록된 마감 일정이 없습니다.</span></li>'}</ul>
+      <ul class="modal-deadlines">${rows || `<li><span>${t("modal.noDeadlines")}</span></li>`}</ul>
       <div class="modal-actions">
         ${gcalLink}
-        ${conf.url ? `<a target="_blank" rel="noopener" href="${conf.url}">공식 사이트 ↗</a>` : ""}
+        ${conf.url ? `<a target="_blank" rel="noopener" href="${conf.url}">${t("modal.officialSite")}</a>` : ""}
       </div>`;
 
     $("#modal").hidden = false;

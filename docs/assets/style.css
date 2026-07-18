@@ -96,6 +96,8 @@ a { color: var(--accent); }
 }
 .ics-link:hover { background: rgba(255, 255, 255, 0.28); }
 
+.lang-toggle { min-width: 44px; text-align: center; cursor: pointer; font: inherit; }
+
 .updated { font-size: 0.78rem; opacity: 0.85; }
 
 /* ── Layout ─────────────────────────────── */
