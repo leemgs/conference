@@ -1,0 +1,492 @@
+{
+  "updated": "2026-07-18",
+  "source": "openalex",
+  "topN": 8,
+  "note": "OpenAlex 기준 제1저자(first author) 소속 국가 추정치입니다. 일부 논문은 소속 정보가 없어 집계에서 제외됩니다. 학회마다 OpenAlex 색인 완성도가 달라, 매핑이 확인된 학회/연도만 표시됩니다.",
+  "venues": [
+    {
+      "id": "cvpr",
+      "years": {
+        "2022": {
+          "total": 2082,
+          "unknown": 166,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 668
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 448
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 106
+            },
+            {
+              "code": "HK",
+              "country": "Hong Kong",
+              "count": 94
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 76
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 72
+            },
+            {
+              "code": "AU",
+              "country": "Australia",
+              "count": 63
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 48
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 341
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "iccv",
+      "years": {
+        "2021": {
+          "total": 1617,
+          "unknown": 100,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 469
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 372
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 100
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 66
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 60
+            },
+            {
+              "code": "HK",
+              "country": "Hong Kong",
+              "count": 59
+            },
+            {
+              "code": "IL",
+              "country": "Israel",
+              "count": 44
+            },
+            {
+              "code": "AU",
+              "country": "Australia",
+              "count": 42
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 305
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "aaai",
+      "years": {
+        "2020": {
+          "total": 1863,
+          "unknown": 104,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 616
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 474
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 74
+            },
+            {
+              "code": "AU",
+              "country": "Australia",
+              "count": 50
+            },
+            {
+              "code": "IN",
+              "country": "India",
+              "count": 48
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 45
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 43
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 43
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 366
+            }
+          ]
+        },
+        "2021": {
+          "total": 2327,
+          "unknown": 125,
+          "countries": [
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 687
+            },
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 645
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 89
+            },
+            {
+              "code": "AU",
+              "country": "Australia",
+              "count": 70
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 69
+            },
+            {
+              "code": "CA",
+              "country": "Canada",
+              "count": 63
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 61
+            },
+            {
+              "code": "IN",
+              "country": "India",
+              "count": 59
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 459
+            }
+          ]
+        },
+        "2022": {
+          "total": 1618,
+          "unknown": 90,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 505
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 380
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 67
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 61
+            },
+            {
+              "code": "CA",
+              "country": "Canada",
+              "count": 56
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 51
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 45
+            },
+            {
+              "code": "IN",
+              "country": "India",
+              "count": 43
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 320
+            }
+          ]
+        },
+        "2023": {
+          "total": 2021,
+          "unknown": 121,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 817
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 409
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 71
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 71
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 53
+            },
+            {
+              "code": "AU",
+              "country": "Australia",
+              "count": 50
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 43
+            },
+            {
+              "code": "HK",
+              "country": "Hong Kong",
+              "count": 42
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 344
+            }
+          ]
+        },
+        "2024": {
+          "total": 2866,
+          "unknown": 124,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 1387
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 449
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 104
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 86
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 76
+            },
+            {
+              "code": "HK",
+              "country": "Hong Kong",
+              "count": 73
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 72
+            },
+            {
+              "code": "AU",
+              "country": "Australia",
+              "count": 62
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 433
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "icassp",
+      "years": {
+        "2022": {
+          "total": 1875,
+          "unknown": 112,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 608
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 398
+            },
+            {
+              "code": "JP",
+              "country": "Japan",
+              "count": 86
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 83
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 58
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 51
+            },
+            {
+              "code": "FR",
+              "country": "France",
+              "count": 50
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 40
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 389
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "interspeech",
+      "years": {
+        "2022": {
+          "total": 1102,
+          "unknown": 650,
+          "countries": [
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 105
+            },
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 87
+            },
+            {
+              "code": "JP",
+              "country": "Japan",
+              "count": 36
+            },
+            {
+              "code": "FR",
+              "country": "France",
+              "count": 35
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 32
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 24
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 19
+            },
+            {
+              "code": "TW",
+              "country": "Taiwan",
+              "count": 14
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 100
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

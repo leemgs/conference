@@ -512,6 +512,8 @@ a { color: var(--accent); }
    재변환하는데, background-image(gradient)는 건드리지 않아 색이 그대로 유지된다 */
 .swatch-top { background-image: linear-gradient(var(--tier-top), var(--tier-top)); }
 .swatch-good { background-image: linear-gradient(var(--tier-good), var(--tier-good)); }
+.swatch-paper { background-image: linear-gradient(var(--accent), var(--accent)); }
+.swatch-abstract { background-image: linear-gradient(var(--accent-2), var(--accent-2)); }
 
 /* 카테고리별 등급: 가로 누적 막대 */
 .domain-chart { display: flex; flex-direction: column; gap: 6px; }
@@ -551,6 +553,38 @@ a { color: var(--accent); }
 .seg-good .seg-label { color: var(--tier-good-ink); }
 
 .domain-total {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 학회별 논문 국가 분포: 가로 막대 (도메인 차트와 동일한 그리드) */
+.country-chart { display: flex; flex-direction: column; gap: 6px; }
+
+.country-row {
+  display: grid;
+  grid-template-columns: 118px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-label {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.country-bar {
+  height: 18px;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--accent);
+  background-image: linear-gradient(var(--accent), var(--accent));
+}
+.country-bar:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+.country-total {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--text-muted);
@@ -608,6 +642,13 @@ a { color: var(--accent); }
 .cc-col:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
 .cc-col.selected { outline: 2px solid var(--accent-2); outline-offset: 2px; }
 .cc-col.zero { height: 2px !important; background: var(--border); }
+
+/* 월별 마감: 논문/초록 구분을 위한 누적 세그먼트 */
+.cc-col.stacked { display: flex; flex-direction: column-reverse; background: none; overflow: hidden; }
+.cc-seg { width: 100%; }
+.cc-seg-paper { background-image: linear-gradient(var(--accent), var(--accent)); }
+.cc-seg-abstract { background-image: linear-gradient(var(--accent-2), var(--accent-2)); }
+.cc-seg-other { background-image: linear-gradient(var(--text-muted), var(--text-muted)); }
 
 .cc-xlabels { display: flex; margin: 6px 0 0 44px; }
 
@@ -698,7 +739,7 @@ a { color: var(--accent); }
 .tip-swatch { width: 12px; height: 4px; border-radius: 2px; flex: 0 0 auto; }
 
 @media (max-width: 640px) {
-  .domain-row { grid-template-columns: 92px 1fr 36px; }
+  .domain-row, .country-row { grid-template-columns: 92px 1fr 36px; }
   .cc-plot, .cc-xlabels { margin-left: 36px; }
   .cc-xlabel { font-size: 0.62rem; }
   /* 좁은 화면에서는 x축 라벨을 하나 걸러 표시 (연도 부제는 유지) */

@@ -35,8 +35,10 @@
     data: null,
     events: [], // { conf, dl, date(Date) }
     paperStats: null,
+    paperCountries: null, // 국가별 데이터(로드 실패 시 null 유지)
     dashMonth: null, // 월별 현황에서 선택한 "YYYY-MM"
     paperConf: null, // 논문 수 패널에서 선택한 학회 id
+    paperYear: null, // 논문 패널에서 선택한 연도(국가 상세용)
   };
 
   const $ = (sel) => document.querySelector(sel);
@@ -67,10 +69,12 @@
   Promise.all([
     fetch("data/conferences.json").then((r) => r.json()),
     fetch("data/paper_stats.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
+    fetch("data/paper_countries.json").then((r) => (r.ok ? r.json() : null)).catch(() => null),
   ])
-    .then(([data, paperStats]) => {
+    .then(([data, paperStats, paperCountries]) => {
       state.data = data;
       state.paperStats = paperStats;
+      state.paperCountries = paperCountries;
       state.events = flatten(data.conferences);
       renderUpdatedAt();
       buildFieldChips();
@@ -608,15 +612,17 @@
     const byMonth = {};
     state.events.forEach((ev) => {
       const key = ev.dl.date.slice(0, 7);
-      const m = (byMonth[key] = byMonth[key] || { events: [], confirmed: 0, estimated: 0, confs: new Set() });
+      const m = (byMonth[key] = byMonth[key] || { events: [], confirmed: 0, estimated: 0, abstract: 0, paper: 0, other: 0, confs: new Set() });
       m.events.push(ev);
       m[ev.dl.status === "estimated" ? "estimated" : "confirmed"] += 1;
+      m[ev.dl.type === "abstract" ? "abstract" : ev.dl.type === "paper" ? "paper" : "other"] += 1;
       m.confs.add(ev.conf.id);
     });
     return monthKeys12().map((mk) => {
-      const m = byMonth[mk.key] || { events: [], confirmed: 0, estimated: 0, confs: new Set() };
-      return { ...mk, count: m.events.length, confirmed: m.confirmed,
-               estimated: m.estimated, confCount: m.confs.size, events: m.events };
+      const m = byMonth[mk.key] || { events: [], confirmed: 0, estimated: 0, abstract: 0, paper: 0, other: 0, confs: new Set() };
+      return { ...mk, count: m.events.length, confirmed: m.confirmed, estimated: m.estimated,
+               abstract: m.abstract, paper: m.paper, other: m.other,
+               confCount: m.confs.size, events: m.events };
     });
   }
 
@@ -770,6 +776,15 @@
       col.setAttribute("aria-pressed", item.selected ? "true" : "false");
       if (item.onClick) col.addEventListener("click", item.onClick);
       attachTip(col, item.tipLines);
+      if (item.segments && item.value > 0) {
+        col.classList.add("stacked");
+        item.segments.forEach((seg) => {
+          if (!seg.value) return;
+          const segEl = el("div", "cc-seg " + (seg.cls || ""));
+          segEl.style.flexGrow = seg.value;
+          col.appendChild(segEl);
+        });
+      }
       slot.appendChild(col);
       cols.appendChild(slot);
     });
@@ -801,14 +816,20 @@
         sub: i === 0 || s.month === 1 ? String(s.year) : undefined,
         value: s.count,
         selected: s.key === state.dashMonth,
-        aria: t("dash.month.aria", { year: s.year, monthLabel, count: s.count, confCount: s.confCount }),
+        aria: t("dash.month.aria", { year: s.year, monthLabel, paper: s.paper, abstract: s.abstract, confCount: s.confCount }),
         onClick: () => {
           state.dashMonth = s.key;
           renderMonthChart();
         },
+        segments: [
+          { value: s.paper, cls: "cc-seg-paper" },
+          { value: s.abstract, cls: "cc-seg-abstract" },
+          { value: s.other, cls: "cc-seg-other" },
+        ],
         tipLines: () => [
           { label: t("cal.title", { year: s.year, monthLabel }) },
-          { value: t("unit.cases", { n: s.count }), label: t("dash.month.tip.deadlines") },
+          { value: t("unit.cases", { n: s.paper }), label: t("dash.month.legend.paper"), swatch: cssVar("--accent") },
+          { value: t("unit.cases", { n: s.abstract }), label: t("dash.month.legend.abstract"), swatch: cssVar("--accent-2") },
           { value: t("unit.venues", { n: s.confCount }), label: t("dash.confCount") },
           { value: `${s.confirmed} · ${s.estimated}`, label: t("dash.month.tip.confirmedEstimated") },
         ],
@@ -848,8 +869,8 @@
     // 표 뷰
     const table = $("#month-table");
     table.innerHTML = "";
-    table.appendChild(tableRow([t("dash.month.table.month"), t("dash.month.table.count"), t("table.confirmed"), t("table.estimated"), t("dash.confCount")], "th"));
-    stats.forEach((s) => table.appendChild(tableRow([`${s.year}.${String(s.month).padStart(2, "0")}`, s.count, s.confirmed, s.estimated, s.confCount])));
+    table.appendChild(tableRow([t("dash.month.table.month"), t("dash.month.table.count"), t("type.paper"), t("type.abstract"), t("table.confirmed"), t("table.estimated"), t("dash.confCount")], "th"));
+    stats.forEach((s) => table.appendChild(tableRow([`${s.year}.${String(s.month).padStart(2, "0")}`, s.count, s.paper, s.abstract, s.confirmed, s.estimated, s.confCount])));
   }
 
   // ── 대시보드: 매년 학회별 등재 논문 수 ──
@@ -865,12 +886,14 @@
       chart.innerHTML = "";
       chart.appendChild(el("p", "empty", t("dash.papers.empty")));
       note.textContent = "";
-      card.querySelector(".dash-table-details").hidden = true;
+      card.querySelectorAll(".dash-table-details").forEach((d) => (d.hidden = true));
+      $("#paper-country-detail-heading").textContent = "";
+      $("#paper-country-detail").innerHTML = "";
       return;
     }
 
     select.hidden = false;
-    card.querySelector(".dash-table-details").hidden = false;
+    card.querySelectorAll(".dash-table-details").forEach((d) => (d.hidden = false));
     if (!select.dataset.bound) {
       select.dataset.bound = "1";
       select.addEventListener("change", () => {
@@ -894,13 +917,22 @@
     const years = Object.keys(venue.years).sort();
     const approxMark = venue.approx ? t("dash.papers.approx") : "";
 
+    if (!state.paperYear || !years.includes(state.paperYear)) {
+      state.paperYear = years[years.length - 1];
+    }
+
     columnChart(chart, years.map((y, i) => {
       const valueText = t("papers.valueWithUnit", { approx: approxMark, n: fmtNum(venue.years[y]) });
       return {
         label: y,
         value: venue.years[y],
         capLabel: i === years.length - 1, // 최신 연도만 직접 라벨
+        selected: y === state.paperYear,
         aria: t("dash.papers.aria", { label: venue.label, year: y, valueText }),
+        onClick: () => {
+          state.paperYear = y;
+          renderPaperPanel();
+        },
         tipLines: () => [
           { label: t("dash.papers.tip.title", { label: venue.label, year: y }) },
           { value: valueText, label: t("dash.papers.tip.accepted") },
@@ -915,6 +947,60 @@
     years.forEach((y) => table.appendChild(tableRow([y, venue.years[y]])));
 
     note.textContent = state.paperStats.note || "";
+
+    renderPaperCountryDetail(venue, state.paperYear);
+  }
+
+  // ── 대시보드: 매년 학회별 제1저자 국가 분포 ──
+  function renderPaperCountryDetail(venue, year) {
+    $("#paper-country-detail-heading").textContent = t("dash.papers.countries.detailHeading", { label: venue.label, year });
+    const detail = $("#paper-country-detail");
+    const tableDetails = $("#paper-country-table-details");
+    const table = $("#paper-country-table");
+    const note = $("#paper-country-note");
+    detail.innerHTML = "";
+
+    const venueCountries = state.paperCountries && state.paperCountries.venues.find((v) => v.id === venue.id);
+    const yearData = venueCountries && venueCountries.years[year];
+    const countries = yearData && yearData.countries;
+
+    if (!countries || countries.length === 0) {
+      detail.appendChild(el("p", "empty", t("dash.papers.countries.empty", { label: venue.label, year })));
+      tableDetails.hidden = true;
+      note.textContent = "";
+      return;
+    }
+
+    tableDetails.hidden = false;
+    const max = Math.max(...countries.map((c) => c.count), 1);
+    const chartWrap = el("div", "country-chart");
+    countries.forEach((c) => {
+      const name = c.code === "other" ? t("dash.papers.countries.other") : `${c.country} (${c.code})`;
+      const pct = Math.round((c.count / yearData.total) * 100);
+      const row = el("div", "country-row");
+      row.appendChild(el("span", "country-label", name));
+      const track = el("div", "country-track");
+      const bar = el("div", "country-bar");
+      bar.style.width = (c.count / max) * 100 + "%";
+      bar.tabIndex = 0;
+      bar.setAttribute("role", "img");
+      bar.setAttribute("aria-label", t("dash.papers.countries.ariaBar", { country: name, count: c.count, pct }));
+      attachTip(bar, () => [{ value: t("dash.papers.countries.tip.share", { pct, count: c.count }), label: name }]);
+      track.appendChild(bar);
+      row.appendChild(track);
+      row.appendChild(el("span", "country-total", fmtNum(c.count)));
+      chartWrap.appendChild(row);
+    });
+    detail.appendChild(chartWrap);
+
+    table.innerHTML = "";
+    table.appendChild(tableRow([t("dash.papers.countries.table.country"), t("dash.papers.countries.table.count")], "th"));
+    countries.forEach((c) => {
+      const name = c.code === "other" ? t("dash.papers.countries.other") : `${c.country} (${c.code})`;
+      table.appendChild(tableRow([name, c.count]));
+    });
+
+    note.textContent = yearData.unknown > 0 ? t("dash.papers.countries.unknownNote", { n: yearData.unknown }) : "";
   }
 
   // ── 모달 ─────────────────────────────────

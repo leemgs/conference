@@ -29,6 +29,7 @@
       "label": "CVPR",
       "dblp": "conf/cvpr",
       "approx": true,
+      "openalexByYear": { "2022": "S4363607701" },
       "years": { "2020": 1466, "2021": 1660, "2022": 2074, "2023": 2359, "2024": 2719 }
     },
     {
@@ -36,6 +37,7 @@
       "label": "ICCV (격년)",
       "dblp": "conf/iccv",
       "approx": true,
+      "openalexByYear": { "2021": "S4363607764" },
       "years": { "2019": 1075, "2021": 1612, "2023": 2160 }
     },
     {
@@ -50,6 +52,7 @@
       "label": "AAAI",
       "dblp": "conf/aaai",
       "approx": true,
+      "openalex": "S4210191458",
       "years": { "2020": 1591, "2021": 1692, "2022": 1349, "2023": 1721, "2024": 2342 }
     },
     {
@@ -85,6 +88,7 @@
       "label": "ICASSP",
       "dblp": "conf/icassp",
       "approx": true,
+      "openalexByYear": { "2022": "S4363607702" },
       "years": { "2020": 1873, "2021": 1731, "2022": 1975, "2023": 2064, "2024": 2713 }
     },
     {
@@ -92,6 +96,7 @@
       "label": "INTERSPEECH",
       "dblp": "conf/interspeech",
       "approx": true,
+      "openalexByYear": { "2022": "S4363604309" },
       "years": { "2020": 1004, "2021": 1607, "2022": 1100, "2023": 1128, "2024": 1300 }
     },
     {

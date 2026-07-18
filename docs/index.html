@@ -92,6 +92,10 @@
         <article class="dash-card" id="month-card">
           <h3 class="dash-title" data-i18n="dash.month.title">월별 학회 현황</h3>
           <p class="dash-sub" data-i18n="dash.month.sub">향후 12개월 논문·초록 마감 건수 — 월을 누르면 해당 월 목록이 표시됩니다</p>
+          <div class="dash-legend" aria-hidden="true">
+            <span class="legend-item"><span class="legend-swatch swatch-paper"></span><span data-i18n="dash.month.legend.paper">논문 마감</span></span>
+            <span class="legend-item"><span class="legend-swatch swatch-abstract"></span><span data-i18n="dash.month.legend.abstract">초록 마감</span></span>
+          </div>
           <div id="month-chart" class="column-chart"></div>
           <h4 class="dash-detail-heading" id="month-detail-heading"></h4>
           <div id="month-detail" class="month-detail"></div>
@@ -113,6 +117,13 @@
             <div class="dash-table-wrap"><table class="dash-table" id="paper-table"></table></div>
           </details>
           <p class="dash-note" id="paper-note"></p>
+          <h4 class="dash-detail-heading" id="paper-country-detail-heading"></h4>
+          <div id="paper-country-detail" class="country-detail"></div>
+          <details class="dash-table-details" id="paper-country-table-details">
+            <summary data-i18n="dash.tableToggle">표로 보기</summary>
+            <div class="dash-table-wrap"><table class="dash-table" id="paper-country-table"></table></div>
+          </details>
+          <p class="dash-note" id="paper-country-note"></p>
         </article>
       </div>
     </section>
