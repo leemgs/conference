@@ -1,6 +1,6 @@
 # 🎓 Top Conference Deadlines Calendar
 
-**https://leemgs.github.io/conference_field/**
+ 
 
 각 뷰로 바로 접속할 수 있는 주소:
 
