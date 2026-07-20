@@ -459,6 +459,122 @@ a { color: var(--accent); }
 }
 .modal-actions a.primary { background: var(--accent); color: #fff; }
 
+/* ── Board (목록 게시판) ─────────────────── */
+/* 달력 뷰에서는 검색·분야·상태 필터를 숨기고 보기 전환만 남긴다 */
+.controls.cal-mode .control-row:not(:first-child) { display: none; }
+
+.board-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.board-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+.board-size select {
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.board-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 660px;
+}
+.board-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.board-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--grid-line);
+  vertical-align: top;
+}
+.board-table tbody tr:last-child td { border-bottom: none; }
+.board-table tbody tr { cursor: pointer; }
+.board-table tbody tr:hover { background: rgba(59, 110, 245, 0.05); }
+.board-no {
+  white-space: nowrap;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.badge-cat {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.badge-cat.cat-ai { background: rgba(47, 158, 68, 0.14); color: var(--tier-top); }
+.badge-cat.cat-cs { background: rgba(59, 110, 245, 0.12); color: var(--accent); }
+.board-sub { white-space: nowrap; }
+.board-abbr { font-weight: 700; white-space: nowrap; }
+.grade-badge {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.grade-s { background: #1c7ed6; }
+.grade-a { background: #0ca678; }
+.grade-b { background: #868e96; }
+.board-note { color: var(--text-muted); font-size: 0.85rem; }
+.board-pager {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0 4px;
+  flex-wrap: wrap;
+}
+.board-pager button {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+}
+.board-pager button:hover:not(:disabled):not(.active) { border-color: var(--accent); }
+.board-pager button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+.board-pager button:disabled { opacity: 0.45; cursor: default; }
+.board-pager .ellipsis { color: var(--text-muted); padding: 0 2px; }
+
 /* ── Dashboard ──────────────────────────── */
 .controls.dash-mode .control-row:not(:first-child) { display: none; }
 

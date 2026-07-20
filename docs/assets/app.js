@@ -25,11 +25,24 @@
     return t("weekday." + ["sun", "mon", "tue", "wed", "thu", "fri", "sat"][i]);
   }
 
+  const BOARD_PAGE_SIZES = [5, 10, 15, 30, 50, 70, 100];
+
+  function savedPageSize() {
+    try {
+      const v = parseInt(localStorage.getItem("boardPageSize"), 10);
+      return BOARD_PAGE_SIZES.includes(v) ? v : 15;
+    } catch (_) {
+      return 15;
+    }
+  }
+
   const state = {
     view: "calendar",
     field: "all",
     status: "all",
     query: "",
+    page: 1, // 목록(게시판) 현재 페이지
+    pageSize: savedPageSize(), // 목록(게시판) 페이지당 표시 개수
     year: new Date().getFullYear(),
     month: new Date().getMonth(), // 0-based
     data: null,
@@ -180,12 +193,14 @@
     const clearSearch = $("#clear-search");
     search.addEventListener("input", () => {
       state.query = search.value.trim().toLocaleLowerCase();
+      state.page = 1;
       clearSearch.hidden = search.value.length === 0;
       render();
     });
     clearSearch.addEventListener("click", () => {
       search.value = "";
       state.query = "";
+      state.page = 1;
       clearSearch.hidden = true;
       search.focus();
       render();
@@ -195,6 +210,7 @@
       const btn = e.target.closest(".chip");
       if (!btn) return;
       state.field = btn.dataset.field;
+      state.page = 1;
       setActive("#field-filter .chip", btn);
       render();
     });
@@ -203,7 +219,17 @@
       const btn = e.target.closest(".chip");
       if (!btn) return;
       state.status = btn.dataset.status;
+      state.page = 1;
       setActive("#status-filter .chip", btn);
+      render();
+    });
+
+    const pageSize = $("#page-size");
+    pageSize.value = String(state.pageSize);
+    pageSize.addEventListener("change", () => {
+      state.pageSize = parseInt(pageSize.value, 10) || 15;
+      state.page = 1;
+      try { localStorage.setItem("boardPageSize", String(state.pageSize)); } catch (_) {}
       render();
     });
 
@@ -267,6 +293,7 @@
     $("#list-view").hidden = isDash || isSearch || isCal;
     $("#dashboard-view").hidden = !isDash;
     document.querySelector(".controls").classList.toggle("dash-mode", isDash);
+    document.querySelector(".controls").classList.toggle("cal-mode", isCal && !isSearch);
     $("#empty-msg").hidden = true;
     if (isDash) {
       renderDashboard();
@@ -276,8 +303,12 @@
       renderSearchResults();
       return;
     }
-    if (isCal) renderCalendar();
-    renderList();
+    if (isCal) {
+      renderCalendar();
+      renderList();
+    } else {
+      renderBoard();
+    }
   }
 
   function renderSearchResults() {
@@ -433,6 +464,134 @@
 
     upcoming.forEach((ev) => upWrap.appendChild(card(ev, false)));
     past.forEach((ev) => pastWrap.appendChild(card(ev, true)));
+  }
+
+  // ── 목록(게시판) ─────────────────────────
+  const GRADE_LETTER = { "최우수": "S", "우수": "A" };
+  const SUBFIELD_CODE = {
+    sys: "OS/Arch", ai: "ML", data: "DM", net: "Net", sec: "Sec", plse: "PL/SE",
+    hci: "HCI", theory: "Theory", hw: "HW", arvr: "AR/VR", health: "Bio", etc: "Etc",
+  };
+
+  function abbrOf(conf) {
+    return conf.name.replace(/\s+\d{4}$/, "");
+  }
+
+  // 학회 id → 게시판 번호(등급별 일련번호). 필터와 무관하게 번호가 고정되도록 전체 목록 기준으로 1회 생성
+  let boardIndex = null;
+  function buildBoardIndex() {
+    const year = new Date().getFullYear();
+    const order = { "최우수": 0, "우수": 1 };
+    const confs = [...(state.data.conferences || [])];
+    confs.sort((a, b) => {
+      const ga = order[a.rating] ?? 2;
+      const gb = order[b.rating] ?? 2;
+      if (ga !== gb) return ga - gb;
+      return abbrOf(a).localeCompare(abbrOf(b));
+    });
+    const counters = {};
+    boardIndex = new Map();
+    confs.forEach((conf, i) => {
+      const letter = GRADE_LETTER[conf.rating] || "B";
+      counters[letter] = (counters[letter] || 0) + 1;
+      boardIndex.set(conf.id, {
+        no: `${year}-${letter}-${String(counters[letter]).padStart(3, "0")}`,
+        letter,
+        rank: i, // 등급(최우수→우수→기타) → 약칭 순 정렬 위치
+      });
+    });
+  }
+
+  function renderBoard() {
+    if (!boardIndex) buildBoardIndex();
+    const confs = (state.data.conferences || []).filter((conf) => {
+      if (state.field !== "all" && conf.field !== state.field) return false;
+      if (!matchesSearch(conf)) return false;
+      if (state.status !== "all" && !conf.deadlines.some((dl) => dl.status === state.status)) return false;
+      return true;
+    });
+    confs.sort((a, b) => boardIndex.get(a.id).rank - boardIndex.get(b.id).rank);
+
+    $("#board-heading").textContent = t("board.heading.count", { n: confs.length });
+
+    const totalPages = Math.max(1, Math.ceil(confs.length / state.pageSize));
+    if (state.page > totalPages) state.page = totalPages;
+    if (state.page < 1) state.page = 1;
+    const start = (state.page - 1) * state.pageSize;
+    const pageConfs = confs.slice(start, start + state.pageSize);
+
+    const body = $("#board-body");
+    body.innerHTML = "";
+    if (confs.length === 0) {
+      body.innerHTML = `<tr><td colspan="7"><p class="empty">${t("board.empty")}</p></td></tr>`;
+    }
+    pageConfs.forEach((conf) => {
+      const idx = boardIndex.get(conf.id);
+      const isAI = conf.field === "ai";
+      const noteKey = conf.deadlines.length === 0
+        ? "board.note.noDeadline"
+        : (conf.deadlines.some((dl) => dl.status === "estimated") ? "board.note.estimated" : null);
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td class="board-no">${idx.no}</td>
+        <td><span class="badge-cat ${isAI ? "cat-ai" : "cat-cs"}">${isAI ? "AI" : "CS"}</span></td>
+        <td class="board-sub">${SUBFIELD_CODE[conf.field] || "Etc"}</td>
+        <td class="board-abbr">${abbrOf(conf)}</td>
+        <td class="board-name"><a href="${conf.url}" target="_blank" rel="noopener">${conf.fullName} <span aria-hidden="true">↗</span></a></td>
+        <td><span class="grade-badge grade-${idx.letter.toLowerCase()}" title="${conf.rating || ""}">${idx.letter}</span></td>
+        <td class="board-note">${noteKey ? t(noteKey) : ""}</td>`;
+      tr.addEventListener("click", (e) => {
+        if (!e.target.closest("a")) openModal(conf);
+      });
+      body.appendChild(tr);
+    });
+
+    renderBoardPager(totalPages);
+  }
+
+  function boardPageNumbers(total, current) {
+    if (total <= 7) return Array.from({ length: total }, (_, i) => i + 1);
+    const pages = [1];
+    const lo = Math.max(2, current - 1);
+    const hi = Math.min(total - 1, current + 1);
+    if (lo > 2) pages.push("…");
+    for (let p = lo; p <= hi; p++) pages.push(p);
+    if (hi < total - 1) pages.push("…");
+    pages.push(total);
+    return pages;
+  }
+
+  function renderBoardPager(totalPages) {
+    const nav = $("#board-pager");
+    nav.innerHTML = "";
+    if (totalPages <= 1) return;
+
+    const addBtn = (label, page, opts = {}) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = label;
+      if (opts.aria) b.setAttribute("aria-label", opts.aria);
+      if (opts.active) {
+        b.classList.add("active");
+        b.setAttribute("aria-current", "page");
+      }
+      if (opts.disabled) b.disabled = true;
+      else b.addEventListener("click", () => { state.page = page; renderBoard(); });
+      nav.appendChild(b);
+    };
+
+    addBtn("‹", state.page - 1, { disabled: state.page === 1, aria: t("board.prev") });
+    boardPageNumbers(totalPages, state.page).forEach((p) => {
+      if (p === "…") {
+        const s = document.createElement("span");
+        s.className = "ellipsis";
+        s.textContent = "…";
+        nav.appendChild(s);
+      } else {
+        addBtn(String(p), p, { active: p === state.page });
+      }
+    });
+    addBtn("›", state.page + 1, { disabled: state.page === totalPages, aria: t("board.next") });
   }
 
   function unknownCard(conf) {

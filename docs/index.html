@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark" />
   <title>탑티어 학회 마감일 캘린더</title>
   <meta name="description" content="ICML, AAAI, CVPR 등 12개 분야 185개 탑티어 학회의 논문 제출 마감일을 한눈에 보는 캘린더" />
-  <link rel="stylesheet" href="assets/style.css?v=20260720-1" />
+  <link rel="stylesheet" href="assets/style.css?v=20260720-2" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
 </head>
 <body>
@@ -71,6 +71,14 @@
       <div class="cal-grid" id="cal-grid"></div>
       <h2 class="list-heading" data-i18n="list.heading">다가오는 마감</h2>
       <div id="upcoming-list" class="deadline-list"></div>
+      <details class="past-details">
+        <summary data-i18n="list.pastSummary">지난 마감 보기</summary>
+        <div id="past-list" class="deadline-list"></div>
+      </details>
+      <details class="past-details" id="unknown-details">
+        <summary data-i18n="list.unknownSummary">마감일 미확인 학회 보기</summary>
+        <div id="unknown-list" class="deadline-list"></div>
+      </details>
     </section>
 
     <section id="dashboard-view" hidden>
@@ -131,14 +139,38 @@
     </section>
 
     <section id="list-view" hidden>
-      <details class="past-details">
-        <summary data-i18n="list.pastSummary">지난 마감 보기</summary>
-        <div id="past-list" class="deadline-list"></div>
-      </details>
-      <details class="past-details" id="unknown-details">
-        <summary data-i18n="list.unknownSummary">마감일 미확인 학회 보기</summary>
-        <div id="unknown-list" class="deadline-list"></div>
-      </details>
+      <div class="board-bar">
+        <h2 class="list-heading" id="board-heading" data-i18n="board.heading">학회 목록</h2>
+        <label class="board-size">
+          <span data-i18n="board.perPage">페이지당 표시</span>
+          <select id="page-size">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15" selected>15</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="70">70</option>
+            <option value="100">100</option>
+          </select>
+        </label>
+      </div>
+      <div class="board-wrap">
+        <table class="board-table">
+          <thead>
+            <tr>
+              <th data-i18n="board.no">번호</th>
+              <th data-i18n="board.cat">대분야</th>
+              <th data-i18n="board.subcat">소분야</th>
+              <th data-i18n="board.abbr">약칭</th>
+              <th data-i18n="board.name">학회명</th>
+              <th data-i18n="board.rating">등급</th>
+              <th data-i18n="board.note">비고</th>
+            </tr>
+          </thead>
+          <tbody id="board-body"></tbody>
+        </table>
+      </div>
+      <nav class="board-pager" id="board-pager" data-i18n-aria-label="board.pagerAria" aria-label="페이지 이동"></nav>
     </section>
 
     <p id="empty-msg" class="empty" data-i18n="empty.default" hidden>표시할 학회 일정이 없습니다.</p>
@@ -160,7 +192,7 @@
     </div>
   </div>
 
-  <script src="assets/i18n.js?v=20260720-1"></script>
-  <script src="assets/app.js?v=20260720-1"></script>
+  <script src="assets/i18n.js?v=20260720-2"></script>
+  <script src="assets/app.js?v=20260720-2"></script>
 </body>
 </html>
