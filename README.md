@@ -1,4 +1,4 @@
-# 🎓 탑티어 학회 마감일 캘린더 (Top Conference Deadlines Calendar)
+# 🎓 Top Conference Deadlines Calendar
 
 **https://leemgs.github.io/conference/**
 
