@@ -459,6 +459,10 @@ a { color: var(--accent); }
 }
 .modal-actions a.primary { background: var(--accent); color: #fff; }
 
+/* 헤더 🎓 로고: 홈 링크 */
+.brand-logo { text-decoration: none; color: inherit; cursor: pointer; }
+.brand-logo:hover { filter: brightness(1.15); }
+
 /* ── Board (목록 게시판) ─────────────────── */
 /* 달력 뷰에서는 검색·분야·상태 필터를 숨기고 보기 전환만 남긴다 */
 .controls.cal-mode .control-row:not(:first-child) { display: none; }

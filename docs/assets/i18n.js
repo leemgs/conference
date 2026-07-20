@@ -8,7 +8,8 @@
       ko: "ICML, AAAI, CVPR 등 12개 분야 185개 탑티어 학회의 논문 제출 마감일을 한눈에 보는 캘린더",
       en: "A calendar of paper submission deadlines for 185 top-tier conferences across 12 fields, including ICML, AAAI, and CVPR",
     },
-    "brand.h1": { ko: "🎓 탑티어 학회 마감일 캘린더", en: "🎓 Top-Tier Conference Deadline Calendar" },
+    "brand.h1": { ko: "탑티어 학회 마감일 캘린더", en: "Top-Tier Conference Deadline Calendar" },
+    "brand.home": { ko: "홈으로 이동", en: "Go to home" },
     "brand.tagline": {
       ko: "ICML · AAAI · CVPR 등 12개 분야, 185개 탑티어 학회 논문 제출 일정 모음",
       en: "Paper submission schedules for 185 top-tier conferences across 12 fields, including ICML, AAAI, and CVPR",
