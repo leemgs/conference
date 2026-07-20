@@ -1,12 +1,12 @@
 # 🎓 Top Conference Deadlines Calendar
 
-**https://leemgs.github.io/conference/**
+**https://leemgs.github.io/conference_field/**
 
 각 뷰로 바로 접속할 수 있는 주소:
 
-- 🗓️ 달력: **https://leemgs.github.io/conference/#calendar**
-- 📋 목록: **https://leemgs.github.io/conference/#list**
-- 📊 대시보드: **https://leemgs.github.io/conference/#dashboard**
+- 🗓️ 달력: **https://leemgs.github.io/conference_field/#calendar**
+- 📋 목록: **https://leemgs.github.io/conference_field/#list**
+- 📊 대시보드: **https://leemgs.github.io/conference_field/#dashboard**
 
 [`data/list_conf.csv`](data/list_conf.csv)에 정리된 **12개 분야, 185개 탑티어 학회**(ICML, AAAI, CVPR, SOSP, SIGCOMM, CHI, PLDI 등)의 논문 제출 마감일을 한눈에 볼 수 있는 캘린더 웹사이트입니다.  
 
@@ -90,7 +90,7 @@ python3 -m http.server 8000 --directory docs
 ## 🌐 GitHub Pages 배포
 
 저장소 **Settings → Pages → Source**에서 `main` 브랜치의 `/docs` 폴더를 지정하면
-https://leemgs.github.io/conference/ 로 서비스됩니다.
+https://leemgs.github.io/conference_field/ 로 서비스됩니다.
 
 > 💡 `docs/assets/`의 CSS·JS를 수정해 배포할 때는 `docs/index.html`의
 > `?v=YYYYMMDD` 버전 쿼리를 함께 올려 주세요. 브라우저가 이전 버전을 캐시하고
