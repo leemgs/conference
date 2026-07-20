@@ -277,7 +277,7 @@
       return;
     }
     if (isCal) renderCalendar();
-    else renderList();
+    renderList();
   }
 
   function renderSearchResults() {

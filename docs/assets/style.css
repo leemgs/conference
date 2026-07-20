@@ -293,6 +293,7 @@ a { color: var(--accent); }
 
 /* ── List view ──────────────────────────── */
 .list-heading { font-size: 1.15rem; margin: 4px 0 12px; }
+#calendar-view .list-heading { margin-top: 28px; }
 
 .conference-results {
   display: grid;
