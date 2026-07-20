@@ -2332,25 +2332,6 @@
       ]
     },
     {
-      "id": "ecml-pkdd",
-      "name": "ECML PKDD 2027",
-      "fullName": "European Conference on Machine learning and knowledge discovery in databases",
-      "field": "data",
-      "rating": "우수",
-      "location": "미정",
-      "confText": "2027년 (예정)",
-      "url": "https://ecmlpkdd.org/2026/",
-      "tz": "AoE",
-      "deadlines": [
-        {
-          "type": "paper",
-          "label": "논문 마감 (예상)",
-          "date": "2027-03-12",
-          "status": "estimated"
-        }
-      ]
-    },
-    {
       "id": "mobicom",
       "name": "MOBICOM 2027",
       "fullName": "ACM International Conference on Mobile Computing and Networking",
@@ -2593,6 +2574,25 @@
           "type": "paper",
           "label": "논문 마감 (예상)",
           "date": "2027-04-16",
+          "status": "estimated"
+        }
+      ]
+    },
+    {
+      "id": "sdm",
+      "name": "SDM 2027",
+      "fullName": "SIAM International Conference on Data Mining",
+      "field": "data",
+      "rating": "우수",
+      "location": "미정",
+      "confText": "2027년 (예정)",
+      "url": "https://www.siam.org/conferences-events/siam-conferences/sdm26/",
+      "tz": "AoE",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (예상)",
+          "date": "2027-04-17",
           "status": "estimated"
         }
       ]
@@ -3366,6 +3366,18 @@
       "deadlines": []
     },
     {
+      "id": "ecml-pkdd",
+      "name": "ECML PKDD 2027",
+      "fullName": "European Conference on Machine learning and knowledge discovery in databases",
+      "field": "data",
+      "rating": "우수",
+      "location": "Eindhoven, The Netherlands",
+      "confText": "September 20-24, 2027",
+      "url": "https://ecmlpkdd.org/2027/",
+      "tz": "AoE",
+      "deadlines": []
+    },
+    {
       "id": "embc",
       "name": "EMBC",
       "fullName": "Engineering in Medicine and Biology Conference",
@@ -3637,31 +3649,6 @@
       "url": "",
       "note": "공식 마감일 데이터 미확보 — 공식 사이트를 확인하세요.",
       "deadlines": []
-    },
-    {
-      "id": "sdm",
-      "name": "SDM 2025",
-      "fullName": "SIAM International Conference on Data Mining",
-      "field": "data",
-      "rating": "우수",
-      "location": "Alexandria, Virginia, USA",
-      "confText": "May 1-3, 2025",
-      "url": "https://www.siam.org/conferences-events/siam-conferences/sdm25",
-      "tz": "UTC-8",
-      "deadlines": [
-        {
-          "type": "abstract",
-          "label": "초록 마감",
-          "date": "2024-09-27",
-          "status": "confirmed"
-        },
-        {
-          "type": "paper",
-          "label": "논문 마감",
-          "date": "2024-10-04",
-          "status": "confirmed"
-        }
-      ]
     },
     {
       "id": "sid",

@@ -373,6 +373,108 @@
               "count": 433
             }
           ]
+        },
+        "2025": {
+          "total": 3485,
+          "unknown": 394,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 1649
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 494
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 114
+            },
+            {
+              "code": "HK",
+              "country": "Hong Kong",
+              "count": 112
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 99
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 58
+            },
+            {
+              "code": "CA",
+              "country": "Canada",
+              "count": 55
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 52
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 458
+            }
+          ]
+        },
+        "2026": {
+          "total": 4978,
+          "unknown": 1008,
+          "countries": [
+            {
+              "code": "CN",
+              "country": "China",
+              "count": 2186
+            },
+            {
+              "code": "US",
+              "country": "United States",
+              "count": 543
+            },
+            {
+              "code": "SG",
+              "country": "Singapore",
+              "count": 125
+            },
+            {
+              "code": "HK",
+              "country": "Hong Kong",
+              "count": 117
+            },
+            {
+              "code": "GB",
+              "country": "United Kingdom",
+              "count": 110
+            },
+            {
+              "code": "KR",
+              "country": "South Korea",
+              "count": 108
+            },
+            {
+              "code": "IN",
+              "country": "India",
+              "count": 80
+            },
+            {
+              "code": "DE",
+              "country": "Germany",
+              "count": 78
+            },
+            {
+              "code": "other",
+              "country": null,
+              "count": 623
+            }
+          ]
         }
       }
     },
