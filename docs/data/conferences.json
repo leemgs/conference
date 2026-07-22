@@ -1,32 +1,7 @@
 {
-  "updated": "2026-07-21",
+  "updated": "2026-07-22",
   "note": "마감일은 각 학회 공지 기준(대부분 AoE/UTC-12)입니다. 'estimated' 항목은 직전 개최 패턴 기반 예상 일정이며, 등급(rating)은 data/list_conf.csv 기준입니다.",
   "conferences": [
-    {
-      "id": "aaai",
-      "name": "AAAI 2027",
-      "fullName": "National Conference on Artificial Intelligence",
-      "field": "ai",
-      "rating": "최우수",
-      "location": "Montréal, Québec, Canada",
-      "confText": "February 16-23, 2027",
-      "url": "https://aaai.org/conference/aaai/aaai-27/",
-      "tz": "UTC-12",
-      "deadlines": [
-        {
-          "type": "abstract",
-          "label": "초록 마감",
-          "date": "2026-07-21",
-          "status": "confirmed"
-        },
-        {
-          "type": "paper",
-          "label": "논문 마감",
-          "date": "2026-07-28",
-          "status": "confirmed"
-        }
-      ]
-    },
     {
       "id": "hpca",
       "name": "HPCA 2027",
@@ -260,6 +235,31 @@
       ]
     },
     {
+      "id": "aaai",
+      "name": "AAAI 2027",
+      "fullName": "National Conference on Artificial Intelligence",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "Montréal, Québec, Canada",
+      "confText": "February 16-23, 2027",
+      "url": "https://aaai.org/conference/aaai/aaai-27/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "abstract",
+          "label": "초록 마감",
+          "date": "2026-07-21",
+          "status": "confirmed"
+        },
+        {
+          "type": "paper",
+          "label": "논문 마감",
+          "date": "2026-07-28",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
       "id": "ubicomp",
       "name": "UbiComp 2026",
       "fullName": "ACM International Conference on Ubiquitous Computing (※ UbiComp의 Accept 여부는 \"Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies\" 저널 탑재 기준으로 판단)",
@@ -349,11 +349,11 @@
       "location": "Athens, Greece",
       "confText": "March 9-14, 2027",
       "url": "https://2027.eacl.org/",
-      "tz": "AoE",
+      "tz": "UTC-12",
       "deadlines": [
         {
           "type": "paper",
-          "label": "논문 마감",
+          "label": "논문 마감 (ARR Submission; commitment deadline: 2026-10-11)",
           "date": "2026-08-03",
           "status": "confirmed"
         }
@@ -1252,6 +1252,25 @@
       ]
     },
     {
+      "id": "naacl-hlt",
+      "name": "NAACL/HLT 2027",
+      "fullName": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+      "field": "ai",
+      "rating": "우수",
+      "location": "San Francisco, California, USA",
+      "confText": "June 1-5, 2027",
+      "url": "https://2027.naacl.org/",
+      "tz": "UTC-12",
+      "deadlines": [
+        {
+          "type": "paper",
+          "label": "논문 마감 (ARR Submission)",
+          "date": "2026-10-12",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
       "id": "noms",
       "name": "NOMS 2027",
       "fullName": "IEEE/IFIP Network Operations and Management Symposium",
@@ -1738,25 +1757,6 @@
           "type": "paper",
           "label": "논문 마감 (예상)",
           "date": "2026-12-31",
-          "status": "estimated"
-        }
-      ]
-    },
-    {
-      "id": "acl",
-      "name": "ACL 2027",
-      "fullName": "Association for Computational Linguistics",
-      "field": "ai",
-      "rating": "최우수",
-      "location": "미정",
-      "confText": "2027년 (예정)",
-      "url": "https://2026.aclweb.org/",
-      "tz": "UTC-12",
-      "deadlines": [
-        {
-          "type": "paper",
-          "label": "논문 마감 (예상)",
-          "date": "2027-01-05",
           "status": "estimated"
         }
       ]
@@ -3244,6 +3244,18 @@
       ]
     },
     {
+      "id": "acl",
+      "name": "ACL 2027",
+      "fullName": "Association for Computational Linguistics",
+      "field": "ai",
+      "rating": "최우수",
+      "location": "Kyoto, Japan",
+      "confText": "August 17-22, 2027",
+      "url": "https://2027.aclweb.org/",
+      "tz": "UTC-12",
+      "deadlines": []
+    },
+    {
       "id": "aes",
       "name": "AES",
       "fullName": "Audio engineering society convention",
@@ -3305,22 +3317,15 @@
     },
     {
       "id": "coling-easy",
-      "name": "COLING (easy) 2025",
+      "name": "COLING (easy) 2027",
       "fullName": "International Conference on Computational Linguistics",
       "field": "ai",
       "rating": "우수",
-      "location": "Abu Dhabi, UAE",
-      "confText": "Jan 19 - Jan 24, 2025",
-      "url": "https://coling2025.org/",
+      "location": "Macau SAR, China",
+      "confText": "May 9-14, 2027",
+      "url": "https://2027.coling-iccl.org/",
       "tz": "UTC-12",
-      "deadlines": [
-        {
-          "type": "paper",
-          "label": "논문 마감 (First Call for Main Conference Papers)",
-          "date": "2024-09-16",
-          "status": "confirmed"
-        }
-      ]
+      "deadlines": []
     },
     {
       "id": "cscw",
@@ -3566,25 +3571,6 @@
           "type": "paper",
           "label": "논문 마감 (Submission R2)",
           "date": "2022-03-15",
-          "status": "confirmed"
-        }
-      ]
-    },
-    {
-      "id": "naacl-hlt",
-      "name": "NAACL/HLT 2025",
-      "fullName": "Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
-      "field": "ai",
-      "rating": "우수",
-      "location": "Albuquerque, New Mexico, USA",
-      "confText": "April 29-May 4, 2025",
-      "url": "https://2025.naacl.org/",
-      "tz": "UTC-12",
-      "deadlines": [
-        {
-          "type": "paper",
-          "label": "논문 마감",
-          "date": "2024-10-15",
           "status": "confirmed"
         }
       ]
