@@ -1,84 +1,195 @@
 {
-  "updated": "2026-07-15",
-  "source": "seed-approx",
-  "note": "본선(main track) 채택 논문 수 기준의 공개 발표 근사치(약 ±5%)입니다. scripts/build_paper_stats.py 를 실행하면 DBLP 등재 기준 실측치로 갱신됩니다.",
+  "updated": "2026-07-22",
+  "source": "dblp",
+  "note": "DBLP 프로시딩 등재 레코드 수 기준입니다(front matter 등 소량 포함 가능). scripts/build_paper_stats.py 로 갱신합니다.",
   "venues": [
     {
       "id": "neurips",
       "label": "NeurIPS",
       "dblp": "conf/nips",
-      "approx": true,
-      "years": { "2020": 1900, "2021": 2334, "2022": 2672, "2023": 3218, "2024": 4037 }
+      "approx": false,
+      "years": {
+        "2020": 1919,
+        "2021": 2566,
+        "2022": 2853,
+        "2023": 3541,
+        "2024": 4495,
+        "2025": 3318
+      }
     },
     {
       "id": "icml",
       "label": "ICML",
       "dblp": "conf/icml",
-      "approx": true,
-      "years": { "2020": 1088, "2021": 1184, "2022": 1235, "2023": 1827, "2024": 2610 }
+      "approx": false,
+      "years": {
+        "2020": 1086,
+        "2021": 1184,
+        "2022": 1250
+      }
     },
     {
       "id": "iclr",
       "label": "ICLR",
       "dblp": "conf/iclr",
-      "approx": true,
-      "years": { "2020": 687, "2021": 860, "2022": 1095, "2023": 1574, "2024": 2260 }
+      "approx": false,
+      "years": {
+        "2020": 688,
+        "2021": 861,
+        "2022": 1095
+      }
     },
     {
       "id": "cvpr",
       "label": "CVPR",
       "dblp": "conf/cvpr",
-      "approx": true,
-      "years": { "2020": 1466, "2021": 1660, "2022": 2074, "2023": 2359, "2024": 2719 }
+      "approx": false,
+      "openalexByYear": {
+        "2022": "S4363607701"
+      },
+      "years": {
+        "2020": 1990,
+        "2021": 2179,
+        "2025": 3545
+      }
     },
     {
       "id": "iccv",
       "label": "ICCV (격년)",
       "dblp": "conf/iccv",
-      "approx": true,
-      "years": { "2019": 1075, "2021": 1612, "2023": 2160 }
+      "approx": false,
+      "openalexByYear": {
+        "2021": "S4363607764"
+      },
+      "years": {
+        "2021": 2078,
+        "2023": 2656,
+        "2025": 3498
+      }
     },
     {
       "id": "eccv",
       "label": "ECCV (격년)",
       "dblp": "conf/eccv",
-      "approx": true,
-      "years": { "2020": 1360, "2022": 1645, "2024": 2395 }
+      "approx": false,
+      "years": {
+        "2020": 1674,
+        "2022": 2051,
+        "2023": 8,
+        "2024": 2960,
+        "2025": 112
+      }
     },
     {
       "id": "aaai",
       "label": "AAAI",
       "dblp": "conf/aaai",
-      "approx": true,
-      "years": { "2020": 1591, "2021": 1692, "2022": 1349, "2023": 1721, "2024": 2342 }
+      "approx": false,
+      "openalex": "S4210191458",
+      "years": {
+        "2020": 1865,
+        "2021": 1962,
+        "2022": 1625,
+        "2023": 2037,
+        "2024": 2870,
+        "2025": 3511,
+        "2026": 4921
+      }
     },
     {
       "id": "ijcai",
       "label": "IJCAI",
       "dblp": "conf/ijcai",
-      "approx": true,
-      "years": { "2020": 592, "2021": 587, "2022": 685, "2023": 643 }
+      "approx": false,
+      "years": {
+        "2020": 780,
+        "2021": 722,
+        "2022": 864,
+        "2023": 847,
+        "2024": 1057,
+        "2025": 1281
+      }
     },
     {
       "id": "acl",
       "label": "ACL",
       "dblp": "conf/acl",
-      "approx": true,
-      "years": { "2020": 779, "2021": 710, "2022": 701, "2023": 910, "2024": 940 }
+      "approx": false,
+      "years": {
+        "2020": 876,
+        "2021": 1254,
+        "2022": 1115,
+        "2023": 2159,
+        "2024": 2010,
+        "2025": 3367,
+        "2026": 4389
+      }
     },
     {
       "id": "emnlp",
       "label": "EMNLP",
       "dblp": "conf/emnlp",
-      "approx": true,
-      "years": { "2020": 754, "2021": 850, "2022": 829, "2023": 1047 }
+      "approx": false,
+      "years": {
+        "2022": 1494,
+        "2023": 2252,
+        "2024": 2460,
+        "2025": 3499
+      }
+    },
+    {
+      "id": "naacl",
+      "label": "NAACL",
+      "dblp": "conf/naacl",
+      "approx": false,
+      "years": {
+        "2021": 556,
+        "2022": 735,
+        "2024": 958,
+        "2025": 1376
+      }
+    },
+    {
+      "id": "icassp",
+      "label": "ICASSP",
+      "dblp": "conf/icassp",
+      "approx": false,
+      "openalexByYear": {
+        "2022": "S4363607702"
+      },
+      "years": {
+        "2021": 1725,
+        "2022": 1866,
+        "2023": 2922
+      }
+    },
+    {
+      "id": "interspeech",
+      "label": "INTERSPEECH",
+      "dblp": "conf/interspeech",
+      "approx": false,
+      "openalexByYear": {
+        "2022": "S4363604309"
+      },
+      "years": {
+        "2020": 1036,
+        "2021": 1000
+      }
     },
     {
       "id": "sigkdd",
       "label": "SIGKDD (Research)",
       "dblp": "conf/kdd",
-      "approx": true,
-      "years": { "2020": 217, "2021": 238, "2022": 254, "2023": 313 }
+      "approx": false,
+      "years": {
+        "2020": 422,
+        "2021": 483,
+        "2022": 535,
+        "2023": 565,
+        "2024": 643,
+        "2025": 846,
+        "2026": 257
+      }
     }
   ]
 }

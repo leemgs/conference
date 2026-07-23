@@ -1,0 +1,70 @@
+name: 데이터 자동 갱신 (daily)
+
+# 매일 1회 학회 마감일·논문 통계를 최신으로 유지한다.
+#  - 마감일(conferences.json) + ICS 피드: ccfddl/ccf-deadlines 기반 (필수)
+#  - 논문 수(paper_stats.json): DBLP 기반 (외부 API, 실패해도 계속 진행)
+#  - 국가별 통계(paper_countries.json): OpenAlex 기반 (외부 API, 실패해도 계속 진행)
+# 변경분이 있을 때만 main 에 커밋 → GitHub Pages 자동 재배포.
+
+on:
+  schedule:
+    # 매일 18:00 UTC (= 한국시간 익일 03:00). AoE 기준 마감이라 시각 자체는 무관.
+    - cron: "0 18 * * *"
+  workflow_dispatch: # 저장소 Actions 탭에서 수동 실행도 허용
+
+# 같은 시각에 겹쳐 도는 것을 방지 (앞선 실행이 있으면 취소)
+concurrency:
+  group: data-update
+  cancel-in-progress: true
+
+permissions:
+  contents: write # 갱신 결과를 커밋/푸시하기 위해 필요
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 의존성 설치
+        run: pip install "PyYAML>=6"
+
+      - name: ccfddl(ccf-deadlines) 데이터셋 받기
+        run: git clone --depth 1 https://github.com/ccfddl/ccf-deadlines.git /tmp/ccfddl
+
+      - name: 마감일 데이터 빌드 (conferences.json)
+        run: python3 scripts/build_data.py --ccfddl /tmp/ccfddl/conference
+
+      - name: ICS 구독 피드 재생성 (conferences.ics)
+        run: python3 scripts/generate_ics.py
+
+      # DBLP/OpenAlex 는 외부 API 라 일시 장애 가능 → 실패해도 나머지 갱신을 커밋한다.
+      - name: 논문 수 통계 갱신 (paper_stats.json, DBLP)
+        continue-on-error: true
+        run: python3 scripts/build_paper_stats.py
+
+      - name: 국가별 통계 갱신 (paper_countries.json, OpenAlex)
+        continue-on-error: true
+        env:
+          # OpenAlex polite pool 연락처. 시크릿이 있으면 사용, 없으면 noreply 로 폴백.
+          OPENALEX_MAILTO: ${{ secrets.OPENALEX_MAILTO || format('{0}@users.noreply.github.com', github.repository_owner) }}
+        run: python3 scripts/build_paper_countries.py --mailto "$OPENALEX_MAILTO"
+
+      - name: 변경분이 있으면 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -z "$(git status --porcelain docs/data docs/conferences.ics)" ]; then
+            echo "변경 사항 없음 — 커밋 건너뜀"
+            exit 0
+          fi
+          git add docs/data docs/conferences.ics
+          git commit -m "chore(data): 학회 마감일·논문 통계 자동 갱신 ($(date -u +%Y-%m-%d))"
+          git push

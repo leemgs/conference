@@ -96,6 +96,8 @@ a { color: var(--accent); }
 }
 .ics-link:hover { background: rgba(255, 255, 255, 0.28); }
 
+.lang-toggle { min-width: 44px; text-align: center; cursor: pointer; font: inherit; }
+
 .updated { font-size: 0.78rem; opacity: 0.85; }
 
 /* ── Layout ─────────────────────────────── */
@@ -291,6 +293,7 @@ a { color: var(--accent); }
 
 /* ── List view ──────────────────────────── */
 .list-heading { font-size: 1.15rem; margin: 4px 0 12px; }
+#calendar-view .list-heading { margin-top: 28px; }
 
 .conference-results {
   display: grid;
@@ -456,6 +459,126 @@ a { color: var(--accent); }
 }
 .modal-actions a.primary { background: var(--accent); color: #fff; }
 
+/* 헤더 🎓 로고: 홈 링크 */
+.brand-logo { text-decoration: none; color: inherit; cursor: pointer; }
+.brand-logo:hover { filter: brightness(1.15); }
+
+/* ── Board (목록 게시판) ─────────────────── */
+/* 달력 뷰에서는 검색·분야·상태 필터를 숨기고 보기 전환만 남긴다 */
+.controls.cal-mode .control-row:not(:first-child) { display: none; }
+
+.board-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.board-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+.board-size select {
+  padding: 5px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.board-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 660px;
+}
+.board-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+.board-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--grid-line);
+  vertical-align: top;
+}
+.board-table tbody tr:last-child td { border-bottom: none; }
+.board-table tbody tr { cursor: pointer; }
+.board-table tbody tr:hover { background: rgba(59, 110, 245, 0.05); }
+.board-no {
+  white-space: nowrap;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+.badge-cat {
+  display: inline-block;
+  padding: 2px 9px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.badge-cat.cat-ai { background: rgba(47, 158, 68, 0.14); color: var(--tier-top); }
+.badge-cat.cat-cs { background: rgba(59, 110, 245, 0.12); color: var(--accent); }
+.board-sub { white-space: nowrap; }
+.board-abbr { font-weight: 700; white-space: nowrap; }
+.grade-badge {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.grade-s { background: #1c7ed6; }
+.grade-a { background: #0ca678; }
+.grade-b { background: #868e96; }
+.board-note { color: var(--text-muted); font-size: 0.85rem; }
+.board-pager {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0 4px;
+  flex-wrap: wrap;
+}
+.board-pager button {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 8px;
+  cursor: pointer;
+  font: inherit;
+}
+.board-pager button:hover:not(:disabled):not(.active) { border-color: var(--accent); }
+.board-pager button.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+.board-pager button:disabled { opacity: 0.45; cursor: default; }
+.board-pager .ellipsis { color: var(--text-muted); padding: 0 2px; }
+
 /* ── Dashboard ──────────────────────────── */
 .controls.dash-mode .control-row:not(:first-child) { display: none; }
 
@@ -510,6 +633,8 @@ a { color: var(--accent); }
    재변환하는데, background-image(gradient)는 건드리지 않아 색이 그대로 유지된다 */
 .swatch-top { background-image: linear-gradient(var(--tier-top), var(--tier-top)); }
 .swatch-good { background-image: linear-gradient(var(--tier-good), var(--tier-good)); }
+.swatch-paper { background-image: linear-gradient(var(--accent), var(--accent)); }
+.swatch-abstract { background-image: linear-gradient(var(--accent-2), var(--accent-2)); }
 
 /* 카테고리별 등급: 가로 누적 막대 */
 .domain-chart { display: flex; flex-direction: column; gap: 6px; }
@@ -549,6 +674,38 @@ a { color: var(--accent); }
 .seg-good .seg-label { color: var(--tier-good-ink); }
 
 .domain-total {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 학회별 논문 국가 분포: 가로 막대 (도메인 차트와 동일한 그리드) */
+.country-chart { display: flex; flex-direction: column; gap: 6px; }
+
+.country-row {
+  display: grid;
+  grid-template-columns: 118px 1fr 44px;
+  align-items: center;
+  gap: 10px;
+}
+
+.country-label {
+  font-size: 0.8rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.country-bar {
+  height: 18px;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--accent);
+  background-image: linear-gradient(var(--accent), var(--accent));
+}
+.country-bar:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
+
+.country-total {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--text-muted);
@@ -606,6 +763,13 @@ a { color: var(--accent); }
 .cc-col:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 2px; }
 .cc-col.selected { outline: 2px solid var(--accent-2); outline-offset: 2px; }
 .cc-col.zero { height: 2px !important; background: var(--border); }
+
+/* 월별 마감: 논문/초록 구분을 위한 누적 세그먼트 */
+.cc-col.stacked { display: flex; flex-direction: column-reverse; background: none; overflow: hidden; }
+.cc-seg { width: 100%; }
+.cc-seg-paper { background-image: linear-gradient(var(--accent), var(--accent)); }
+.cc-seg-abstract { background-image: linear-gradient(var(--accent-2), var(--accent-2)); }
+.cc-seg-other { background-image: linear-gradient(var(--text-muted), var(--text-muted)); }
 
 .cc-xlabels { display: flex; margin: 6px 0 0 44px; }
 
@@ -696,7 +860,7 @@ a { color: var(--accent); }
 .tip-swatch { width: 12px; height: 4px; border-radius: 2px; flex: 0 0 auto; }
 
 @media (max-width: 640px) {
-  .domain-row { grid-template-columns: 92px 1fr 36px; }
+  .domain-row, .country-row { grid-template-columns: 92px 1fr 36px; }
   .cc-plot, .cc-xlabels { margin-left: 36px; }
   .cc-xlabel { font-size: 0.62rem; }
   /* 좁은 화면에서는 x축 라벨을 하나 걸러 표시 (연도 부제는 유지) */
