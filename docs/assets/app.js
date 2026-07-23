@@ -789,7 +789,122 @@
     renderDashTiles();
     renderDomainChart();
     renderMonthChart();
+    renderKoreaPanel();
     renderPaperPanel();
+  }
+
+  // ── 대시보드: 한국 개최 학회 현황 ──
+  const KOREA_RE = /korea|한국|서울|seoul|jeju|제주|busan|부산|incheon|인천|daejeon|대전|gyeongju|경주|daegu|대구|gwangju|광주|songdo|송도|pyeongchang|평창/i;
+  // 특별 관리 대상 학회(빨간색 표기, 13개) — conferences.json 의 id 기준
+  const KOREA_WATCH_IDS = new Set([
+    "icml", "iclr", "aaai", "neurips", "ijcai", "cvpr", "iccv",
+    "eccv", "acl", "emnlp", "naacl-hlt", "icassp", "interspeech",
+  ]);
+  const KOREA_WATCH_NAMES = ["ICML", "ICLR", "AAAI", "NeurIPS", "IJCAI", "CVPR", "ICCV",
+                             "ECCV", "ACL", "EMNLP", "NAACL", "ICASSP", "INTERSPEECH"];
+
+  function koreaYearOf(conf) {
+    const m = (conf.name || "").match(/\b(20\d{2})\b/);
+    if (m) return Number(m[1]);
+    if (conf.confStart) return parseDate(conf.confStart).getFullYear();
+    if (conf.deadlines.length) return parseDate(conf.deadlines[0].date).getFullYear();
+    return null;
+  }
+
+  function koreaDeadlineCell(conf) {
+    const cell = document.createElement("td");
+    cell.className = "kr-dl-cell";
+    if (conf.deadlines.length === 0) {
+      cell.appendChild(el("span", "kr-dl-line", t("dash.korea.noDeadline")));
+      return cell;
+    }
+    conf.deadlines.forEach((dl) => {
+      const d = parseDate(dl.date);
+      const dday = ddayOf(d);
+      const line = el("span", "kr-dl-line" + (dday < 0 ? " past" : ""));
+      line.appendChild(el("span", "kr-dl-date", fmtDate(d)));
+      line.appendChild(el("span", "kr-dl-label", dl.label));
+      if (dday < 0) {
+        line.appendChild(el("span", "kr-dl-flag", `(${t("dash.korea.pastDl")})`));
+      } else {
+        line.appendChild(el("span", "mini-dday", dday === 0 ? "D-Day" : `D-${dday}`));
+      }
+      cell.appendChild(line);
+    });
+    return cell;
+  }
+
+  function renderKoreaPanel() {
+    const wrap = $("#korea-content");
+    wrap.innerHTML = "";
+
+    const confs = (state.data.conferences || []).filter((c) => KOREA_RE.test(c.location || ""));
+    const byYear = {};
+    confs.forEach((c) => {
+      const y = koreaYearOf(c) || 0;
+      (byYear[y] = byYear[y] || []).push(c);
+    });
+    const years = Object.keys(byYear).map(Number).sort((a, b) => a - b);
+
+    if (confs.length === 0) {
+      wrap.appendChild(el("p", "empty", t("dash.korea.empty")));
+    }
+
+    years.forEach((year) => {
+      wrap.appendChild(el("h4", "dash-detail-heading", t("dash.korea.yearHeading", { year: year || "-" })));
+      const tableWrap = el("div", "dash-table-wrap");
+      const table = el("table", "dash-table korea-table");
+      table.appendChild(tableRow([
+        t("dash.korea.table.name"), t("dash.korea.table.deadline"), t("dash.korea.table.venue"),
+        t("dash.korea.table.schedule"), t("dash.korea.table.site"),
+      ], "th"));
+
+      byYear[year]
+        .sort((a, b) => (a.deadlines[0] ? a.deadlines[0].date : "9999") < (b.deadlines[0] ? b.deadlines[0].date : "9999") ? -1 : 1)
+        .forEach((conf) => {
+          const tr = document.createElement("tr");
+          const isWatch = KOREA_WATCH_IDS.has(conf.id);
+          if (isWatch) tr.className = "kr-watch-row";
+
+          const nameTd = document.createElement("th");
+          const nameBtn = el("button", "kr-name-btn" + (isWatch ? " kr-watch" : ""));
+          nameBtn.type = "button";
+          nameBtn.appendChild(document.createTextNode(conf.name));
+          nameBtn.title = conf.fullName || conf.name;
+          nameBtn.addEventListener("click", () => openModal(conf));
+          nameTd.appendChild(nameBtn);
+          if (isWatch) {
+            const wb = el("span", "badge kr-watch-badge", t("dash.korea.watchBadge"));
+            wb.title = t("dash.korea.watchTitle");
+            nameTd.appendChild(wb);
+          }
+          tr.appendChild(nameTd);
+
+          tr.appendChild(koreaDeadlineCell(conf));
+
+          tr.appendChild(el("td", "kr-venue", conf.location || "-"));
+          tr.appendChild(el("td", "kr-schedule", confPeriod(conf)));
+
+          const siteTd = document.createElement("td");
+          if (conf.url) {
+            const a = el("a", "kr-site-link", t("dash.korea.siteLink"));
+            a.href = conf.url;
+            a.target = "_blank";
+            a.rel = "noopener";
+            siteTd.appendChild(a);
+          } else {
+            siteTd.textContent = t("dash.korea.noSite");
+          }
+          tr.appendChild(siteTd);
+
+          table.appendChild(tr);
+        });
+
+      tableWrap.appendChild(table);
+      wrap.appendChild(tableWrap);
+    });
+
+    $("#korea-watch-note").textContent = t("dash.korea.watchNote", { list: KOREA_WATCH_NAMES.join(", ") });
   }
 
   // ── 대시보드: 요약 타일 ──

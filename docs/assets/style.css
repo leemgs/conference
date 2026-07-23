@@ -859,6 +859,40 @@ a { color: var(--accent); }
 .tip-label { color: var(--text-muted); }
 .tip-swatch { width: 12px; height: 4px; border-radius: 2px; flex: 0 0 auto; }
 
+/* 한국 개최 학회 현황 */
+#korea-content .dash-table-wrap { margin-top: 4px; margin-bottom: 8px; }
+
+.korea-table th, .korea-table td { text-align: left; vertical-align: top; }
+
+.kr-name-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.kr-name-btn.kr-watch { color: var(--danger); }
+
+.kr-watch-badge {
+  background: rgba(224, 49, 49, 0.12);
+  color: var(--danger);
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+.kr-dl-cell .kr-dl-line { display: block; white-space: nowrap; margin: 1px 0; }
+.kr-dl-line .kr-dl-label { color: var(--text-muted); margin-left: 6px; font-size: 0.76rem; }
+.kr-dl-line.past { opacity: 0.55; }
+.kr-dl-line.past .kr-dl-date { text-decoration: line-through; }
+.kr-dl-flag { color: var(--text-muted); margin-left: 4px; font-size: 0.75rem; }
+.kr-dl-line .mini-dday { color: var(--danger); font-weight: 700; font-size: 0.75rem; margin-left: 6px; }
+
+.kr-site-link { font-weight: 600; white-space: nowrap; }
+
 @media (max-width: 640px) {
   .domain-row, .country-row { grid-template-columns: 92px 1fr 36px; }
   .cc-plot, .cc-xlabels { margin-left: 36px; }

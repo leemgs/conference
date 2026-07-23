@@ -182,6 +182,36 @@
     "dash.papers.countries.table.country": { ko: "국가", en: "Country" },
     "dash.papers.countries.table.count": { ko: "논문 수", en: "Papers" },
 
+    "dash.korea.title": { ko: "🇰🇷 한국 개최 학회 현황", en: "🇰🇷 Conferences Held in Korea" },
+    "dash.korea.sub": {
+      ko: "개최지가 한국인 학회 — 국내 개최 학회에 논문을 제출하면 해외 출장 없이 발표할 수 있습니다",
+      en: "Conferences hosted in Korea — submit to these and present without traveling abroad",
+    },
+    "dash.korea.yearHeading": { ko: "{year}년", en: "{year}" },
+    "dash.korea.table.name": { ko: "학회명", en: "Conference" },
+    "dash.korea.table.deadline": { ko: "제출마감일", en: "Submission Deadline" },
+    "dash.korea.table.venue": { ko: "개최지", en: "Venue" },
+    "dash.korea.table.schedule": { ko: "학회 일정", en: "Dates" },
+    "dash.korea.table.site": { ko: "학회 사이트", en: "Website" },
+    "dash.korea.siteLink": { ko: "바로가기 ↗", en: "Visit ↗" },
+    "dash.korea.noSite": { ko: "미확인", en: "N/A" },
+    "dash.korea.noDeadline": { ko: "마감일 미확인", en: "Not announced" },
+    "dash.korea.pastDl": { ko: "지남", en: "past" },
+    "dash.korea.watchBadge": { ko: "★ 관리", en: "★ Watch" },
+    "dash.korea.watchTitle": { ko: "특별 관리 대상 학회", en: "Specially watched conference" },
+    "dash.korea.watchNote": {
+      ko: "🔴 빨간색은 특별 관리 대상 학회(13개)입니다: {list}",
+      en: "🔴 Red marks the 13 specially watched conferences: {list}",
+    },
+    "dash.korea.empty": {
+      ko: "현재 데이터에 한국 개최가 확정된 학회가 없습니다.",
+      en: "No conferences currently confirmed to be held in Korea.",
+    },
+    "dash.korea.autoNote": {
+      ko: "개최지가 미정(TBD)인 학회는 장소가 발표되어 데이터에 반영되는 대로 이 표에 자동 표시됩니다.",
+      en: "Conferences with venues still TBD appear here automatically once their locations are announced in the data.",
+    },
+
     "modal.close": { ko: "닫기", en: "Close" },
     "modal.location": { ko: "장소", en: "Location" },
     "modal.dates": { ko: "개최", en: "Dates" },
